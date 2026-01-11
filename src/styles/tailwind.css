@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #e65100; /* deep-orange-800 - Revolutionary energy */
+    --color-primary-foreground: #ffffff; /* white */
+
+    /* Secondary Colors */
+    --color-secondary: #1565c0; /* blue-800 - Trust foundation */
+    --color-secondary-foreground: #ffffff; /* white */
+
+    /* Accent Colors */
+    --color-accent: #2e7d32; /* green-800 - Growth achievement */
+    --color-accent-foreground: #ffffff; /* white */
+
+    /* Background Colors */
+    --color-background: #fafafa; /* gray-50 - Clean canvas */
+    --color-foreground: #212121; /* gray-900 - Text primary */
+
+    /* Surface Colors */
+    --color-card: #ffffff; /* white - Content elevation */
+    --color-card-foreground: #212121; /* gray-900 */
+
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #212121; /* gray-900 */
+
+    /* Muted Colors */
+    --color-muted: #f5f5f5; /* gray-100 */
+    --color-muted-foreground: #616161; /* gray-600 - Text secondary */
+
+    /* Border & Input */
+    --color-border: #e0e0e0; /* gray-300 */
+    --color-input: #e0e0e0; /* gray-300 */
+    --color-ring: #e65100; /* deep-orange-800 */
+
+    /* Status Colors */
+    --color-success: #388e3c; /* green-700 - Achievement celebration */
+    --color-success-foreground: #ffffff; /* white */
+
+    --color-warning: #f57c00; /* orange-700 - Opportunity urgency */
+    --color-warning-foreground: #ffffff; /* white */
+
+    --color-error: #d32f2f; /* red-700 - Helpful correction */
+    --color-error-foreground: #ffffff; /* white */
+
+    --color-destructive: #d32f2f; /* red-700 */
+    --color-destructive-foreground: #ffffff; /* white */
+
+    /* Brand Specific Colors */
+    --color-brand-orange: #ff6b35; /* orange-600 - Energetic innovation */
+    --color-brand-blue: #2e86ab; /* blue-600 - Trustworthy stability */
+    --color-conversion: #f7931e; /* orange-500 - Vibrant action */
+    --color-trust: #1b365d; /* blue-900 - Deep authority */
+
+    /* Radius */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
