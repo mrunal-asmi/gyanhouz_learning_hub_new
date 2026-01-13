@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import QuickActionCenter from './QuickActionCenter';
 import PreschoolAdmissionForm from './PreschoolAdmissionForm';
@@ -82,17 +82,19 @@ const ContactInteractiveInner = ({ className = '' }: ContactInteractiveProps) =>
   };
 
   return (
-    <div className={className}>
-      {!selectedAction ? (
-        <QuickActionCenter onActionSelect={handleActionSelect} />
-      ) : (
-        <div className="py-16 lg:py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">{renderForm()}</div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className={className}>
+        {!selectedAction ? (
+          <QuickActionCenter onActionSelect={handleActionSelect} />
+        ) : (
+          <div className="py-16 lg:py-20 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">{renderForm()}</div>
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </Suspense>
   );
 };
 
