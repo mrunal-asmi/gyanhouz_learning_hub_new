@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import ContactHero from './components/ContactHero';
@@ -19,7 +20,19 @@ export default function ContactAndAdmissionsPage() {
 
       <div className="pt-16 lg:pt-20">
         <ContactHero />
-        <ContactInteractive />
+        <Suspense
+          fallback={
+            <div className="py-16 lg:py-20 bg-background">
+              <div className="container mx-auto px-4">
+                <div className="text-center">
+                  <div className="inline-block w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+                </div>
+              </div>
+            </div>
+          }
+        >
+          <ContactInteractive />
+        </Suspense>
         <AdmissionProcess />
         <ContactInfo />
       </div>
