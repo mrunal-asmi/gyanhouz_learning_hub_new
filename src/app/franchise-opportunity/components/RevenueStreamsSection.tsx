@@ -7,6 +7,7 @@ interface RevenueStream {
   icon: string;
   monthlyRevenue: string;
   growthPotential: string;
+  age: string;
 }
 
 const RevenueStreamsSection = () => {
@@ -19,6 +20,7 @@ const RevenueStreamsSection = () => {
       icon: 'AcademicCapIcon',
       monthlyRevenue: '₹3-5 Lakhs',
       growthPotential: 'High',
+      age: '2 - 6 Years',
     },
     {
       id: 2,
@@ -27,6 +29,7 @@ const RevenueStreamsSection = () => {
       icon: 'BriefcaseIcon',
       monthlyRevenue: '₹2-4 Lakhs',
       growthPotential: 'Very High',
+      age: '10 - 16 Years',
     },
     {
       id: 3,
@@ -35,6 +38,7 @@ const RevenueStreamsSection = () => {
       icon: 'LightBulbIcon',
       monthlyRevenue: '₹1.5-3 Lakhs',
       growthPotential: 'High',
+      age: '7 - 14 Years',
     },
     {
       id: 4,
@@ -43,6 +47,7 @@ const RevenueStreamsSection = () => {
       icon: 'BeakerIcon',
       monthlyRevenue: '₹1-2 Lakhs',
       growthPotential: 'Medium',
+      age: '7 - 14 Years',
     },
     {
       id: 5,
@@ -51,6 +56,7 @@ const RevenueStreamsSection = () => {
       icon: 'CpuChipIcon',
       monthlyRevenue: '₹1.5-2.5 Lakhs',
       growthPotential: 'Very High',
+      age: '8 - 15 Years',
     },
     {
       id: 6,
@@ -59,6 +65,7 @@ const RevenueStreamsSection = () => {
       icon: 'StarIcon',
       monthlyRevenue: '₹1-2 Lakhs',
       growthPotential: 'Medium',
+      age: '6 - 16 Years',
     },
     {
       id: 7,
@@ -67,6 +74,7 @@ const RevenueStreamsSection = () => {
       icon: 'UserGroupIcon',
       monthlyRevenue: '₹50K-1 Lakh',
       growthPotential: 'Medium',
+      age: 'All Ages',
     },
     {
       id: 8,
@@ -75,6 +83,7 @@ const RevenueStreamsSection = () => {
       icon: 'BuildingOfficeIcon',
       monthlyRevenue: '₹1-3 Lakhs',
       growthPotential: 'High',
+      age: 'B2B / Schools',
     },
   ];
 
@@ -109,9 +118,12 @@ const RevenueStreamsSection = () => {
                 <Icon name={stream.icon as any} size={28} className="text-white" />
               </div>
 
-              <h3 className="text-lg font-bold text-foreground mb-2 font-poppins">
-                {stream.title}
-              </h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-lg font-bold text-foreground font-poppins">{stream.title}</h3>
+                <span className="text-[10px] font-bold bg-primary/10 text-primary px-2 py-1 rounded-full uppercase tracking-wider">
+                  {stream.age}
+                </span>
+              </div>
 
               <p className="text-sm text-muted-foreground mb-4 font-source leading-relaxed">
                 {stream.description}

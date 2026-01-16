@@ -11,14 +11,10 @@ interface RevenueStream {
   description: string;
   icon: string;
   potential: string;
+  age: string;
 }
 
 const FranchiseSpotlight = () => {
-  const [isHydrated, setIsHydrated] = useState(false);
-
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
 
   const revenueStreams: RevenueStream[] = [
     {
@@ -26,7 +22,8 @@ const FranchiseSpotlight = () => {
       title: 'Preschool Programs',
       description: 'Year-round enrollment with premium pricing for revolutionary outcomes',
       icon: 'AcademicCapIcon',
-      potential: '₹40-60L/year',
+      potential: '₹50-80L/year',
+      age: '1.5 - 6 Years',
     },
     {
       id: 2,
@@ -34,6 +31,7 @@ const FranchiseSpotlight = () => {
       description: 'High-value career discovery programs for teenagers',
       icon: 'BriefcaseIcon',
       potential: '₹25-35L/year',
+      age: '13 - 18 Years',
     },
     {
       id: 3,
@@ -41,6 +39,7 @@ const FranchiseSpotlight = () => {
       description: 'STEM programs with robotics, electronics, and science',
       icon: 'CpuChipIcon',
       potential: '₹30-45L/year',
+      age: '7 - 14 Years',
     },
     {
       id: 4,
@@ -48,6 +47,7 @@ const FranchiseSpotlight = () => {
       description: 'Weekend and holiday programs for skill development',
       icon: 'StarIcon',
       potential: '₹15-25L/year',
+      age: '6 - 16 Years',
     },
     {
       id: 5,
@@ -55,6 +55,7 @@ const FranchiseSpotlight = () => {
       description: 'Intensive seasonal programs with premium pricing',
       icon: 'SunIcon',
       potential: '₹10-15L/season',
+      age: '5 - 15 Years',
     },
     {
       id: 6,
@@ -62,6 +63,7 @@ const FranchiseSpotlight = () => {
       description: 'B2B collaborations and sponsored programs',
       icon: 'BuildingOfficeIcon',
       potential: '₹20-30L/year',
+      age: 'All Ages',
     },
   ];
 
@@ -85,9 +87,9 @@ const FranchiseSpotlight = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 font-source leading-relaxed">
-              Join India's fastest-growing education revolution with a proven business model that
-              generates multiple revenue streams throughout the year. No seasonal fluctuations, just
-              consistent growth.
+              Join India's fastest-growing education revolution with a proven business model
+              that generates multiple revenue streams throughout the year. No seasonal fluctuations,
+              just consistent growth.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -174,9 +176,14 @@ const FranchiseSpotlight = () => {
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                   <Icon name={stream.icon as any} size={24} className="text-secondary" />
                 </div>
-                <h4 className="text-lg font-bold text-foreground mb-2 font-poppins">
-                  {stream.title}
-                </h4>
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="text-lg font-bold text-foreground font-poppins">
+                    {stream.title}
+                  </h4>
+                  <span className="text-[10px] font-bold bg-secondary/10 text-secondary px-2 py-1 rounded-full uppercase tracking-wider">
+                    {stream.age}
+                  </span>
+                </div>
                 <p className="text-sm text-muted-foreground mb-4 font-source">
                   {stream.description}
                 </p>
