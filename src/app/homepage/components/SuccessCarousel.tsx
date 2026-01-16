@@ -104,7 +104,7 @@ const SuccessCarousel = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-primary/10 px-6 py-3 rounded-full mb-6">
             <Icon name="ChatBubbleLeftRightIcon" size={20} className="text-primary" />
-            <span className="text-lg font-semibold text-primary font-poppins">
+            <span className="text-xl font-semibold text-primary font-poppins">
               Parent Testimonials
             </span>
           </div>

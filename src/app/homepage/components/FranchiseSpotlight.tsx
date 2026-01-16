@@ -72,7 +72,7 @@ const FranchiseSpotlight = () => {
           <div>
             <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full mb-6">
               <Icon name="BuildingStorefrontIcon" size={20} className="text-secondary" />
-              <span className="text-lg font-semibold text-secondary font-poppins">
+              <span className="text-xl font-semibold text-secondary font-poppins">
                 Franchise Opportunity
               </span>
             </div>
