@@ -8,10 +8,12 @@ import FOMOGenerator from './FOMOGenerator';
 import FranchiseSpotlight from './FranchiseSpotlight';
 import SuccessCarousel from './SuccessCarousel';
 import QuickActionCenter from './QuickActionCenter';
+import UrgencyPopup from './UrgencyPopup';
 
 const HomepageInteractive = () => {
   return (
     <>
+      <UrgencyPopup />
       <TopBanner />
       <HeroSection />
       <EcosystemMap />
