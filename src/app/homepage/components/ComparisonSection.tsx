@@ -12,28 +12,28 @@ export default function ComparisonSection() {
     {
       category: 'Learning Approach',
       oldSchool: 'Rote memorization and textbook-based',
-      newSchool: 'Hands-on experimentation and discovery'
+      newSchool: 'Hands-on experimentation and discovery',
     },
     {
       category: 'Skill Development',
       oldSchool: 'Focus on exam scores only',
-      newSchool: 'Critical thinking, creativity, problem-solving'
+      newSchool: 'Critical thinking, creativity, problem-solving',
     },
     {
       category: 'Career Preparation',
       oldSchool: 'Guess careers from books',
-      newSchool: 'Experience real careers through simulations'
+      newSchool: 'Experience real careers through simulations',
     },
     {
       category: 'Innovation',
       oldSchool: 'Imagine concepts theoretically',
-      newSchool: 'Build robots, circuits, and experiments'
+      newSchool: 'Build robots, circuits, and experiments',
     },
     {
       category: 'Assessment',
       oldSchool: 'Written tests measure memory',
-      newSchool: 'Project-based evaluation of understanding'
-    }
+      newSchool: 'Project-based evaluation of understanding',
+    },
   ];
 
   return (

@@ -13,14 +13,14 @@ const Header = ({ className = '' }: HeaderProps) => {
 
   const navigationItems = [
     { label: 'Home', href: '/homepage' },
-    { label: 'Preschool Program', href: '/preschool-program' },
+    { label: 'Preschool', href: '/preschool-program' },
     {
       label: 'Practical Labs',
       href: '/career-labs',
       submenu: [
         { label: 'Career Labs', href: '/career-labs' },
         { label: 'Science Labs', href: '/science-labs' },
-        { label: 'Innovation Lab', href: '/innovation-lab' },
+        { label: 'Science Lab', href: '/innovation-lab' },
         { label: 'School of Creativity', href: '/school-of-creativity' },
         { label: 'Robotics & Electronics Lab', href: '/robotics-electronics-lab' },
         { label: 'Business Clubs', href: '/business-clubs' },

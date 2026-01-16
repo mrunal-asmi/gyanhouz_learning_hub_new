@@ -31,7 +31,7 @@ export default function InquiryForm({ isOpen, onClose }: InquiryFormProps) {
     investmentCapacity: '',
     experience: '',
     preferredTerritory: '',
-    message: ''
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -53,17 +53,19 @@ export default function InquiryForm({ isOpen, onClose }: InquiryFormProps) {
 
   if (!isHydrated || !isOpen) return null;
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitSuccess(true);
@@ -79,7 +81,7 @@ export default function InquiryForm({ isOpen, onClose }: InquiryFormProps) {
           investmentCapacity: '',
           experience: '',
           preferredTerritory: '',
-          message: ''
+          message: '',
         });
       }, 2000);
     }, 1500);
@@ -252,7 +254,9 @@ export default function InquiryForm({ isOpen, onClose }: InquiryFormProps) {
               <Icon name="CheckCircleIcon" size={24} className="text-brand-green" />
               <div>
                 <div className="font-semibold text-brand-green">Application Submitted!</div>
-                <div className="text-sm text-muted-foreground">Our team will contact you within 24 hours.</div>
+                <div className="text-sm text-muted-foreground">
+                  Our team will contact you within 24 hours.
+                </div>
               </div>
             </div>
           ) : (
@@ -273,7 +277,9 @@ export default function InquiryForm({ isOpen, onClose }: InquiryFormProps) {
           )}
 
           <p className="text-xs text-muted-foreground text-center">
-            By submitting this form, you agree to our Terms of Service and Privacy Policy. We'll use your information to process your franchise inquiry and contact you with relevant details.
+            By submitting this form, you agree to our Terms of Service and Privacy Policy. We'll use
+            your information to process your franchise inquiry and contact you with relevant
+            details.
           </p>
         </form>
       </div>

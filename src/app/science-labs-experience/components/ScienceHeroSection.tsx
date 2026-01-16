@@ -12,7 +12,13 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
     <section className="relative bg-gradient-to-br from-brand-green via-brand-teal to-brand-blue overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px',
+          }}
+        />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
@@ -56,8 +62,8 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
                 onClick={onEnrollClick}
-                className="px-8 py-4 bg-brand-orange text-white font-bold text-lg rounded-lg shadow-xl hover:bg-brand-red hover:scale-105 transition-smooth">
-
+                className="px-8 py-4 bg-brand-orange text-white font-bold text-lg rounded-lg shadow-xl hover:bg-brand-red hover:scale-105 transition-smooth"
+              >
                 Book Lab Session
               </button>
               <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold text-lg rounded-lg border-2 border-white/40 hover:bg-white/30 transition-smooth">
@@ -68,7 +74,9 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
             {/* Urgency Indicator */}
             <div className="flex items-center space-x-2 bg-brand-red/90 backdrop-blur-sm px-4 py-3 rounded-lg">
               <Icon name="FireIcon" size={20} className="text-white animate-pulse" />
-              <span className="text-sm font-semibold">Board exam students: Limited slots for 8th-10th grade</span>
+              <span className="text-sm font-semibold">
+                Board exam students: Limited slots for 8th-10th grade
+              </span>
             </div>
           </div>
 
@@ -78,9 +86,9 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
               <AppImage
                 src="https://img.rocket.new/generatedImages/rocket_gen_img_10bad85e5-1767130132132.png"
                 alt="Students in safety goggles conducting chemistry experiments with colorful liquids in modern science laboratory"
-                className="w-full h-auto" />
+                className="w-full h-auto"
+              />
 
-              
               {/* Floating Experiment Cards */}
               <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-3 animate-float">
                 <div className="flex items-center space-x-2">
@@ -91,8 +99,11 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
                   </div>
                 </div>
               </div>
-              
-              <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 animate-float" style={{ animationDelay: '1s' }}>
+
+              <div
+                className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 animate-float"
+                style={{ animationDelay: '1s' }}
+              >
                 <div className="flex items-center space-x-2">
                   <Icon name="BoltIcon" size={24} className="text-brand-orange" />
                   <div>
@@ -105,6 +116,6 @@ export default function ScienceHeroSection({ onEnrollClick }: ScienceHeroSection
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

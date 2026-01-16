@@ -97,17 +97,17 @@ export default function SuccessStoriesInteractive() {
       id: 3,
       studentName: 'Arjun Reddy',
       age: 12,
-      program: 'Innovation Lab',
+      program: 'Science Lab',
       achievement: 'State Science Fair Gold Medalist',
       beforeDescription:
         'Academically strong but lacked practical application skills. Struggled to convert theoretical knowledge into real-world projects.',
       afterDescription:
-        'Developed a water purification system using solar energy that won state-level recognition. Now mentors younger students in the Innovation Lab and has filed for a patent with guidance from GYANHOUZ mentors.',
+        'Developed a water purification system using solar energy that won state-level recognition. Now mentors younger students in the Science Lab and has filed for a patent with guidance from GYANHOUZ mentors.',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1b9bd9048-1765043048613.png',
       alt: 'Teenage boy in white lab coat demonstrating solar-powered water purification prototype at modern science laboratory',
       parentName: 'Lakshmi Reddy',
       parentTestimonial:
-        'The Innovation Lab gave my son the platform to turn his ideas into reality. The access to equipment, mentors, and real-world problem-solving opportunities has prepared him for a future in engineering better than any traditional school could.',
+        'The Science Lab gave my son the platform to turn his ideas into reality. The access to equipment, mentors, and real-world problem-solving opportunities has prepared him for a future in engineering better than any traditional school could.',
       metrics: [
         { label: 'Patents Filed', value: '1' },
         { label: 'Awards Won', value: '3' },

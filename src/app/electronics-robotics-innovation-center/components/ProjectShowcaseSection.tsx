@@ -5,43 +5,44 @@ import Icon from '@/components/ui/AppIcon';
 import Image from '@/components/ui/AppImage';
 
 const projects = [
-{
-  title: 'Smart Home Automation',
-  student: 'Aarav, 13 years',
-  description: 'Voice-controlled home system using Raspberry Pi, controlling lights, fans, and security',
-  tech: ['Raspberry Pi', 'Python', 'Google Assistant', 'Relay Modules'],
-  image: "https://images.unsplash.com/photo-1652084824353-a9f939f43555",
-  alt: 'Smart home automation system with Raspberry Pi controlling lights and appliances via voice commands',
-  outcome: 'Won district-level innovation competition'
-},
-{
-  title: 'Line-Following Delivery Robot',
-  student: 'Priya, 11 years',
-  description: 'Autonomous robot that follows black lines and delivers items between stations',
-  tech: ['Arduino Uno', 'IR Sensors', 'Motor Drivers', 'C++'],
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1047622c9-1766999598496.png",
-  alt: 'Autonomous line-following robot with IR sensors navigating a track and delivering packages',
-  outcome: 'Selected for state robotics championship'
-},
-{
-  title: 'Weather Monitoring Station',
-  student: 'Rohan, 14 years',
-  description: 'IoT device measuring temperature, humidity, air quality with cloud data logging',
-  tech: ['ESP32', 'DHT22 Sensor', 'ThingSpeak', 'Mobile App'],
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1aab171e7-1765111116318.png",
-  alt: 'IoT weather station with multiple sensors displaying real-time environmental data on mobile app',
-  outcome: 'Data used by school for environmental study'
-},
-{
-  title: 'Gesture-Controlled Robotic Arm',
-  student: 'Ananya, 12 years',
-  description: 'Robotic arm controlled by hand gestures using accelerometer and servo motors',
-  tech: ['Arduino Mega', 'MPU6050', 'Servo Motors', 'Wireless'],
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1748ecd86-1768036262102.png",
-  alt: 'Robotic arm with multiple servo motors controlled by hand gesture recognition system',
-  outcome: 'Featured in national innovation magazine'
-}];
-
+  {
+    title: 'Smart Home Automation',
+    student: 'Aarav, 13 years',
+    description:
+      'Voice-controlled home system using Raspberry Pi, controlling lights, fans, and security',
+    tech: ['Raspberry Pi', 'Python', 'Google Assistant', 'Relay Modules'],
+    image: 'https://images.unsplash.com/photo-1652084824353-a9f939f43555',
+    alt: 'Smart home automation system with Raspberry Pi controlling lights and appliances via voice commands',
+    outcome: 'Won district-level innovation competition',
+  },
+  {
+    title: 'Line-Following Delivery Robot',
+    student: 'Priya, 11 years',
+    description: 'Autonomous robot that follows black lines and delivers items between stations',
+    tech: ['Arduino Uno', 'IR Sensors', 'Motor Drivers', 'C++'],
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1047622c9-1766999598496.png',
+    alt: 'Autonomous line-following robot with IR sensors navigating a track and delivering packages',
+    outcome: 'Selected for state robotics championship',
+  },
+  {
+    title: 'Weather Monitoring Station',
+    student: 'Rohan, 14 years',
+    description: 'IoT device measuring temperature, humidity, air quality with cloud data logging',
+    tech: ['ESP32', 'DHT22 Sensor', 'ThingSpeak', 'Mobile App'],
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1aab171e7-1765111116318.png',
+    alt: 'IoT weather station with multiple sensors displaying real-time environmental data on mobile app',
+    outcome: 'Data used by school for environmental study',
+  },
+  {
+    title: 'Gesture-Controlled Robotic Arm',
+    student: 'Ananya, 12 years',
+    description: 'Robotic arm controlled by hand gestures using accelerometer and servo motors',
+    tech: ['Arduino Mega', 'MPU6050', 'Servo Motors', 'Wireless'],
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1748ecd86-1768036262102.png',
+    alt: 'Robotic arm with multiple servo motors controlled by hand gesture recognition system',
+    outcome: 'Featured in national innovation magazine',
+  },
+];
 
 export default function ProjectShowcaseSection() {
   const [selectedProject, setSelectedProject] = useState(0);
@@ -59,7 +60,8 @@ export default function ProjectShowcaseSection() {
             Real Projects, <span className="text-brand-orange">Real Impact</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            These aren't school science fair models. These are working inventions built by GYANHOUZ students.
+            These aren't school science fair models. These are working inventions built by GYANHOUZ
+            students.
           </p>
         </div>
 
@@ -73,19 +75,20 @@ export default function ProjectShowcaseSection() {
                 alt={projects?.[selectedProject]?.alt}
                 width={500}
                 height={350}
-                className="w-full h-auto" />
+                className="w-full h-auto"
+              />
 
               {/* Tech Stack Overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                 <div className="flex flex-wrap gap-2">
-                  {projects?.[selectedProject]?.tech?.map((tech, idx) =>
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full">
-
+                  {projects?.[selectedProject]?.tech?.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full"
+                    >
                       {tech}
                     </span>
-                  )}
+                  ))}
                 </div>
               </div>
             </div>
@@ -139,21 +142,20 @@ export default function ProjectShowcaseSection() {
 
         {/* Project Selector */}
         <div className="grid md:grid-cols-4 gap-4">
-          {projects?.map((project, index) =>
-          <button
-            key={index}
-            onClick={() => setSelectedProject(index)}
-            className={`text-left p-4 rounded-lg border-2 transition-smooth ${
-            selectedProject === index ?
-            'border-brand-orange bg-brand-orange/5' : 'border-border bg-card hover:border-brand-orange/50'}`
-            }>
-
-              <h4 className="font-semibold text-foreground mb-1 text-sm">
-                {project?.title}
-              </h4>
+          {projects?.map((project, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedProject(index)}
+              className={`text-left p-4 rounded-lg border-2 transition-smooth ${
+                selectedProject === index
+                  ? 'border-brand-orange bg-brand-orange/5'
+                  : 'border-border bg-card hover:border-brand-orange/50'
+              }`}
+            >
+              <h4 className="font-semibold text-foreground mb-1 text-sm">{project?.title}</h4>
               <p className="text-xs text-muted-foreground">{project?.student}</p>
             </button>
-          )}
+          ))}
         </div>
 
         {/* Bottom Stats */}
@@ -176,6 +178,6 @@ export default function ProjectShowcaseSection() {
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

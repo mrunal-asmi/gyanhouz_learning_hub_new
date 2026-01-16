@@ -54,21 +54,21 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-primary font-poppins">500+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary font-poppins">1500+</div>
                 <div className="text-sm text-muted-foreground font-source mt-1">
                   Transformed Lives
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-secondary font-poppins">
-                  100%
+                  99%
                 </div>
                 <div className="text-sm text-muted-foreground font-source mt-1">
                   Parent Satisfaction
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-accent font-poppins">15+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-accent font-poppins">75+</div>
                 <div className="text-sm text-muted-foreground font-source mt-1">Unique Skills</div>
               </div>
             </div>

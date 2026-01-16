@@ -1,4 +1,3 @@
-
 import Icon from '@/components/ui/AppIcon';
 
 interface TrustIndicator {
@@ -18,41 +17,41 @@ export default function TrustSection() {
     {
       icon: 'ShieldCheckIcon',
       title: 'CBSE Affiliated',
-      description: 'Recognized curriculum aligned with national standards'
+      description: 'Recognized curriculum aligned with national standards',
     },
     {
       icon: 'AcademicCapIcon',
       title: 'ISO Certified',
-      description: 'International quality management certification'
+      description: 'International quality management certification',
     },
     {
       icon: 'StarIcon',
       title: 'Award Winning',
-      description: 'Best Innovation in Education 2024'
+      description: 'Best Innovation in Education 2024',
     },
     {
       icon: 'UserGroupIcon',
       title: 'Expert Faculty',
-      description: 'Trained educators with child psychology expertise'
-    }
+      description: 'Trained educators with child psychology expertise',
+    },
   ];
 
   const awards: Award[] = [
     {
       title: 'Best EdTech Innovation',
       organization: 'Education Excellence Awards',
-      year: '2024'
+      year: '2024',
     },
     {
       title: 'Top Preschool Chain',
       organization: 'India Education Summit',
-      year: '2024'
+      year: '2024',
     },
     {
       title: 'Excellence in STEM',
       organization: 'National Innovation Council',
-      year: '2023'
-    }
+      year: '2023',
+    },
   ];
 
   const mediaLogos = [
@@ -60,7 +59,7 @@ export default function TrustSection() {
     { name: 'Economic Times', width: 100 },
     { name: 'Hindustan Times', width: 110 },
     { name: 'NDTV', width: 90 },
-    { name: 'India Today', width: 100 }
+    { name: 'India Today', width: 100 },
   ];
 
   return (
@@ -84,7 +83,12 @@ export default function TrustSection() {
               className="text-center p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl hover:shadow-brand transition-smooth"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                <Icon name={indicator.icon as any} size={32} className="text-primary" variant="solid" />
+                <Icon
+                  name={indicator.icon as any}
+                  size={32}
+                  className="text-primary"
+                  variant="solid"
+                />
               </div>
               <h3 className="font-bold text-foreground mb-2">{indicator.title}</h3>
               <p className="text-sm text-muted-foreground">{indicator.description}</p>
@@ -99,11 +103,13 @@ export default function TrustSection() {
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {awards.map((award, index) => (
-              <div
-                key={index}
-                className="bg-card p-6 rounded-xl shadow-brand text-center"
-              >
-                <Icon name="TrophyIcon" size={48} className="text-warning mx-auto mb-4" variant="solid" />
+              <div key={index} className="bg-card p-6 rounded-xl shadow-brand text-center">
+                <Icon
+                  name="TrophyIcon"
+                  size={48}
+                  className="text-warning mx-auto mb-4"
+                  variant="solid"
+                />
                 <h4 className="font-bold text-foreground mb-2">{award.title}</h4>
                 <p className="text-sm text-muted-foreground mb-1">{award.organization}</p>
                 <p className="text-xs text-muted-foreground font-semibold">{award.year}</p>

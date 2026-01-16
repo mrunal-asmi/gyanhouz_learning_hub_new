@@ -13,37 +13,40 @@ interface Partner {
 }
 
 const partners: Partner[] = [
-{
-  name: 'Rajesh Kumar',
-  location: 'Bangalore, Karnataka',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d209a74a-1765093178471.png",
-  alt: 'Indian businessman Rajesh Kumar in formal blue suit smiling confidently in modern office',
-  yearJoined: 2021,
-  students: 145,
-  revenue: '₹58 Lakhs',
-  testimonial: 'GYANHOUZ transformed my career from corporate professional to education entrepreneur. The support system is exceptional, and seeing children develop confidence through our programs is incredibly rewarding.'
-},
-{
-  name: 'Priya Sharma',
-  location: 'Pune, Maharashtra',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_115d61d2c-1765988781101.png",
-  alt: 'Professional Indian woman Priya Sharma in elegant maroon blazer with warm smile in bright office setting',
-  yearJoined: 2022,
-  students: 128,
-  revenue: '₹52 Lakhs',
-  testimonial: 'As a former teacher, I always dreamed of running my own learning center. GYANHOUZ made it possible with their proven model and continuous training. My center achieved profitability within 16 months.'
-},
-{
-  name: 'Amit Patel',
-  location: 'Ahmedabad, Gujarat',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_150d1b412-1763295725152.png",
-  alt: 'Indian entrepreneur Amit Patel in casual business attire with friendly expression in contemporary workspace',
-  yearJoined: 2020,
-  students: 162,
-  revenue: '₹64 Lakhs',
-  testimonial: 'The franchise model is brilliant—multiple revenue streams, strong brand recognition, and operational excellence. I expanded to a second location within 3 years. Best business decision I ever made.'
-}];
-
+  {
+    name: 'Rajesh Kumar',
+    location: 'Bangalore, Karnataka',
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1d209a74a-1765093178471.png',
+    alt: 'Indian businessman Rajesh Kumar in formal blue suit smiling confidently in modern office',
+    yearJoined: 2021,
+    students: 145,
+    revenue: '₹58 Lakhs',
+    testimonial:
+      'GYANHOUZ transformed my career from corporate professional to education entrepreneur. The support system is exceptional, and seeing children develop confidence through our programs is incredibly rewarding.',
+  },
+  {
+    name: 'Priya Sharma',
+    location: 'Pune, Maharashtra',
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_115d61d2c-1765988781101.png',
+    alt: 'Professional Indian woman Priya Sharma in elegant maroon blazer with warm smile in bright office setting',
+    yearJoined: 2022,
+    students: 128,
+    revenue: '₹52 Lakhs',
+    testimonial:
+      'As a former teacher, I always dreamed of running my own learning center. GYANHOUZ made it possible with their proven model and continuous training. My center achieved profitability within 16 months.',
+  },
+  {
+    name: 'Amit Patel',
+    location: 'Ahmedabad, Gujarat',
+    image: 'https://img.rocket.new/generatedImages/rocket_gen_img_150d1b412-1763295725152.png',
+    alt: 'Indian entrepreneur Amit Patel in casual business attire with friendly expression in contemporary workspace',
+    yearJoined: 2020,
+    students: 162,
+    revenue: '₹64 Lakhs',
+    testimonial:
+      'The franchise model is brilliant—multiple revenue streams, strong brand recognition, and operational excellence. I expanded to a second location within 3 years. Best business decision I ever made.',
+  },
+];
 
 export default function SuccessStories() {
   return (
@@ -63,16 +66,17 @@ export default function SuccessStories() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {partners.map((partner, index) =>
-          <div
-            key={index}
-            className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-brand transition-smooth">
-
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-brand transition-smooth"
+            >
               <div className="relative h-64 overflow-hidden">
                 <AppImage
-                src={partner.image}
-                alt={partner.alt}
-                className="w-full h-full object-cover" />
+                  src={partner.image}
+                  alt={partner.alt}
+                  className="w-full h-full object-cover"
+                />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -105,7 +109,7 @@ export default function SuccessStories() {
                 </p>
               </div>
             </div>
-          )}
+          ))}
         </div>
 
         <div className="mt-16 bg-gradient-to-br from-brand-orange to-brand-red rounded-xl p-8 lg:p-12 text-white text-center">
@@ -140,6 +144,6 @@ export default function SuccessStories() {
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

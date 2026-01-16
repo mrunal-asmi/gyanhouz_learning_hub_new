@@ -19,7 +19,7 @@ const FAQSection = ({ className = '' }: FAQSectionProps) => {
     {
       question: 'What makes GYANHOUZ different from traditional preschools?',
       answer:
-        "GYANHOUZ is India's FIRST integrated learning ecosystem offering a complete 2-16 age journey. Unlike traditional preschools that focus only on basic education, we provide ambidextrous writing training, trilingual fluency (English, Hindi, Sanskrit), stage confidence building, innovation lab access, and practical problem-solving skills - all under one roof. Our anti-rote learning approach emphasizes hands-on experimentation over passive memorization.",
+        "GYANHOUZ is India's FIRST integrated learning ecosystem offering a complete 2-16 age journey. Unlike traditional preschools that focus only on basic education, we provide ambidextrous writing training, trilingual fluency (English, Hindi, Sanskrit), stage confidence building, Science Lab access, and practical problem-solving skills - all under one roof. Our anti-rote learning approach emphasizes hands-on experimentation over passive memorization.",
     },
     {
       question: 'How does the ambidextrous writing program work?',

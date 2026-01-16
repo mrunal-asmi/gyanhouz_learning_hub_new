@@ -34,14 +34,16 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
   ];
 
   return (
-    <section className={`py-16 lg:py-24 bg-gradient-to-br from-brand-orange/10 via-background to-brand-teal/10 ${className}`}>
+    <section
+      className={`py-16 lg:py-24 bg-gradient-to-br from-brand-orange/10 via-background to-brand-teal/10 ${className}`}
+    >
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Ready to Join the <span className="text-brand-orange">Revolution?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Take the next step in transforming your child's education or becoming part of India's most innovative learning ecosystem
+            {"Take the next step in transforming your child's education or becoming part of India's most innovative learning ecosystem"}
           </p>
         </div>
 
@@ -51,7 +53,9 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
               key={index}
               className="bg-card border border-border rounded-2xl p-8 hover:shadow-brand transition-smooth text-center"
             >
-              <div className={`w-16 h-16 bg-${option.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-6`}>
+              <div
+                className={`w-16 h-16 bg-${option.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-6`}
+              >
                 <Icon name={option.icon as any} size={32} className={`text-${option.color}`} />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">{option.title}</h3>
@@ -67,10 +71,14 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
         </div>
 
         <div className="mt-16 bg-card border border-border rounded-2xl p-8 text-center">
-          <Icon name="ChatBubbleLeftRightIcon" size={48} className="text-brand-orange mx-auto mb-4" />
+          <Icon
+            name="ChatBubbleLeftRightIcon"
+            size={48}
+            className="text-brand-orange mx-auto mb-4"
+          />
           <h3 className="text-2xl font-bold text-foreground mb-3">Have Questions?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Our team is here to help you understand how GYANHOUZ can transform your child's learning journey
+            {"Our team is here to help you understand how GYANHOUZ can transform your child's learning journey"}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

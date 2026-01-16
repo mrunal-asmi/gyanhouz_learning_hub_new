@@ -12,59 +12,64 @@ const steps: Step[] = [
   {
     number: 1,
     title: 'Initial Inquiry',
-    description: 'Submit your franchise application and schedule a discovery call with our partnership team',
+    description:
+      'Submit your franchise application and schedule a discovery call with our partnership team',
     duration: '1-2 Days',
-    icon: 'DocumentTextIcon'
+    icon: 'DocumentTextIcon',
   },
   {
     number: 2,
     title: 'Business Evaluation',
-    description: 'Detailed discussion about investment, territory selection, and business expectations',
+    description:
+      'Detailed discussion about investment, territory selection, and business expectations',
     duration: '3-5 Days',
-    icon: 'ChartBarIcon'
+    icon: 'ChartBarIcon',
   },
   {
     number: 3,
     title: 'Site Selection',
     description: 'Territory finalization, location scouting assistance, and demographic analysis',
     duration: '2-3 Weeks',
-    icon: 'MapPinIcon'
+    icon: 'MapPinIcon',
   },
   {
     number: 4,
     title: 'Agreement Signing',
-    description: 'Legal documentation, franchise agreement execution, and initial payment processing',
+    description:
+      'Legal documentation, franchise agreement execution, and initial payment processing',
     duration: '1 Week',
-    icon: 'DocumentCheckIcon'
+    icon: 'DocumentCheckIcon',
   },
   {
     number: 5,
     title: 'Training Program',
-    description: 'Comprehensive 6-week training covering operations, curriculum, marketing, and management',
+    description:
+      'Comprehensive 6-week training covering operations, curriculum, marketing, and management',
     duration: '6 Weeks',
-    icon: 'AcademicCapIcon'
+    icon: 'AcademicCapIcon',
   },
   {
     number: 6,
     title: 'Center Setup',
-    description: 'Infrastructure development, branding installation, technology setup, and staff recruitment',
+    description:
+      'Infrastructure development, branding installation, technology setup, and staff recruitment',
     duration: '8-12 Weeks',
-    icon: 'BuildingOfficeIcon'
+    icon: 'BuildingOfficeIcon',
   },
   {
     number: 7,
     title: 'Pre-Launch Marketing',
     description: 'Local marketing campaigns, community outreach, and enrollment drive initiation',
     duration: '4 Weeks',
-    icon: 'MegaphoneIcon'
+    icon: 'MegaphoneIcon',
   },
   {
     number: 8,
     title: 'Grand Opening',
     description: 'Official launch with ongoing support, quality monitoring, and growth assistance',
     duration: 'Ongoing',
-    icon: 'RocketLaunchIcon'
-  }
+    icon: 'RocketLaunchIcon',
+  },
 ];
 
 export default function ProcessTimeline() {
@@ -80,7 +85,8 @@ export default function ProcessTimeline() {
             Your Journey to Ownership
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A structured 4-6 month process from inquiry to launch with dedicated support at every step.
+            A structured 4-6 month process from inquiry to launch with dedicated support at every
+            step.
           </p>
         </div>
 
@@ -103,7 +109,9 @@ export default function ProcessTimeline() {
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center space-x-3 mb-2">
-                          <span className="text-sm font-bold text-brand-orange">Step {step.number}</span>
+                          <span className="text-sm font-bold text-brand-orange">
+                            Step {step.number}
+                          </span>
                           <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">
                             {step.duration}
                           </span>
@@ -127,11 +135,10 @@ export default function ProcessTimeline() {
 
         <div className="mt-16 bg-muted/50 rounded-xl p-8 text-center">
           <Icon name="ClockIcon" size={48} className="text-brand-orange mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-foreground mb-3">
-            Total Timeline: 4-6 Months
-          </h3>
+          <h3 className="text-2xl font-bold text-foreground mb-3">Total Timeline: 4-6 Months</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From initial inquiry to grand opening, we ensure a smooth transition with comprehensive support, training, and guidance throughout your franchise journey.
+            From initial inquiry to grand opening, we ensure a smooth transition with comprehensive
+            support, training, and guidance throughout your franchise journey.
           </p>
         </div>
       </div>

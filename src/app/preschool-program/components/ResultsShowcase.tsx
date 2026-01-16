@@ -93,16 +93,14 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
     <section className={`py-16 lg:py-24 bg-background ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-accent/10 px-4 py-2 rounded-full mb-4">
-            <Icon name="TrophyIcon" size={20} className="text-accent" />
-            <span className="text-sm font-semibold text-accent font-poppins">
+          <div className="inline-flex items-center space-x-4 bg-accent/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+            <Icon name="TrophyIcon" size={40} className="text-accent scale-75 md:scale-100" />
+            <span className="text-2xl md:text-5xl font-semibold text-accent font-poppins whitespace-nowrap">
               Miraculous Outcomes
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
-            Results That <span className="text-primary">Speak</span> for Themselves
-          </h2>
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">Results That Speak for Themselves</h2>
 
           <p className="text-lg text-muted-foreground font-source">
             Quantified, measurable outcomes that traditional preschools can only dream of achieving.

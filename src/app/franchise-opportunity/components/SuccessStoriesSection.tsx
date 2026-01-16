@@ -57,7 +57,7 @@ const SuccessStoriesSection = () => {
       name: 'Amit Patel',
       location: 'Ahmedabad, Gujarat',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1c745c1d8-1763296357030.png',
-      alt: 'Young Indian entrepreneur Amit Patel in casual smart attire with glasses standing in innovation lab surrounded by robotics equipment and student projects',
+      alt: 'Young Indian entrepreneur Amit Patel in casual smart attire with glasses standing in Science Lab surrounded by robotics equipment and student projects',
       yearStarted: '2023',
       monthlyRevenue: '₹15 Lakhs',
       studentCount: '130+',

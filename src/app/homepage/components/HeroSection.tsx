@@ -24,16 +24,17 @@ const HeroSection = () => {
 
   const journeySteps: AgeJourneyStep[] = [
     {
-      age: '2-4 Years',
+      age: '1.5-6 Years',
       title: 'Foundation Building',
-      description:
-        'Miraculous early development through play-based learning and sensory exploration',
+      description: 'Holistic development through play-based learning and early literacy',
       image: 'https://images.unsplash.com/photo-1646148327678-63ae561ec90c',
       alt: 'Happy Indian toddler girl with pigtails playing with colorful building blocks in bright classroom',
-      outcomes: ['Ambidextrous Writing', 'Multilingual Foundation', 'Sensory Development'],
+      outcomes: [
+        'Confident stage speaker, Great Learner, Higher IQ levels, Scientific thinking, Confident child goes out to meet the world, Good academics, Early reader, Good Phonics, General knowledge Solve any problems, Go getter!!',
+      ],
     },
     {
-      age: '5-8 Years',
+      age: '7-12 Years',
       title: 'Skill Mastery',
       description: 'Practical learning through hands-on experiments and creative expression',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1d8fb08bc-1764659821764.png',
@@ -65,7 +66,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 pt-24 lg:pt-32 pb-16 lg:pb-24 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 pt-16 pb-16 lg:pb-24 overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
@@ -73,9 +74,9 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 px-6 py-3 rounded-full mb-6">
-            <Icon name="SparklesIcon" size={20} className="text-primary" />
-            <span className="text-sm font-semibold text-primary font-poppins">
+          <div className="inline-flex items-center space-x-3 bg-primary/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full">
+            <Icon name="SparklesIcon" size={60} className="text-primary flex-shrink-0 scale-50 md:scale-100" />
+            <span className="text-xl md:text-5xl lg:text-6xl font-bold text-primary font-poppins whitespace-nowrap">
               India's FIRST Integrated Learning Ecosystem
             </span>
           </div>
@@ -89,8 +90,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 font-source leading-relaxed">
-            From age 2 to 16, experience the complete educational journey that transforms curious
-            toddlers into confident innovators through our revolutionary integrated approach.
+            From preschool foundations to academic excellence, creativity, competitions, and future
+            skills — Gyanhouz nurtures your child at every stage of life.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

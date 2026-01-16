@@ -55,7 +55,9 @@ export default function WhyDifferentSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center space-x-2 bg-brand-orange/10 px-4 py-2 rounded-full mb-6">
             <Icon name="ExclamationTriangleIcon" size={20} className="text-brand-orange" />
-            <span className="text-sm font-semibold text-brand-orange">Why Schools Can't Offer This</span>
+            <span className="text-sm font-semibold text-brand-orange">
+              Why Schools Can't Offer This
+            </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Not Another <span className="text-brand-orange">"STEM Activity"</span>
@@ -72,25 +74,31 @@ export default function WhyDifferentSection() {
               key={index}
               className="bg-card rounded-xl p-6 border border-border hover:shadow-lg transition-smooth"
             >
-              <div className={`w-14 h-14 rounded-lg bg-${item?.color}/10 flex items-center justify-center mb-4`}>
+              <div
+                className={`w-14 h-14 rounded-lg bg-${item?.color}/10 flex items-center justify-center mb-4`}
+              >
                 <Icon name={item?.icon} size={28} className={`text-${item?.color}`} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">{item?.title}</h3>
-              
+
               {/* School Approach */}
               <div className="mb-4 pb-4 border-b border-border">
                 <div className="flex items-start space-x-2 mb-2">
                   <Icon name="XMarkIcon" size={16} className="text-error mt-1 flex-shrink-0" />
-                  <span className="text-xs font-semibold text-muted-foreground uppercase">Traditional Schools</span>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase">
+                    Traditional Schools
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground">{item?.school}</p>
               </div>
-              
+
               {/* GYANHOUZ Approach */}
               <div>
                 <div className="flex items-start space-x-2 mb-2">
                   <Icon name="CheckIcon" size={16} className="text-success mt-1 flex-shrink-0" />
-                  <span className="text-xs font-semibold text-brand-orange uppercase">GYANHOUZ Method</span>
+                  <span className="text-xs font-semibold text-brand-orange uppercase">
+                    GYANHOUZ Method
+                  </span>
                 </div>
                 <p className="text-sm font-medium text-foreground">{item?.gyanhouz}</p>
               </div>

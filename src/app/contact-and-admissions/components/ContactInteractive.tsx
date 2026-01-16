@@ -62,9 +62,7 @@ const ContactInteractiveInner = ({ className = '' }: ContactInteractiveProps) =>
       case 'business-collaboration':
         return (
           <div className="bg-card rounded-2xl p-8 shadow-elevated text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4 font-poppins">
-              Coming Soon
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-poppins">Coming Soon</h3>
             <p className="text-muted-foreground font-source mb-6">
               This form is currently under development. Please contact us directly for inquiries.
             </p>

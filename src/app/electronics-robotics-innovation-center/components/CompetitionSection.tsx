@@ -4,35 +4,35 @@ import Icon from '@/components/ui/AppIcon';
 import Image from '@/components/ui/AppImage';
 
 const competitions = [
-{
-  name: 'National Robotics Championship',
-  level: 'National',
-  achievements: '12 Gold, 8 Silver medals',
-  icon: 'TrophyIcon',
-  color: 'brand-orange'
-},
-{
-  name: 'First Lego League',
-  level: 'International',
-  achievements: 'State finalists 3 years running',
-  icon: 'GlobeAltIcon',
-  color: 'brand-blue'
-},
-{
-  name: 'Innovation Hackathons',
-  level: 'Regional',
-  achievements: '25+ winning projects',
-  icon: 'LightBulbIcon',
-  color: 'brand-green'
-},
-{
-  name: 'Arduino Day Challenges',
-  level: 'City-wide',
-  achievements: 'Best Project Award 2024',
-  icon: 'CpuChipIcon',
-  color: 'secondary'
-}];
-
+  {
+    name: 'National Robotics Championship',
+    level: 'National',
+    achievements: '12 Gold, 8 Silver medals',
+    icon: 'TrophyIcon',
+    color: 'brand-orange',
+  },
+  {
+    name: 'First Lego League',
+    level: 'International',
+    achievements: 'State finalists 3 years running',
+    icon: 'GlobeAltIcon',
+    color: 'brand-blue',
+  },
+  {
+    name: 'Innovation Hackathons',
+    level: 'Regional',
+    achievements: '25+ winning projects',
+    icon: 'LightBulbIcon',
+    color: 'brand-green',
+  },
+  {
+    name: 'Arduino Day Challenges',
+    level: 'City-wide',
+    achievements: 'Best Project Award 2024',
+    icon: 'CpuChipIcon',
+    color: 'secondary',
+  },
+];
 
 export default function CompetitionSection() {
   return (
@@ -50,25 +50,30 @@ export default function CompetitionSection() {
                 Train Like <span className="text-brand-orange">Champions</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We don't just teach robotics. We prepare students to compete and win at national and international levels.
+                We don't just teach robotics. We prepare students to compete and win at national and
+                international levels.
               </p>
             </div>
 
             {/* Competition Cards */}
             <div className="space-y-4">
-              {competitions?.map((comp, index) =>
-              <div
-                key={index}
-                className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-smooth">
-
+              {competitions?.map((comp, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-smooth"
+                >
                   <div className="flex items-start space-x-4">
-                    <div className={`w-12 h-12 rounded-lg bg-${comp?.color}/10 flex items-center justify-center flex-shrink-0`}>
+                    <div
+                      className={`w-12 h-12 rounded-lg bg-${comp?.color}/10 flex items-center justify-center flex-shrink-0`}
+                    >
                       <Icon name={comp?.icon} size={24} className={`text-${comp?.color}`} />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="font-bold text-foreground">{comp?.name}</h3>
-                        <span className={`px-3 py-1 bg-${comp?.color}/10 text-${comp?.color} text-xs font-semibold rounded-full`}>
+                        <span
+                          className={`px-3 py-1 bg-${comp?.color}/10 text-${comp?.color} text-xs font-semibold rounded-full`}
+                        >
                           {comp?.level}
                         </span>
                       </div>
@@ -76,7 +81,7 @@ export default function CompetitionSection() {
                     </div>
                   </div>
                 </div>
-              )}
+              ))}
             </div>
 
             {/* Training Features */}
@@ -84,17 +89,21 @@ export default function CompetitionSection() {
               <h3 className="font-bold text-foreground mb-4">Competition Training Includes:</h3>
               <div className="grid gap-3">
                 {[
-                'Weekly practice sessions with competition scenarios',
-                'Team collaboration and strategy development',
-                'Time-bound challenge solving',
-                'Presentation and documentation skills',
-                'Travel support for national competitions']?.
-                map((feature, idx) =>
-                <div key={idx} className="flex items-center space-x-2">
-                    <Icon name="CheckCircleIcon" size={16} className="text-brand-orange flex-shrink-0" />
+                  'Weekly practice sessions with competition scenarios',
+                  'Team collaboration and strategy development',
+                  'Time-bound challenge solving',
+                  'Presentation and documentation skills',
+                  'Travel support for national competitions',
+                ]?.map((feature, idx) => (
+                  <div key={idx} className="flex items-center space-x-2">
+                    <Icon
+                      name="CheckCircleIcon"
+                      size={16}
+                      className="text-brand-orange flex-shrink-0"
+                    />
                     <span className="text-sm text-foreground">{feature}</span>
                   </div>
-                )}
+                ))}
               </div>
             </div>
           </div>
@@ -107,7 +116,8 @@ export default function CompetitionSection() {
                 alt="Students celebrating robotics competition victory with trophies and medals at national championship"
                 width={700}
                 height={800}
-                className="w-full h-auto" />
+                className="w-full h-auto"
+              />
 
               {/* Overlay Stats */}
               <div className="absolute bottom-6 left-6 right-6 space-y-3">
@@ -132,6 +142,6 @@ export default function CompetitionSection() {
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

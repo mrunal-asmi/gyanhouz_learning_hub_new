@@ -129,7 +129,9 @@ const AchievementGallery = ({ achievements }: AchievementGalleryProps) => {
               </div>
 
               <div className="flex items-center justify-between pt-6 border-t border-border">
-                <p className="text-sm text-muted-foreground">Completed on {selectedAchievement.date}</p>
+                <p className="text-sm text-muted-foreground">
+                  Completed on {selectedAchievement.date}
+                </p>
                 <button className="flex items-center space-x-2 px-4 py-2 bg-brand-orange text-white rounded-lg hover:bg-brand-red transition-smooth">
                   <Icon name="ShareIcon" size={16} />
                   <span className="text-sm font-semibold">Share Story</span>

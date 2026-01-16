@@ -39,7 +39,7 @@ const IndustryPartnershipsSection = ({ className = '' }: IndustryPartnershipsSec
     {
       company: 'Engineering Solutions',
       industry: 'Engineering',
-      opportunities: ['Technical Training', 'Innovation Labs', 'Product Development'],
+      opportunities: ['Technical Training', 'Science Labs', 'Product Development'],
       logo: 'https://img.rocket.new/generatedImages/rocket_gen_img_13d8c2f45-1768066551246.png',
       alt: 'Engineering firm logo with industrial gear design on modern glass building facade',
     },

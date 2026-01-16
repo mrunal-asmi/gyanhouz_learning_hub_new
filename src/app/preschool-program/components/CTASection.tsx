@@ -51,19 +51,19 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
               <Icon name="CheckBadgeIcon" size={40} className="text-white mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white font-poppins mb-1">100%</div>
+              <div className="text-2xl font-bold text-white font-poppins mb-1">99%</div>
               <div className="text-sm text-white/80 font-source">Parent Satisfaction</div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
               <Icon name="UserGroupIcon" size={40} className="text-white mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white font-poppins mb-1">8:1</div>
+              <div className="text-2xl font-bold text-white font-poppins mb-1">6:1</div>
               <div className="text-sm text-white/80 font-source">Student-Teacher Ratio</div>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
               <Icon name="TrophyIcon" size={40} className="text-white mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white font-poppins mb-1">15+</div>
+              <div className="text-2xl font-bold text-white font-poppins mb-1">75+</div>
               <div className="text-sm text-white/80 font-source">Unique Skills Developed</div>
             </div>
           </div>

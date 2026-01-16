@@ -16,7 +16,7 @@ const EcosystemApproachSection = ({ className = '' }: EcosystemApproachProps) =>
     },
     {
       icon: 'BeakerIcon',
-      title: 'Science & Innovation Labs',
+      title: 'Science & Science Labs',
       age: 'Ages 6-12',
       description:
         'Hands-on experimentation, practical learning, and scientific thinking development.',
@@ -150,8 +150,8 @@ const EcosystemApproachSection = ({ className = '' }: EcosystemApproachProps) =>
                 The Ecosystem Advantage
               </h3>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 font-source leading-relaxed">
-                When children experience our complete ecosystem, they don't just learn subjects
-                - they develop interconnected skills, discover their passions, and build confidence
+                When children experience our complete ecosystem, they don't just learn subjects -
+                they develop interconnected skills, discover their passions, and build confidence
                 that carries through their entire educational journey.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

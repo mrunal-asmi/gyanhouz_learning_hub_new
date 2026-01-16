@@ -35,7 +35,7 @@ const FounderStorySection = ({ className = '' }: FounderStoryProps) => {
     {
       year: '2022',
       event: 'Ecosystem Expansion',
-      description: 'Added Career Labs and Innovation Lab',
+      description: 'Added Career Labs and Science Lab',
     },
     {
       year: '2024',

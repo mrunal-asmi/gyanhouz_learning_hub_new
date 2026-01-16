@@ -10,33 +10,39 @@ const benefits: Benefit[] = [
   {
     icon: 'AcademicCapIcon',
     title: 'Proven Education Model',
-    description: 'Research-backed curriculum with documented child development outcomes and parent satisfaction rates above 95%'
+    description:
+      'Research-backed curriculum with documented child development outcomes and parent satisfaction rates above 95%',
   },
   {
     icon: 'ChartBarIcon',
     title: 'Strong Revenue Streams',
-    description: 'Multiple income channels: Preschool programs, innovation labs, career discovery, workshops, and seasonal camps'
+    description:
+      'Multiple income channels: Preschool programs, Science Labs, career discovery, workshops, and seasonal camps',
   },
   {
     icon: 'UserGroupIcon',
     title: 'Comprehensive Training',
-    description: '6-week intensive training program covering operations, curriculum delivery, marketing, and team management'
+    description:
+      '6-week intensive training program covering operations, curriculum delivery, marketing, and team management',
   },
   {
     icon: 'ShieldCheckIcon',
     title: 'Brand Recognition',
-    description: 'Leverage established brand reputation with national media coverage and industry awards'
+    description:
+      'Leverage established brand reputation with national media coverage and industry awards',
   },
   {
     icon: 'CogIcon',
     title: 'Operational Support',
-    description: 'End-to-end assistance with setup, recruitment, marketing campaigns, and ongoing operational guidance'
+    description:
+      'End-to-end assistance with setup, recruitment, marketing campaigns, and ongoing operational guidance',
   },
   {
     icon: 'GlobeAltIcon',
     title: 'Territory Protection',
-    description: 'Exclusive geographic rights ensuring no competition from other GYANHOUZ centers in your area'
-  }
+    description:
+      'Exclusive geographic rights ensuring no competition from other GYANHOUZ centers in your area',
+  },
 ];
 
 export default function WhyGYANHOUZSection() {
@@ -52,10 +58,11 @@ export default function WhyGYANHOUZSection() {
             Built for Success, Designed for Growth
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            GYANHOUZ offers more than a franchise—it's a complete business ecosystem with proven systems, ongoing support, and a brand parents trust.
+            GYANHOUZ offers more than a franchise—it's a complete business ecosystem with proven
+            systems, ongoing support, and a brand parents trust.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div

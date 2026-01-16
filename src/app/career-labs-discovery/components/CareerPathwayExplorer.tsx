@@ -17,36 +17,61 @@ export default function CareerPathwayExplorer() {
       title: 'Career Exploration',
       description: 'Discover interests through exposure to multiple career fields',
       icon: 'MagnifyingGlassIcon',
-      activities: ['Career aptitude assessment', 'Interest mapping workshops', 'Industry overview sessions', 'Professional video calls']
+      activities: [
+        'Career aptitude assessment',
+        'Interest mapping workshops',
+        'Industry overview sessions',
+        'Professional video calls',
+      ],
     },
     {
       stage: 'Stage 2',
       title: 'Hands-On Experience',
       description: 'Engage in realistic simulations and role-playing activities',
       icon: 'HandRaisedIcon',
-      activities: ['Real-world project simulations', 'Role-playing scenarios', 'Equipment handling training', 'Team collaboration projects']
+      activities: [
+        'Real-world project simulations',
+        'Role-playing scenarios',
+        'Equipment handling training',
+        'Team collaboration projects',
+      ],
     },
     {
       stage: 'Stage 3',
       title: 'Skill Development',
       description: 'Build foundational skills specific to chosen career paths',
       icon: 'AcademicCapIcon',
-      activities: ['Technical skill workshops', 'Soft skills training', 'Problem-solving challenges', 'Communication development']
+      activities: [
+        'Technical skill workshops',
+        'Soft skills training',
+        'Problem-solving challenges',
+        'Communication development',
+      ],
     },
     {
       stage: 'Stage 4',
       title: 'Industry Mentorship',
       description: 'Connect with professionals and gain insider perspectives',
       icon: 'UserGroupIcon',
-      activities: ['One-on-one mentor sessions', 'Industry site visits', 'Professional networking', 'Career guidance counseling']
+      activities: [
+        'One-on-one mentor sessions',
+        'Industry site visits',
+        'Professional networking',
+        'Career guidance counseling',
+      ],
     },
     {
       stage: 'Stage 5',
       title: 'Career Clarity',
       description: 'Make informed decisions with comprehensive career roadmaps',
       icon: 'MapIcon',
-      activities: ['Personalized career roadmap', 'Educational pathway planning', 'Goal setting workshops', 'Future planning sessions']
-    }
+      activities: [
+        'Personalized career roadmap',
+        'Educational pathway planning',
+        'Goal setting workshops',
+        'Future planning sessions',
+      ],
+    },
   ];
 
   return (
@@ -58,14 +83,15 @@ export default function CareerPathwayExplorer() {
             <Icon name="MapIcon" size={20} className="text-primary" />
             <span className="text-sm font-semibold text-primary">Career Discovery Journey</span>
           </div>
-          
+
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
             Your Child's Journey from
             <span className="block text-primary">Confusion to Career Clarity</span>
           </h2>
-          
+
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our structured 5-stage pathway ensures every child discovers their true calling through systematic exploration and hands-on experience
+            Our structured 5-stage pathway ensures every child discovers their true calling through
+            systematic exploration and hands-on experience
           </p>
         </div>
 
@@ -87,7 +113,9 @@ export default function CareerPathwayExplorer() {
 
                   {/* Stage Number */}
                   <div className="text-center mb-3">
-                    <span className="text-xs font-bold text-primary uppercase tracking-wide">{stage.stage}</span>
+                    <span className="text-xs font-bold text-primary uppercase tracking-wide">
+                      {stage.stage}
+                    </span>
                   </div>
 
                   {/* Title */}
@@ -104,7 +132,11 @@ export default function CareerPathwayExplorer() {
                   <div className="space-y-2">
                     {stage.activities.map((activity, actIndex) => (
                       <div key={actIndex} className="flex items-start space-x-2">
-                        <Icon name="CheckIcon" size={16} className="text-brand-green mt-0.5 flex-shrink-0" />
+                        <Icon
+                          name="CheckIcon"
+                          size={16}
+                          className="text-brand-green mt-0.5 flex-shrink-0"
+                        />
                         <span className="text-xs text-foreground">{activity}</span>
                       </div>
                     ))}

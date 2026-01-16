@@ -16,7 +16,7 @@ export default function ROICalculator() {
     studentCapacity: 100,
     enrollmentRate: 85,
     avgFeePerStudent: 45000,
-    additionalRevenue: 800000
+    additionalRevenue: 800000,
   });
 
   useEffect(() => {
@@ -56,21 +56,21 @@ export default function ROICalculator() {
       annualTuitionRevenue,
       totalAnnualRevenue,
       netProfit,
-      roiMonths
+      roiMonths,
     };
   };
 
   const results = calculateResults();
 
   const handleInputChange = (field: keyof CalculatorInputs, value: number) => {
-    setInputs(prev => ({ ...prev, [field]: value }));
+    setInputs((prev) => ({ ...prev, [field]: value }));
   };
 
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('en-IN', {
       style: 'currency',
       currency: 'INR',
-      maximumFractionDigits: 0
+      maximumFractionDigits: 0,
     }).format(amount);
   };
 
@@ -106,7 +106,9 @@ export default function ROICalculator() {
               />
               <div className="flex justify-between mt-2">
                 <span className="text-sm text-muted-foreground">50</span>
-                <span className="text-lg font-bold text-brand-orange">{inputs.studentCapacity}</span>
+                <span className="text-lg font-bold text-brand-orange">
+                  {inputs.studentCapacity}
+                </span>
                 <span className="text-sm text-muted-foreground">200</span>
               </div>
             </div>
@@ -125,7 +127,9 @@ export default function ROICalculator() {
               />
               <div className="flex justify-between mt-2">
                 <span className="text-sm text-muted-foreground">60%</span>
-                <span className="text-lg font-bold text-brand-orange">{inputs.enrollmentRate}%</span>
+                <span className="text-lg font-bold text-brand-orange">
+                  {inputs.enrollmentRate}%
+                </span>
                 <span className="text-sm text-muted-foreground">100%</span>
               </div>
             </div>
@@ -145,7 +149,9 @@ export default function ROICalculator() {
               />
               <div className="flex justify-between mt-2">
                 <span className="text-sm text-muted-foreground">₹30,000</span>
-                <span className="text-lg font-bold text-brand-orange">{formatCurrency(inputs.avgFeePerStudent)}</span>
+                <span className="text-lg font-bold text-brand-orange">
+                  {formatCurrency(inputs.avgFeePerStudent)}
+                </span>
                 <span className="text-sm text-muted-foreground">₹80,000</span>
               </div>
             </div>
@@ -165,7 +171,9 @@ export default function ROICalculator() {
               />
               <div className="flex justify-between mt-2">
                 <span className="text-sm text-muted-foreground">₹5L</span>
-                <span className="text-lg font-bold text-brand-orange">{formatCurrency(inputs.additionalRevenue)}</span>
+                <span className="text-lg font-bold text-brand-orange">
+                  {formatCurrency(inputs.additionalRevenue)}
+                </span>
                 <span className="text-sm text-muted-foreground">₹20L</span>
               </div>
             </div>
@@ -176,29 +184,37 @@ export default function ROICalculator() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-muted/50 rounded-lg p-6">
                 <div className="text-sm text-muted-foreground mb-2">Enrolled Students</div>
-                <div className="text-3xl font-bold text-brand-orange">{results.enrolledStudents}</div>
+                <div className="text-3xl font-bold text-brand-orange">
+                  {results.enrolledStudents}
+                </div>
               </div>
-              
+
               <div className="bg-muted/50 rounded-lg p-6">
                 <div className="text-sm text-muted-foreground mb-2">Annual Revenue</div>
-                <div className="text-2xl font-bold text-brand-green">{formatCurrency(results.totalAnnualRevenue)}</div>
+                <div className="text-2xl font-bold text-brand-green">
+                  {formatCurrency(results.totalAnnualRevenue)}
+                </div>
               </div>
-              
+
               <div className="bg-muted/50 rounded-lg p-6">
                 <div className="text-sm text-muted-foreground mb-2">Net Profit</div>
-                <div className="text-2xl font-bold text-brand-blue">{formatCurrency(results.netProfit)}</div>
+                <div className="text-2xl font-bold text-brand-blue">
+                  {formatCurrency(results.netProfit)}
+                </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-orange to-brand-red text-white rounded-lg p-6">
                 <div className="text-sm opacity-90 mb-2">ROI Timeline</div>
                 <div className="text-3xl font-bold">{results.roiMonths} Months</div>
               </div>
             </div>
-            
+
             <div className="mt-6 flex items-start space-x-2 text-sm text-muted-foreground bg-muted/30 p-4 rounded-lg">
               <Icon name="InformationCircleIcon" size={20} className="flex-shrink-0 mt-0.5" />
               <p>
-                Calculations assume 65% operational costs including staff salaries, rent, utilities, marketing, and administrative expenses. Actual results may vary based on location, management efficiency, and market conditions.
+                Calculations assume 65% operational costs including staff salaries, rent, utilities,
+                marketing, and administrative expenses. Actual results may vary based on location,
+                management efficiency, and market conditions.
               </p>
             </div>
           </div>

@@ -84,7 +84,9 @@ const VideoTestimonialCard = ({ testimonial }: VideoTestimonialCardProps) => {
           </div>
         </div>
 
-        <p className="text-sm text-foreground mb-4 line-clamp-3">{testimonial.testimonialPreview}</p>
+        <p className="text-sm text-foreground mb-4 line-clamp-3">
+          {testimonial.testimonialPreview}
+        </p>
 
         <div className="flex items-center justify-between pt-4 border-t border-border">
           <div className="flex items-center space-x-2">

@@ -55,9 +55,7 @@ export default function ProgramCard({
 
       <div className="p-6">
         <h3 className="text-2xl font-bold text-foreground mb-2">{title}</h3>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-          {description}
-        </p>
+        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{description}</p>
 
         <div className="space-y-3 mb-4">
           {features.slice(0, isExpanded ? features.length : 3).map((feature, index) => (

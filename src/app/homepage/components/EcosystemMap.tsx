@@ -41,17 +41,17 @@ const EcosystemMap = () => {
       icon: 'BriefcaseIcon',
       color: 'from-secondary to-brand-blue',
       link: '/career-labs',
-      ageRange: '13-16 Years',
+      ageRange: '12-20 Years',
     },
     {
       id: 'innovation',
-      title: 'Innovation Lab',
+      title: 'Science Lab',
       description:
         'Young inventors ecosystem with mentor network and cutting-edge technology access',
       icon: 'LightBulbIcon',
       color: 'from-accent to-success',
       link: '/innovation-lab',
-      ageRange: '9-16 Years',
+      ageRange: '!0-16 Years',
     },
     {
       id: 'robotics',
@@ -77,11 +77,41 @@ const EcosystemMap = () => {
       id: 'skills',
       title: 'Skills Development',
       description:
-        'Comprehensive skill-building programs for communication, leadership, and creative expression',
+        'Comprehensive skill-building programs for art, dance, music, digital marketing, communication, leadership, and creative expression',
       icon: 'StarIcon',
       color: 'from-success to-accent',
       link: '/preschool-program',
-      ageRange: '2-16 Years',
+      ageRange: '10-60 Years',
+    },
+    {
+      id: 'business',
+      title: 'Business Network',
+      description:
+        'Connect your local business through local networking clubs, and enhance practical business skills from an early age',
+      icon: 'UserGroupIcon',
+      color: 'from-success to-accent',
+      link: '/preschool-program',
+      ageRange: 'above 20 Years',
+    },
+    {
+      id: 'corporate',
+      title: 'Corporate Training',
+      description:
+        'Upskill your employees with our specialized corporate training programs designed to enhance productivity, leadership, and innovation within your organization.',
+      icon: 'PresentationChartBarIcon',
+      color: 'from-success to-accent',
+      link: '/preschool-program',
+      ageRange: 'above 20 Years',
+    },
+    {
+      id: 'personal-development',
+      title: 'Personal Development',
+      description:
+        'Empower yourself with our personal development courses that focus on building confidence, communication skills, and emotional intelligence for lifelong success.',
+      icon: 'UserIcon',
+      color: 'from-success to-accent',
+      link: '/preschool-program',
+      ageRange: 'above 20 Years',
     },
   ];
 
@@ -97,7 +127,7 @@ const EcosystemMap = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full mb-6">
             <Icon name="MapIcon" size={20} className="text-secondary" />
-            <span className="text-sm font-semibold text-secondary font-poppins">
+            <span className="text-lg font-semibold text-secondary font-poppins">
               Complete Learning Ecosystem
             </span>
           </div>

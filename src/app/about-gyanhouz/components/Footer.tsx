@@ -12,7 +12,7 @@ const Footer = ({ className = '' }: FooterProps) => {
     programs: [
       { label: 'Preschool Foundation', href: '/learning-programs-hub' },
       { label: 'School of Creativity', href: '/learning-programs-hub' },
-      { label: 'Innovation Labs', href: '/learning-programs-hub' },
+      { label: 'Science Labs', href: '/learning-programs-hub' },
       { label: 'Career Discovery', href: '/learning-programs-hub' },
     ],
     company: [
@@ -43,10 +43,20 @@ const Footer = ({ className = '' }: FooterProps) => {
           <div className="lg:col-span-2">
             <Link href="/homepage" className="flex items-center space-x-2 mb-4">
               <div className="relative w-10 h-10 flex items-center justify-center bg-gradient-to-br from-brand-orange to-brand-red rounded-lg">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+                <svg
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6"
+                >
                   <path d="M20 8L12 14V26L20 32L28 26V14L20 8Z" fill="white" fillOpacity="0.9" />
                   <circle cx="20" cy="20" r="4" fill="white" />
-                  <path d="M20 12V16M20 24V28M12 18L16 20M24 20L28 18" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                  <path
+                    d="M20 12V16M20 24V28M12 18L16 20M24 20L28 18"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </div>
               <div className="flex flex-col">
@@ -55,7 +65,7 @@ const Footer = ({ className = '' }: FooterProps) => {
               </div>
             </Link>
             <p className="text-sm text-gray-300 mb-4 max-w-sm">
-              India's first integrated learning ecosystem transforming education from passive consumption to active discovery.
+              {"India's first integrated learning ecosystem transforming education from passive consumption to active discovery."}
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((social, index) => (
@@ -76,7 +86,10 @@ const Footer = ({ className = '' }: FooterProps) => {
             <ul className="space-y-2">
               {footerLinks.programs.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-sm text-gray-300 hover:text-brand-orange transition-smooth">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-300 hover:text-brand-orange transition-smooth"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -89,7 +102,10 @@ const Footer = ({ className = '' }: FooterProps) => {
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-sm text-gray-300 hover:text-brand-orange transition-smooth">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-300 hover:text-brand-orange transition-smooth"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -102,7 +118,10 @@ const Footer = ({ className = '' }: FooterProps) => {
             <ul className="space-y-2">
               {footerLinks.resources.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-sm text-gray-300 hover:text-brand-orange transition-smooth">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-300 hover:text-brand-orange transition-smooth"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -117,13 +136,22 @@ const Footer = ({ className = '' }: FooterProps) => {
               &copy; {currentYear} GYANHOUZ Learning Hub. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-sm text-gray-400 hover:text-brand-orange transition-smooth">
+              <Link
+                href="#"
+                className="text-sm text-gray-400 hover:text-brand-orange transition-smooth"
+              >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-brand-orange transition-smooth">
+              <Link
+                href="#"
+                className="text-sm text-gray-400 hover:text-brand-orange transition-smooth"
+              >
                 Terms of Service
               </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-brand-orange transition-smooth">
+              <Link
+                href="#"
+                className="text-sm text-gray-400 hover:text-brand-orange transition-smooth"
+              >
                 Cookie Policy
               </Link>
             </div>

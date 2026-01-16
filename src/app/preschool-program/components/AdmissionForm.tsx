@@ -107,36 +107,36 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
     <section
       className={`py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-secondary/5 ${className}`}
     >
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
-            <Icon name="DocumentTextIcon" size={20} className="text-primary" />
-            <span className="text-sm font-semibold text-primary font-poppins">
+      <div className="w-full px-4 lg:px-12">
+        <div className="text-center max-w-full mx-auto mb-16">
+          <div className="inline-flex items-center space-x-4 bg-primary/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+            <Icon name="DocumentTextIcon" size={40} className="text-primary scale-75 md:scale-100" />
+            <span className="text-2xl md:text-5xl font-semibold text-primary font-poppins whitespace-nowrap">
               Secure Your Child's Future
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-3xl lg:text-5xl xl:text-6xl font-bold text-foreground font-poppins mb-8">
             Start Your Child's <span className="text-primary">Transformation</span> Today
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-xl lg:text-2xl text-muted-foreground font-source max-w-4xl mx-auto">
             Limited seats available. Fill out the form below and our admissions team will contact
             you within 24 hours.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-elevated p-8 lg:p-12">
+        <div className="max-w-full mx-auto">
+          <div className="bg-white rounded-2xl shadow-elevated p-8 lg:p-16">
             {submitStatus === 'success' ? (
               <div className="text-center py-12">
                 <div className="w-20 h-20 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon name="CheckCircleIcon" size={48} className="text-success" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground font-poppins mb-4">
+                <h3 className="text-4xl font-bold text-foreground font-poppins mb-6">
                   Application Submitted Successfully!
                 </h3>
-                <p className="text-muted-foreground font-source mb-6">
+                <p className="text-xl text-muted-foreground font-source mb-8">
                   Thank you for your interest in GYANHOUZ. Our admissions team will contact you
                   within 24 hours to schedule a campus tour and discuss the next steps.
                 </p>
@@ -153,7 +153,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="parentName"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Parent/Guardian Name *
                     </label>
@@ -164,7 +164,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.parentName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -172,7 +172,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Email Address *
                     </label>
@@ -183,7 +183,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -191,7 +191,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Phone Number *
                     </label>
@@ -202,7 +202,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                       placeholder="+91 98765 43210"
                     />
                   </div>
@@ -210,7 +210,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="childName"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Child's Name *
                     </label>
@@ -221,7 +221,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.childName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                       placeholder="Enter child's full name"
                     />
                   </div>
@@ -229,7 +229,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="childAge"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Child's Age Group *
                     </label>
@@ -239,7 +239,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.childAge}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                     >
                       <option value="">Select age group</option>
                       {ageGroups.map((group) => (
@@ -253,7 +253,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div>
                     <label
                       htmlFor="preferredProgram"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Preferred Program *
                     </label>
@@ -263,7 +263,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.preferredProgram}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                     >
                       <option value="">Select program</option>
                       {programs.map((program) => (
@@ -277,7 +277,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                   <div className="md:col-span-2">
                     <label
                       htmlFor="preferredStartDate"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Preferred Start Date *
                     </label>
@@ -288,14 +288,14 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.preferredStartDate}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source text-lg"
                     />
                   </div>
 
                   <div className="md:col-span-2">
                     <label
                       htmlFor="message"
-                      className="block text-sm font-semibold text-foreground font-poppins mb-2"
+                      className="block text-lg font-semibold text-foreground font-poppins mb-2"
                     >
                       Additional Information (Optional)
                     </label>
@@ -305,7 +305,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source resize-none"
+                      className="w-full px-4 py-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-source resize-none text-lg"
                       placeholder="Any specific requirements or questions?"
                     />
                   </div>
@@ -317,7 +317,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                     size={24}
                     className="text-primary flex-shrink-0 mt-0.5"
                   />
-                  <p className="text-sm text-muted-foreground font-source">
+                  <p className="text-lg text-muted-foreground font-source">
                     By submitting this form, you agree to be contacted by GYANHOUZ regarding
                     admission details and campus tours. We respect your privacy and will never share
                     your information with third parties.
@@ -327,7 +327,7 @@ const AdmissionForm = ({ className = '' }: AdmissionFormProps) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-elevated-hover disabled:opacity-50 disabled:cursor-not-allowed font-nunito flex items-center justify-center space-x-2"
+                  className="w-full px-10 py-6 bg-primary text-primary-foreground rounded-lg font-bold text-2xl hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-elevated-hover disabled:opacity-50 disabled:cursor-not-allowed font-nunito flex items-center justify-center space-x-3"
                 >
                   {isSubmitting ? (
                     <>

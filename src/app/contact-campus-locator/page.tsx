@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'Contact & Campus Locator - GYANHOUZ Learning Hub',
-  description: 'Find your nearest GYANHOUZ campus across India. Book campus tours, request callbacks, and connect with our admissions team. Visit our innovation labs and experience the future of education.',
+  description:
+    'Find your nearest GYANHOUZ campus across India. Book campus tours, request callbacks, and connect with our admissions team. Visit our Science Labs and experience the future of education.',
 };
 
 export default function ContactCampusLocatorPage() {

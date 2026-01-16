@@ -29,22 +29,34 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/learning-programs-hub" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/learning-programs-hub"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   All Programs
                 </Link>
               </li>
               <li>
-                <Link href="/franchise-opportunity-center" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/franchise-opportunity-center"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   Franchise
                 </Link>
               </li>
               <li>
-                <Link href="/parent-success-stories" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/parent-success-stories"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   Success Stories
                 </Link>
               </li>
               <li>
-                <Link href="/contact-campus-locator" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/contact-campus-locator"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -56,18 +68,27 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Other Labs</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/career-labs-discovery" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/career-labs-discovery"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   Career Labs
                 </Link>
               </li>
               <li>
-                <Link href="/science-labs-experience" className="text-white/70 hover:text-brand-orange transition-smooth">
+                <Link
+                  href="/science-labs-experience"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
                   Science Labs
                 </Link>
               </li>
               <li>
-                <Link href="/learning-programs-hub" className="text-white/70 hover:text-brand-orange transition-smooth">
-                  Innovation Labs
+                <Link
+                  href="/learning-programs-hub"
+                  className="text-white/70 hover:text-brand-orange transition-smooth"
+                >
+                  Science Labs
                 </Link>
               </li>
             </ul>

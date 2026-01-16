@@ -18,11 +18,12 @@ export default function RoboticsElectronicsLabPage() {
               Robotics & Electronics Lab
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-source">
-              Turning ideas into machines and innovation through hands-on robotics and electronics exploration.
+              Turning ideas into machines and innovation through hands-on robotics and electronics
+              exploration.
             </p>
           </div>
         </section>
-        
+
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -20,9 +20,9 @@ export default function Footer() {
       links: [
         { label: 'Preschool Foundation', href: '/learning-programs-hub' },
         { label: 'School of Creativity', href: '/learning-programs-hub' },
-        { label: 'Innovation Labs', href: '/learning-programs-hub' },
-        { label: 'Career Discovery', href: '/learning-programs-hub' }
-      ]
+        { label: 'Science Labs', href: '/learning-programs-hub' },
+        { label: 'Career Discovery', href: '/learning-programs-hub' },
+      ],
     },
     {
       title: 'Company',
@@ -30,8 +30,8 @@ export default function Footer() {
         { label: 'About Us', href: '/about-gyanhouz' },
         { label: 'Success Stories', href: '/parent-success-stories' },
         { label: 'Franchise', href: '/franchise-opportunity-center' },
-        { label: 'Contact', href: '/contact-campus-locator' }
-      ]
+        { label: 'Contact', href: '/contact-campus-locator' },
+      ],
     },
     {
       title: 'Resources',
@@ -39,9 +39,9 @@ export default function Footer() {
         { label: 'Parenting Guides', href: '/about-gyanhouz' },
         { label: 'Educational Research', href: '/about-gyanhouz' },
         { label: 'Activity Downloads', href: '/about-gyanhouz' },
-        { label: 'Blog', href: '/about-gyanhouz' }
-      ]
-    }
+        { label: 'Blog', href: '/about-gyanhouz' },
+      ],
+    },
   ];
 
   const socialLinks = [
@@ -49,7 +49,7 @@ export default function Footer() {
     { name: 'Twitter', icon: 'ChatBubbleLeftIcon', href: '#' },
     { name: 'Instagram', icon: 'CameraIcon', href: '#' },
     { name: 'LinkedIn', icon: 'BriefcaseIcon', href: '#' },
-    { name: 'YouTube', icon: 'PlayIcon', href: '#' }
+    { name: 'YouTube', icon: 'PlayIcon', href: '#' },
   ];
 
   return (
@@ -67,11 +67,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-7"
                 >
-                  <path
-                    d="M20 8L12 14V26L20 32L28 26V14L20 8Z"
-                    fill="white"
-                    fillOpacity="0.9"
-                  />
+                  <path d="M20 8L12 14V26L20 32L28 26V14L20 8Z" fill="white" fillOpacity="0.9" />
                   <circle cx="20" cy="20" r="4" fill="white" />
                   <path
                     d="M20 12V16M20 24V28M12 18L16 20M24 20L28 18"
@@ -82,17 +78,14 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold leading-none tracking-tight">
-                  GYANHOUZ
-                </span>
-                <span className="text-sm text-white/70 font-medium">
-                  Learning Hub
-                </span>
+                <span className="text-2xl font-bold leading-none tracking-tight">GYANHOUZ</span>
+                <span className="text-sm text-white/70 font-medium">Learning Hub</span>
               </div>
             </Link>
 
             <p className="text-white/70 mb-6 leading-relaxed">
-              India's first integrated learning ecosystem transforming education from passive consumption to active discovery. Building confident innovators, not memorizers.
+              India's first integrated learning ecosystem transforming education from passive
+              consumption to active discovery. Building confident innovators, not memorizers.
             </p>
 
             {/* Social Links */}

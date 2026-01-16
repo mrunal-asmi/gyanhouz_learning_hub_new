@@ -9,11 +9,7 @@ interface EnrollmentModalProps {
   programName: string;
 }
 
-export default function EnrollmentModal({
-  isOpen,
-  onClose,
-  programName,
-}: EnrollmentModalProps) {
+export default function EnrollmentModal({ isOpen, onClose, programName }: EnrollmentModalProps) {
   const [formData, setFormData] = useState({
     parentName: '',
     email: '',
@@ -38,7 +34,9 @@ export default function EnrollmentModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Enrollment request submitted for ${programName}!\n\nParent: ${formData.parentName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nChild: ${formData.childName}, ${formData.childAge} years\n\nOur team will contact you within 24 hours.`);
+    alert(
+      `Enrollment request submitted for ${programName}!\n\nParent: ${formData.parentName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nChild: ${formData.childName}, ${formData.childAge} years\n\nOur team will contact you within 24 hours.`
+    );
     onClose();
   };
 
@@ -51,20 +49,12 @@ export default function EnrollmentModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
 
       <div className="relative bg-card rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-card border-b border-border px-6 py-4 flex items-center justify-between">
-          <h3 className="text-xl font-bold text-foreground">
-            Enroll in {programName}
-          </h3>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-muted rounded-lg transition-smooth"
-          >
+          <h3 className="text-xl font-bold text-foreground">Enroll in {programName}</h3>
+          <button onClick={onClose} className="p-2 hover:bg-muted rounded-lg transition-smooth">
             <Icon name="XMarkIcon" size={24} className="text-muted-foreground" />
           </button>
         </div>
@@ -150,37 +140,16 @@ export default function EnrollmentModal({
 
           <div className="bg-muted rounded-lg p-4 space-y-2">
             <div className="flex items-center space-x-2">
-              <Icon
-                name="CheckCircleIcon"
-                size={18}
-                className="text-brand-green"
-                variant="solid"
-              />
-              <span className="text-sm text-foreground">
-                Free assessment included
-              </span>
+              <Icon name="CheckCircleIcon" size={18} className="text-brand-green" variant="solid" />
+              <span className="text-sm text-foreground">Free assessment included</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Icon
-                name="CheckCircleIcon"
-                size={18}
-                className="text-brand-green"
-                variant="solid"
-              />
-              <span className="text-sm text-foreground">
-                Campus tour available
-              </span>
+              <Icon name="CheckCircleIcon" size={18} className="text-brand-green" variant="solid" />
+              <span className="text-sm text-foreground">Campus tour available</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Icon
-                name="CheckCircleIcon"
-                size={18}
-                className="text-brand-green"
-                variant="solid"
-              />
-              <span className="text-sm text-foreground">
-                24-hour response guarantee
-              </span>
+              <Icon name="CheckCircleIcon" size={18} className="text-brand-green" variant="solid" />
+              <span className="text-sm text-foreground">24-hour response guarantee</span>
             </div>
           </div>
 

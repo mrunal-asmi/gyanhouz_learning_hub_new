@@ -21,7 +21,9 @@ const SuccessMetricsDashboard = ({ metrics }: SuccessMetricsDashboardProps) => {
           key={metric.id}
           className="bg-card rounded-xl shadow-brand p-6 hover:shadow-lg transition-smooth"
         >
-          <div className={`w-12 h-12 ${metric.bgColor} rounded-lg flex items-center justify-center mb-4`}>
+          <div
+            className={`w-12 h-12 ${metric.bgColor} rounded-lg flex items-center justify-center mb-4`}
+          >
             <Icon name={metric.icon as any} size={24} className={metric.color} variant="solid" />
           </div>
           <p className="text-3xl font-bold text-foreground mb-1">{metric.value}</p>

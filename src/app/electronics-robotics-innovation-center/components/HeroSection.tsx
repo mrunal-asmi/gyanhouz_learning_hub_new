@@ -30,7 +30,9 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-xl text-white/90 leading-relaxed">
-              While others teach theory, we build creators. India's most advanced electronics & robotics lab where children program real robots, design IoT devices, and compete nationally.
+              While others teach theory, we build creators. India's most advanced electronics &
+              robotics lab where children program real robots, design IoT devices, and compete
+              nationally.
             </p>
 
             {/* Key Stats */}
@@ -53,15 +55,15 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact-campus-locator"
-                className="inline-flex items-center justify-center px-8 py-4 bg-brand-orange text-white font-semibold rounded-lg shadow-brand hover:bg-brand-red hover:shadow-lg hover:-translate-y-1 transition-smooth">
-
+                className="inline-flex items-center justify-center px-8 py-4 bg-brand-orange text-white font-semibold rounded-lg shadow-brand hover:bg-brand-red hover:shadow-lg hover:-translate-y-1 transition-smooth"
+              >
                 <Icon name="RocketLaunchIcon" size={20} className="mr-2" />
                 Enroll in Robotics Lab
               </Link>
               <button
                 onClick={() => setIsVideoPlaying(true)}
-                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-smooth">
-
+                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-smooth"
+              >
                 <Icon name="PlayIcon" size={20} className="mr-2" />
                 Watch Lab Tour
               </button>
@@ -70,9 +72,12 @@ export default function HeroSection() {
             {/* Trust Badge */}
             <div className="flex items-center space-x-3 pt-4">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4]?.map((i) =>
-                <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-orange to-brand-red border-2 border-white" />
-                )}
+                {[1, 2, 3, 4]?.map((i) => (
+                  <div
+                    key={i}
+                    className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-orange to-brand-red border-2 border-white"
+                  />
+                ))}
               </div>
               <div className="text-sm text-white/90">
                 <span className="font-semibold">1,200+ students</span> building the future
@@ -88,14 +93,19 @@ export default function HeroSection() {
                 alt="Children building and programming robots in advanced electronics lab with Arduino boards and robotic arms"
                 width={800}
                 height={600}
-                className="w-full h-auto" />
+                className="w-full h-auto"
+              />
 
               {/* Overlay Stats */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-2xl font-bold text-brand-blue">Arduino • Raspberry Pi • IoT</div>
-                    <div className="text-sm text-muted-foreground">Professional-grade equipment</div>
+                    <div className="text-2xl font-bold text-brand-blue">
+                      Arduino • Raspberry Pi • IoT
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Professional-grade equipment
+                    </div>
                   </div>
                   <Icon name="CpuChipIcon" size={40} className="text-brand-orange" />
                 </div>
@@ -111,13 +121,16 @@ export default function HeroSection() {
         </div>
       </div>
       {/* Video Modal */}
-      {isVideoPlaying &&
-      <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4" onClick={() => setIsVideoPlaying(false)}>
+      {isVideoPlaying && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setIsVideoPlaying(false)}
+        >
           <div className="relative w-full max-w-4xl aspect-video bg-black rounded-xl overflow-hidden">
             <button
-            onClick={() => setIsVideoPlaying(false)}
-            className="absolute top-4 right-4 z-10 p-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-smooth">
-
+              onClick={() => setIsVideoPlaying(false)}
+              className="absolute top-4 right-4 z-10 p-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-smooth"
+            >
               <Icon name="XMarkIcon" size={24} className="text-white" />
             </button>
             <div className="w-full h-full flex items-center justify-center text-white">
@@ -128,7 +141,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      }
-    </section>);
-
+      )}
+    </section>
+  );
 }

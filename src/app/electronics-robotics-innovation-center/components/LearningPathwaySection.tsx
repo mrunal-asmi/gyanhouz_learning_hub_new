@@ -71,7 +71,8 @@ export default function LearningPathwaySection() {
             Age-Progressive <span className="text-brand-blue">Learning Journey</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            From basic circuits to national competitions - a structured pathway designed by robotics experts.
+            From basic circuits to national competitions - a structured pathway designed by robotics
+            experts.
           </p>
         </div>
 
@@ -90,18 +91,26 @@ export default function LearningPathwaySection() {
                 }`}
               >
                 {/* Card */}
-                <div className={`${index % 2 === 0 ? 'lg:text-right lg:pr-12' : 'lg:col-start-2 lg:pl-12'}`}>
+                <div
+                  className={`${index % 2 === 0 ? 'lg:text-right lg:pr-12' : 'lg:col-start-2 lg:pl-12'}`}
+                >
                   <div className="bg-card rounded-xl p-8 border border-border shadow-lg hover:shadow-xl transition-smooth">
                     {/* Header */}
-                    <div className={`flex items-center space-x-3 mb-6 ${
-                      index % 2 === 0 ? 'lg:justify-end' : ''
-                    }`}>
-                      <div className={`w-14 h-14 rounded-lg bg-${pathway?.color}/10 flex items-center justify-center`}>
+                    <div
+                      className={`flex items-center space-x-3 mb-6 ${
+                        index % 2 === 0 ? 'lg:justify-end' : ''
+                      }`}
+                    >
+                      <div
+                        className={`w-14 h-14 rounded-lg bg-${pathway?.color}/10 flex items-center justify-center`}
+                      >
                         <Icon name={pathway?.icon} size={28} className={`text-${pathway?.color}`} />
                       </div>
                       <div className={index % 2 === 0 ? 'lg:text-right' : ''}>
                         <h3 className="text-2xl font-bold text-foreground">{pathway?.level}</h3>
-                        <p className="text-sm text-muted-foreground">{pathway?.age} • {pathway?.duration}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {pathway?.age} • {pathway?.duration}
+                        </p>
                       </div>
                     </div>
 
@@ -112,10 +121,17 @@ export default function LearningPathwaySection() {
                       </h4>
                       <div className="space-y-2">
                         {pathway?.skills?.map((skill, idx) => (
-                          <div key={idx} className={`flex items-center space-x-2 ${
-                            index % 2 === 0 ? 'lg:justify-end' : ''
-                          }`}>
-                            <Icon name="CheckCircleIcon" size={16} className={`text-${pathway?.color}`} />
+                          <div
+                            key={idx}
+                            className={`flex items-center space-x-2 ${
+                              index % 2 === 0 ? 'lg:justify-end' : ''
+                            }`}
+                          >
+                            <Icon
+                              name="CheckCircleIcon"
+                              size={16}
+                              className={`text-${pathway?.color}`}
+                            />
                             <span className="text-sm text-foreground">{skill}</span>
                           </div>
                         ))}
@@ -124,7 +140,9 @@ export default function LearningPathwaySection() {
 
                     {/* Projects */}
                     <div className={`bg-${pathway?.color}/5 rounded-lg p-4`}>
-                      <h4 className="text-sm font-semibold text-foreground mb-2">Signature Projects</h4>
+                      <h4 className="text-sm font-semibold text-foreground mb-2">
+                        Signature Projects
+                      </h4>
                       <div className="flex flex-wrap gap-2">
                         {pathway?.projects?.map((project, idx) => (
                           <span
@@ -141,7 +159,9 @@ export default function LearningPathwaySection() {
 
                 {/* Center Dot */}
                 <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className={`w-6 h-6 rounded-full bg-${pathway?.color} border-4 border-background shadow-lg`} />
+                  <div
+                    className={`w-6 h-6 rounded-full bg-${pathway?.color} border-4 border-background shadow-lg`}
+                  />
                 </div>
               </div>
             ))}

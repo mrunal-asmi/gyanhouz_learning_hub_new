@@ -38,9 +38,7 @@ export default function ComparisonTable({ features }: ComparisonTableProps) {
                   index % 2 === 0 ? 'bg-background' : 'bg-card'
                 }`}
               >
-                <td className="px-6 py-4 text-sm font-semibold text-foreground">
-                  {item.feature}
-                </td>
+                <td className="px-6 py-4 text-sm font-semibold text-foreground">{item.feature}</td>
                 <td className="px-6 py-4 text-sm text-muted-foreground">
                   <div className="flex items-start space-x-2">
                     <Icon

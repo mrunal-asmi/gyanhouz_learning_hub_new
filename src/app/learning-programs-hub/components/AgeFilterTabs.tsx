@@ -12,11 +12,7 @@ interface AgeFilterTabsProps {
   onTabChange: (id: string) => void;
 }
 
-export default function AgeFilterTabs({
-  ageGroups,
-  activeTab,
-  onTabChange,
-}: AgeFilterTabsProps) {
+export default function AgeFilterTabs({ ageGroups, activeTab, onTabChange }: AgeFilterTabsProps) {
   return (
     <div className="flex flex-wrap gap-3 justify-center">
       {ageGroups.map((group) => (

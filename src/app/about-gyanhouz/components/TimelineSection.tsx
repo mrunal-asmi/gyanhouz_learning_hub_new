@@ -17,42 +17,48 @@ const TimelineSection = ({ className = '' }: TimelineSectionProps) => {
     {
       year: '2014',
       title: 'The Beginning',
-      description: 'GYANHOUZ founded with first campus in Bangalore, introducing experiential learning methodology to 50 pioneering families.',
+      description:
+        'GYANHOUZ founded with first campus in Bangalore, introducing experiential learning methodology to 50 pioneering families.',
       icon: 'SparklesIcon',
       color: 'brand-orange',
     },
     {
       year: '2016',
-      title: 'Innovation Labs Launch',
-      description: 'Introduced India\'s first career discovery labs for children, allowing hands-on exploration of 20+ professions.',
+      title: 'Science Labs Launch',
+      description:
+        "Introduced India's first career discovery labs for children, allowing hands-on exploration of 20+ professions.",
       icon: 'BeakerIcon',
       color: 'brand-teal',
     },
     {
       year: '2018',
       title: 'National Expansion',
-      description: 'Expanded to 10 cities across India, transforming education for 2000+ students with research-backed methodologies.',
+      description:
+        'Expanded to 10 cities across India, transforming education for 2000+ students with research-backed methodologies.',
       icon: 'MapIcon',
       color: 'brand-blue',
     },
     {
       year: '2020',
       title: 'Digital Transformation',
-      description: 'Launched hybrid learning model during pandemic, ensuring uninterrupted experiential education through innovative virtual labs.',
+      description:
+        'Launched hybrid learning model during pandemic, ensuring uninterrupted experiential education through innovative virtual labs.',
       icon: 'ComputerDesktopIcon',
       color: 'brand-green',
     },
     {
       year: '2022',
       title: 'Franchise Model',
-      description: 'Introduced franchise opportunities, enabling education entrepreneurs to bring GYANHOUZ methodology to their communities.',
+      description:
+        'Introduced franchise opportunities, enabling education entrepreneurs to bring GYANHOUZ methodology to their communities.',
       icon: 'BuildingStorefrontIcon',
       color: 'brand-red',
     },
     {
       year: '2024',
       title: 'Industry Partnerships',
-      description: 'Partnered with 50+ corporations for authentic career labs, giving children real-world exposure to future professions.',
+      description:
+        'Partnered with 50+ corporations for authentic career labs, giving children real-world exposure to future professions.',
       icon: 'UserGroupIcon',
       color: 'brand-orange',
     },
@@ -84,8 +90,14 @@ const TimelineSection = ({ className = '' }: TimelineSectionProps) => {
                 <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
                   <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-brand transition-smooth">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className={`w-12 h-12 bg-${event.color}/10 rounded-full flex items-center justify-center flex-shrink-0`}>
-                        <Icon name={event.icon as any} size={24} className={`text-${event.color}`} />
+                      <div
+                        className={`w-12 h-12 bg-${event.color}/10 rounded-full flex items-center justify-center flex-shrink-0`}
+                      >
+                        <Icon
+                          name={event.icon as any}
+                          size={24}
+                          className={`text-${event.color}`}
+                        />
                       </div>
                       <div>
                         <p className={`text-2xl font-bold text-${event.color}`}>{event.year}</p>

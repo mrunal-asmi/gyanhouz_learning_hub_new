@@ -29,7 +29,7 @@ export default function EnrollmentCTASection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -46,7 +46,9 @@ export default function EnrollmentCTASection() {
     }, 1500);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -74,7 +76,8 @@ export default function EnrollmentCTASection() {
                 Enroll in Electronics & Robotics Lab
               </h2>
               <p className="text-xl text-white/90 leading-relaxed">
-                Join India's most advanced technology learning center. Transform your child from consumer to creator.
+                Join India's most advanced technology learning center. Transform your child from
+                consumer to creator.
               </p>
             </div>
 
@@ -84,7 +87,9 @@ export default function EnrollmentCTASection() {
                 <Icon name="ClockIcon" size={24} className="text-brand-orange flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">Next Batch Starts: January 15, 2026</h3>
-                  <p className="text-sm text-white/80">Only 15 seats per batch for equipment access</p>
+                  <p className="text-sm text-white/80">
+                    Only 15 seats per batch for equipment access
+                  </p>
                 </div>
               </div>
 
@@ -92,7 +97,9 @@ export default function EnrollmentCTASection() {
                 <Icon name="UserGroupIcon" size={24} className="text-brand-teal flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">8 Seats Already Filled</h3>
-                  <p className="text-sm text-white/80">High demand for advanced technology programs</p>
+                  <p className="text-sm text-white/80">
+                    High demand for advanced technology programs
+                  </p>
                 </div>
               </div>
 
@@ -100,7 +107,9 @@ export default function EnrollmentCTASection() {
                 <Icon name="GiftIcon" size={24} className="text-brand-green flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">Early Bird Offer: 20% Off</h3>
-                  <p className="text-sm text-white/80">Valid only for enrollments before January 10</p>
+                  <p className="text-sm text-white/80">
+                    Valid only for enrollments before January 10
+                  </p>
                 </div>
               </div>
             </div>
@@ -125,13 +134,15 @@ export default function EnrollmentCTASection() {
           {/* Right Form */}
           <div className="bg-white rounded-2xl p-8 shadow-2xl">
             <h3 className="text-2xl font-bold text-foreground mb-6">Reserve Your Seat Now</h3>
-            
+
             {submitStatus === 'success' ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="CheckCircleIcon" size={32} className="text-success" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground mb-2">Enrollment Request Received!</h4>
+                <h4 className="text-xl font-bold text-foreground mb-2">
+                  Enrollment Request Received!
+                </h4>
                 <p className="text-muted-foreground mb-6">
                   Our team will contact you within 24 hours to confirm your seat.
                 </p>

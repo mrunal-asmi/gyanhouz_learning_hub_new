@@ -32,24 +32,20 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
     subject: '',
     currentScore: '',
     preferredDate: '',
-    message: ''
+    message: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const subjects = [
-    'Physics',
-    'Chemistry',
-    'Biology',
-    'All Sciences',
-    'Environmental Science'
-  ];
+  const subjects = ['Physics', 'Chemistry', 'Biology', 'All Sciences', 'Environmental Science'];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -70,7 +66,7 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
         subject: '',
         currentScore: '',
         preferredDate: '',
-        message: ''
+        message: '',
       });
 
       setTimeout(() => {
@@ -91,10 +87,7 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
             <h3 className="text-2xl font-bold">Science Labs Admission</h3>
             <p className="text-sm text-white/90">Book your first lab session</p>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-white/20 rounded-lg transition-smooth"
-          >
+          <button onClick={onClose} className="p-2 hover:bg-white/20 rounded-lg transition-smooth">
             <Icon name="XMarkIcon" size={24} />
           </button>
         </div>
@@ -106,7 +99,9 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
               <Icon name="CheckCircleIcon" size={24} className="text-brand-green" />
               <div>
                 <div className="font-semibold text-brand-green">Application Submitted!</div>
-                <div className="text-sm text-muted-foreground">Our team will contact you within 2 hours</div>
+                <div className="text-sm text-muted-foreground">
+                  Our team will contact you within 2 hours
+                </div>
               </div>
             </div>
           )}
@@ -191,9 +186,7 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                City *
-              </label>
+              <label className="block text-sm font-semibold text-foreground mb-2">City *</label>
               <input
                 type="text"
                 name="city"
@@ -217,8 +210,10 @@ export default function ScienceAdmissionForm({ isOpen, onClose }: ScienceAdmissi
                 className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
               >
                 <option value="">Select subject</option>
-                {subjects.map(subject => (
-                  <option key={subject} value={subject}>{subject}</option>
+                {subjects.map((subject) => (
+                  <option key={subject} value={subject}>
+                    {subject}
+                  </option>
                 ))}
               </select>
             </div>

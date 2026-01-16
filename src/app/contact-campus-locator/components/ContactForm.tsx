@@ -21,7 +21,7 @@ const inquiryTypes = [
   'Admission Inquiry',
   'Franchise Opportunity',
   'Partnership Proposal',
-  'General Inquiry'
+  'General Inquiry',
 ];
 
 const cities = ['Bangalore', 'Mumbai', 'Gurgaon', 'Hyderabad', 'Pune', 'Chennai', 'Other'];
@@ -32,7 +32,7 @@ const timeSlots = [
   '11:00 AM - 12:00 PM',
   '2:00 PM - 3:00 PM',
   '3:00 PM - 4:00 PM',
-  '4:00 PM - 5:00 PM'
+  '4:00 PM - 5:00 PM',
 ];
 
 export default function ContactForm() {
@@ -46,16 +46,18 @@ export default function ContactForm() {
     preferredCampus: '',
     preferredDate: '',
     preferredTime: '',
-    message: ''
+    message: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -76,7 +78,7 @@ export default function ContactForm() {
         preferredCampus: '',
         preferredDate: '',
         preferredTime: '',
-        message: ''
+        message: '',
       });
 
       setTimeout(() => setSubmitSuccess(false), 5000);
@@ -91,11 +93,11 @@ export default function ContactForm() {
             <Icon name="PencilSquareIcon" size={20} className="text-primary" />
             <span className="text-sm font-semibold text-primary">Get In Touch</span>
           </div>
-          
+
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Book Your Campus Visit or Request Information
           </h2>
-          
+
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Fill out the form below and our admissions team will contact you within 2 hours
           </p>
@@ -107,13 +109,17 @@ export default function ContactForm() {
             <div>
               <h3 className="font-bold text-success mb-1">Request Submitted Successfully!</h3>
               <p className="text-sm text-success/80">
-                Thank you for your interest. Our team will contact you shortly at the provided email and phone number.
+                Thank you for your interest. Our team will contact you shortly at the provided email
+                and phone number.
               </p>
             </div>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl shadow-lg p-8 space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-card border border-border rounded-2xl shadow-lg p-8 space-y-6"
+        >
           <div>
             <label className="block text-sm font-semibold text-foreground mb-2">
               Inquiry Type <span className="text-error">*</span>
@@ -127,7 +133,9 @@ export default function ContactForm() {
             >
               <option value="">Select inquiry type</option>
               {inquiryTypes.map((type) => (
-                <option key={type} value={type}>{type}</option>
+                <option key={type} value={type}>
+                  {type}
+                </option>
               ))}
             </select>
           </div>
@@ -193,7 +201,9 @@ export default function ContactForm() {
               >
                 <option value="">Select your city</option>
                 {cities.map((city) => (
-                  <option key={city} value={city}>{city}</option>
+                  <option key={city} value={city}>
+                    {city}
+                  </option>
                 ))}
               </select>
             </div>
@@ -256,7 +266,9 @@ export default function ContactForm() {
               >
                 <option value="">Select time slot</option>
                 {timeSlots.map((slot) => (
-                  <option key={slot} value={slot}>{slot}</option>
+                  <option key={slot} value={slot}>
+                    {slot}
+                  </option>
                 ))}
               </select>
             </div>
@@ -277,9 +289,15 @@ export default function ContactForm() {
           </div>
 
           <div className="flex items-start space-x-3 p-4 bg-muted/50 rounded-lg">
-            <Icon name="InformationCircleIcon" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+            <Icon
+              name="InformationCircleIcon"
+              size={20}
+              className="text-primary flex-shrink-0 mt-0.5"
+            />
             <p className="text-sm text-muted-foreground">
-              By submitting this form, you agree to receive communications from GYANHOUZ regarding your inquiry. We respect your privacy and will never share your information with third parties.
+              By submitting this form, you agree to receive communications from GYANHOUZ regarding
+              your inquiry. We respect your privacy and will never share your information with third
+              parties.
             </p>
           </div>
 

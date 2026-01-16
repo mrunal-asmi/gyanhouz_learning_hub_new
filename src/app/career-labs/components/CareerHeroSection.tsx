@@ -26,12 +26,14 @@ const CareerHeroSection = ({ className = '' }: CareerHeroSectionProps) => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight font-poppins">
-              Helping Children <span className="text-brand-orange">Try the Future</span> Before Choosing It
+              Helping Children <span className="text-brand-orange">Try the Future</span> Before
+              Choosing It
             </h1>
 
             <p className="text-lg lg:text-xl text-white/90 leading-relaxed font-source">
-              From age 2 to 16, our comprehensive Career Labs guide children through early career discovery 
-              and hands-on exploration of 50+ career pathways with expert mentors and real industry projects.
+              From age 2 to 16, our comprehensive Career Labs guide children through early career
+              discovery and hands-on exploration of 50+ career pathways with expert mentors and real
+              industry projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -65,7 +67,7 @@ const CareerHeroSection = ({ className = '' }: CareerHeroSectionProps) => {
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <AppImage
                 src="https://img.rocket.new/generatedImages/rocket_gen_img_1644626ed-1764661581325.png"
-                alt="Indian teenage student in blue shirt working on robotics project with circuit boards and laptop in modern innovation lab"
+                alt="Indian teenage student in blue shirt working on robotics project with circuit boards and laptop in modern Science Lab"
                 className="w-full h-[500px] object-cover"
               />
 

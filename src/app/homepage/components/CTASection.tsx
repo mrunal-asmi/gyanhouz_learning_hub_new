@@ -23,7 +23,8 @@ export default function CTASection() {
         </h2>
 
         <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Join 15,000+ families who chose innovation over tradition. Book your free assessment today and see the GYANHOUZ difference.
+          Join 15,000+ families who chose innovation over tradition. Book your free assessment today
+          and see the GYANHOUZ difference.
         </p>
 
         {/* Stats Row */}

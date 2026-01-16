@@ -41,18 +41,16 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-6 py-2 bg-primary/10 rounded-full mb-6">
             <span className="text-primary font-semibold text-sm lg:text-base font-poppins">
-              The Education Revolution
+              Expanding early only preschool model to multiple learning modules
             </span>
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 font-poppins leading-tight">
-            Unlocking Every Child's <span className="text-primary">Infinite Potential</span>
+            <span className="text-primary"> </span>
           </h1>
 
           <p className="text-lg lg:text-xl text-muted-foreground mb-8 font-source leading-relaxed">
-            India's FIRST integrated learning ecosystem that transforms education from theoretical
-            memorization to practical innovation, career readiness, and holistic development for
-            ages 2-16.
+            Expanding early only preschool model to multiple learning module under single campus.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

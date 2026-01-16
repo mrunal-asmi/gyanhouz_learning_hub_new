@@ -34,7 +34,7 @@ const QuickActionCenter = ({ onActionSelect, className = '' }: QuickActionCenter
     },
     {
       id: 'innovation-lab',
-      title: 'Innovation Lab Application',
+      title: 'Science Lab Application',
       description: 'Ages 8-16 | Young inventors ecosystem',
       icon: 'LightBulbIcon',
       color: 'text-accent',

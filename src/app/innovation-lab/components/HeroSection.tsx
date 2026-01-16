@@ -21,7 +21,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
               <Icon name="SparklesIcon" size={20} className="text-primary" />
               <span className="text-sm font-semibold text-primary font-poppins">
-                India's Most Advanced Innovation Lab
+                India's Most Advanced Science Lab
               </span>
             </div>
 
@@ -77,7 +77,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <AppImage
                 src="https://img.rocket.new/generatedImages/rocket_gen_img_1f966c70b-1767715904004.png"
-                alt="Young Indian students working together on robotics project with circuit boards and electronic components in modern innovation lab"
+                alt="Young Indian students working together on robotics project with circuit boards and electronic components in modern Science Lab"
                 className="w-full h-[500px] object-cover"
               />
 

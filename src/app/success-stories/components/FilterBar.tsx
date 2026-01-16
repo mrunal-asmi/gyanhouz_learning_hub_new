@@ -24,7 +24,7 @@ export default function FilterBar({
     'All Programs',
     'Preschool++',
     'Career Labs',
-    'Innovation Lab',
+    'Science Lab',
     'Skills Development',
   ];
   const categories = [

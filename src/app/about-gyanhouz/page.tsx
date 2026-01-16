@@ -12,8 +12,9 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
-  title: 'About GYANHOUZ - India\'s Education Revolution | Learning Hub',
-  description: 'Discover GYANHOUZ\'s vision to transform education from passive consumption to active discovery. Learn about our research-backed experiential learning methodology, founder story, and mission to make every child a confident innovator.',
+  title: "About GYANHOUZ - India's Education Revolution | Learning Hub",
+  description:
+    "Discover GYANHOUZ's vision to transform education from passive consumption to active discovery. Learn about our research-backed experiential learning methodology, founder story, and mission to make every child a confident innovator.",
 };
 
 export default function AboutGyanHouzPage() {

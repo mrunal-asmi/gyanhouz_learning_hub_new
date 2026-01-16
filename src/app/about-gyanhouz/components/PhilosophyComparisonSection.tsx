@@ -26,7 +26,7 @@ const PhilosophyComparisonSection = ({ className = '' }: PhilosophyComparisonSec
       {
         category: 'Curriculum Focus',
         traditional: 'Theory-heavy with limited practical application',
-        gyanhouz: 'Skill-building through innovation labs and career discovery',
+        gyanhouz: 'Skill-building through Science Labs and career discovery',
       },
       {
         category: 'Student Role',
@@ -119,16 +119,24 @@ const PhilosophyComparisonSection = ({ className = '' }: PhilosophyComparisonSec
                   <div className="flex items-start space-x-3">
                     <Icon name="XMarkIcon" size={20} className="text-error flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-sm font-semibold text-muted-foreground mb-1">Traditional Approach</p>
+                      <p className="text-sm font-semibold text-muted-foreground mb-1">
+                        Traditional Approach
+                      </p>
                       <p className="text-foreground">{item.traditional}</p>
                     </div>
                   </div>
                 </div>
                 <div className="p-6 bg-brand-orange/5">
                   <div className="flex items-start space-x-3">
-                    <Icon name="CheckCircleIcon" size={20} className="text-brand-orange flex-shrink-0 mt-1" />
+                    <Icon
+                      name="CheckCircleIcon"
+                      size={20}
+                      className="text-brand-orange flex-shrink-0 mt-1"
+                    />
                     <div>
-                      <p className="text-sm font-semibold text-brand-orange mb-1">GYANHOUZ Approach</p>
+                      <p className="text-sm font-semibold text-brand-orange mb-1">
+                        GYANHOUZ Approach
+                      </p>
                       <p className="text-foreground">{item.gyanhouz}</p>
                     </div>
                   </div>
@@ -141,7 +149,9 @@ const PhilosophyComparisonSection = ({ className = '' }: PhilosophyComparisonSec
         <div className="mt-12 text-center">
           <div className="inline-block bg-gradient-to-r from-brand-orange to-brand-red text-white px-8 py-4 rounded-2xl shadow-brand">
             <p className="text-lg font-bold mb-1">Experience the Difference</p>
-            <p className="text-sm opacity-90">Book a free campus tour to see our methodology in action</p>
+            <p className="text-sm opacity-90">
+              Book a free campus tour to see our methodology in action
+            </p>
           </div>
         </div>
       </div>

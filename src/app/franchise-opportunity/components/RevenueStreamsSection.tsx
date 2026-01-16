@@ -30,7 +30,7 @@ const RevenueStreamsSection = () => {
     },
     {
       id: 3,
-      title: 'Innovation Lab',
+      title: 'Science Lab',
       description: 'Project-based learning and innovation programs with mentor network',
       icon: 'LightBulbIcon',
       monthlyRevenue: '₹1.5-3 Lakhs',

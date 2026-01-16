@@ -23,7 +23,7 @@ const FacilitiesShowcase = ({ className = '' }: FacilitiesShowcaseProps) => {
       description:
         'State-of-the-art 3D printers and rapid prototyping tools that transform digital designs into physical inventions within hours.',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_11a5d4cca-1767208481891.png',
-      alt: 'Modern 3D printer creating colorful prototype with students observing the printing process in bright innovation lab',
+      alt: 'Modern 3D printer creating colorful prototype with students observing the printing process in bright Science Lab',
       features: [
         'Multiple 3D printer models',
         'CAD software training',
@@ -129,7 +129,7 @@ const FacilitiesShowcase = ({ className = '' }: FacilitiesShowcaseProps) => {
             State-of-the-Art Innovation Facilities
           </h2>
           <p className="text-lg text-muted-foreground font-source">
-            Our innovation lab features cutting-edge equipment and tools that rival professional
+            Our Science Lab features cutting-edge equipment and tools that rival professional
             innovation centers, giving students access to technology that transforms ideas into
             reality.
           </p>
@@ -185,7 +185,7 @@ const FacilitiesShowcase = ({ className = '' }: FacilitiesShowcaseProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold font-poppins mb-4">
-                Experience Our Innovation Lab
+                Experience Our Science Lab
               </h3>
               <p className="text-lg opacity-90 font-source mb-6">
                 Schedule a virtual or in-person tour to see our world-class facilities in action.

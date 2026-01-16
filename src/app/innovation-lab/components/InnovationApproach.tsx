@@ -89,8 +89,9 @@ const InnovationApproach = ({ className = '' }: InnovationApproachProps) => {
             Gyanhouz Curiosity-Driven Module
           </h2>
           <p className="text-lg text-muted-foreground font-source">
-            A structured, science-backed program that turns everyday moments into powerful learning experiences. 
-            It teaches children to observe, question, think, and explain — instead of memorizing.
+            A structured, science-backed program that turns everyday moments into powerful learning
+            experiences. It teaches children to observe, question, think, and explain — instead of
+            memorizing.
           </p>
         </div>
 
@@ -163,7 +164,8 @@ const InnovationApproach = ({ className = '' }: InnovationApproachProps) => {
                       Real-World Problem Solving
                     </div>
                     <div className="text-sm text-muted-foreground font-source">
-                      Solving real-world problems with design thinking and innovation-first pedagogy.
+                      Solving real-world problems with design thinking and innovation-first
+                      pedagogy.
                     </div>
                   </div>
                 </div>

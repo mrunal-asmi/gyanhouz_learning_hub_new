@@ -31,7 +31,7 @@ const StoryFilters = ({ onFilterChange }: StoryFiltersProps) => {
     { value: 'all', label: 'All Programs' },
     { value: 'preschool', label: 'Preschool Foundation' },
     { value: 'creativity', label: 'School of Creativity' },
-    { value: 'innovation', label: 'Innovation Labs' },
+    { value: 'innovation', label: 'Science Labs' },
     { value: 'career', label: 'Career Discovery' },
   ];
 

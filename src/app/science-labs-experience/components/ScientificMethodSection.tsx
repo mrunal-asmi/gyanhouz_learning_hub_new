@@ -17,36 +17,36 @@ export default function ScientificMethodSection() {
       title: 'Ask Questions',
       description: 'Develop curiosity and formulate testable hypotheses',
       icon: 'QuestionMarkCircleIcon',
-      activities: ['Observation skills', 'Problem identification', 'Hypothesis formation']
+      activities: ['Observation skills', 'Problem identification', 'Hypothesis formation'],
     },
     {
       step: 2,
       title: 'Design Experiments',
       description: 'Plan procedures and identify variables',
       icon: 'PencilSquareIcon',
-      activities: ['Variable control', 'Procedure planning', 'Safety protocols']
+      activities: ['Variable control', 'Procedure planning', 'Safety protocols'],
     },
     {
       step: 3,
       title: 'Conduct Research',
       description: 'Perform experiments with precision and care',
       icon: 'BeakerIcon',
-      activities: ['Hands-on execution', 'Data collection', 'Observation recording']
+      activities: ['Hands-on execution', 'Data collection', 'Observation recording'],
     },
     {
       step: 4,
       title: 'Analyze Data',
       description: 'Interpret results and identify patterns',
       icon: 'ChartBarIcon',
-      activities: ['Data analysis', 'Graph creation', 'Pattern recognition']
+      activities: ['Data analysis', 'Graph creation', 'Pattern recognition'],
     },
     {
       step: 5,
       title: 'Draw Conclusions',
       description: 'Validate hypotheses and communicate findings',
       icon: 'LightBulbIcon',
-      activities: ['Result interpretation', 'Conclusion writing', 'Presentation skills']
-    }
+      activities: ['Result interpretation', 'Conclusion writing', 'Presentation skills'],
+    },
   ];
 
   return (
@@ -58,14 +58,15 @@ export default function ScientificMethodSection() {
             <Icon name="AcademicCapIcon" size={20} className="text-primary" />
             <span className="text-sm font-semibold text-primary">Scientific Method Mastery</span>
           </div>
-          
+
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
             Learn to Think Like
             <span className="block text-primary">Real Scientists</span>
           </h2>
-          
+
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Every experiment follows the scientific method, building critical thinking and analytical skills
+            Every experiment follows the scientific method, building critical thinking and
+            analytical skills
           </p>
         </div>
 
@@ -104,7 +105,11 @@ export default function ScientificMethodSection() {
                   <div className="space-y-2">
                     {step.activities.map((activity, actIndex) => (
                       <div key={actIndex} className="flex items-start space-x-2">
-                        <Icon name="CheckIcon" size={16} className="text-brand-green mt-0.5 flex-shrink-0" />
+                        <Icon
+                          name="CheckIcon"
+                          size={16}
+                          className="text-brand-green mt-0.5 flex-shrink-0"
+                        />
                         <span className="text-xs text-foreground">{activity}</span>
                       </div>
                     ))}
@@ -133,21 +138,27 @@ export default function ScientificMethodSection() {
                 <Icon name="BrainIcon" size={32} className="text-white" />
               </div>
               <h4 className="font-bold text-foreground">Critical Thinking</h4>
-              <p className="text-sm text-muted-foreground">Analyze problems systematically and logically</p>
+              <p className="text-sm text-muted-foreground">
+                Analyze problems systematically and logically
+              </p>
             </div>
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-brand-teal rounded-full flex items-center justify-center mx-auto">
                 <Icon name="PuzzlePieceIcon" size={32} className="text-white" />
               </div>
               <h4 className="font-bold text-foreground">Problem Solving</h4>
-              <p className="text-sm text-muted-foreground">Approach challenges with structured methodology</p>
+              <p className="text-sm text-muted-foreground">
+                Approach challenges with structured methodology
+              </p>
             </div>
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto">
                 <Icon name="DocumentTextIcon" size={32} className="text-white" />
               </div>
               <h4 className="font-bold text-foreground">Documentation</h4>
-              <p className="text-sm text-muted-foreground">Record observations and communicate findings</p>
+              <p className="text-sm text-muted-foreground">
+                Record observations and communicate findings
+              </p>
             </div>
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mx-auto">

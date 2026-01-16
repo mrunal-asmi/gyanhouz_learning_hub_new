@@ -4,9 +4,9 @@ import Footer from '@/components/common/Footer';
 import HeroSection from './components/HeroSection';
 import ComparisonSection from './components/ComparisonSection';
 import ResultsShowcase from './components/ResultsShowcase';
-import DayInLifeSection from './components/DayInLifeSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import CurriculumSection from './components/CurriculumSection';
+import FutureOpportunitiesSection from './components/FutureOpportunitiesSection';
 import AdmissionForm from './components/AdmissionForm';
 import FAQSection from './components/FAQSection';
 import CTASection from './components/CTASection';
@@ -26,11 +26,11 @@ export default function PreschoolProgramPage() {
         <HeroSection />
         <ComparisonSection />
         <ResultsShowcase />
-        <DayInLifeSection />
         <CurriculumSection />
+        <FutureOpportunitiesSection />
+        <AdmissionForm />
         <TestimonialsSection />
         <FAQSection />
-        <AdmissionForm />
         <CTASection />
       </div>
 

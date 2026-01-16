@@ -18,11 +18,12 @@ export default function CareerDiscoveryPage() {
               Career Discovery
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-source">
-              Unlock your potential and explore diverse career pathways designed for the next generation of leaders.
+              Unlock your potential and explore diverse career pathways designed for the next
+              generation of leaders.
             </p>
           </div>
         </section>
-        
+
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -30,19 +31,22 @@ export default function CareerDiscoveryPage() {
               <div className="p-8 bg-card rounded-2xl shadow-subtle border border-border">
                 <h3 className="text-2xl font-bold mb-4 font-poppins">Self-Assessment</h3>
                 <p className="text-muted-foreground font-source">
-                  Discover your strengths, interests, and values through our comprehensive assessment tools.
+                  Discover your strengths, interests, and values through our comprehensive
+                  assessment tools.
                 </p>
               </div>
               <div className="p-8 bg-card rounded-2xl shadow-subtle border border-border">
                 <h3 className="text-2xl font-bold mb-4 font-poppins">Industry Insights</h3>
                 <p className="text-muted-foreground font-source">
-                  Gain deep insights into various industries and understand the skills required for success.
+                  Gain deep insights into various industries and understand the skills required for
+                  success.
                 </p>
               </div>
               <div className="p-8 bg-card rounded-2xl shadow-subtle border border-border">
                 <h3 className="text-2xl font-bold mb-4 font-poppins">Expert Guidance</h3>
                 <p className="text-muted-foreground font-source">
-                  Connect with industry experts and mentors who can guide you on your career journey.
+                  Connect with industry experts and mentors who can guide you on your career
+                  journey.
                 </p>
               </div>
             </div>

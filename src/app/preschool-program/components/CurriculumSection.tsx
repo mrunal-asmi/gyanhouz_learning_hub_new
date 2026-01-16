@@ -98,9 +98,9 @@ const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
     <section className={`py-16 lg:py-24 bg-muted ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
-            <Icon name="AcademicCapIcon" size={20} className="text-primary" />
-            <span className="text-sm font-semibold text-primary font-poppins">
+          <div className="inline-flex items-center space-x-4 bg-primary/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+            <Icon name="AcademicCapIcon" size={40} className="text-primary scale-75 md:scale-100" />
+            <span className="text-2xl md:text-5xl font-semibold text-primary font-poppins whitespace-nowrap">
               Comprehensive Curriculum
             </span>
           </div>

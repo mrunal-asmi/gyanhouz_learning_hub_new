@@ -121,7 +121,7 @@ const DayInLifeSection = ({ className = '' }: DayInLifeSectionProps) => {
       },
       {
         time: '10:00 AM',
-        activity: 'Innovation Lab Time',
+        activity: 'Science Lab Time',
         description: 'Building, creating, and experimenting with various materials and concepts',
         icon: 'CubeIcon',
         color: 'bg-secondary/10 text-secondary',

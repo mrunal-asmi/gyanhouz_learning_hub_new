@@ -37,7 +37,7 @@ const FranchiseSpotlight = () => {
     },
     {
       id: 3,
-      title: 'Innovation Labs',
+      title: 'Science Labs',
       description: 'STEM programs with robotics, electronics, and science',
       icon: 'CpuChipIcon',
       potential: '₹30-45L/year',
@@ -72,7 +72,7 @@ const FranchiseSpotlight = () => {
           <div>
             <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full mb-6">
               <Icon name="BuildingStorefrontIcon" size={20} className="text-secondary" />
-              <span className="text-sm font-semibold text-secondary font-poppins">
+              <span className="text-lg font-semibold text-secondary font-poppins">
                 Franchise Opportunity
               </span>
             </div>

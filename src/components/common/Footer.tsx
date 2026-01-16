@@ -14,7 +14,7 @@ const Footer = ({ className = '' }: FooterProps) => {
     { label: 'Home', href: '/homepage' },
     { label: 'Preschool Program', href: '/preschool-program' },
     { label: 'Career Labs', href: '/career-labs' },
-    { label: 'Innovation Lab', href: '/innovation-lab' },
+    { label: 'Science Lab', href: '/innovation-lab' },
   ];
 
   const opportunities = [

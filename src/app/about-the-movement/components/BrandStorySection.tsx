@@ -36,9 +36,8 @@ const BrandStorySection = ({ className = '' }: BrandStoryProps) => {
               Our Brand <span className="text-primary">Identity</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-source leading-relaxed">
-              GYANHOUZ embodies the Education Revolution - a visionary brand that challenges
-              India's theoretical education crisis with practical, integrated learning
-              solutions.
+              Being the first preschooling, schooling, classes and academic partner... That teaches
+              the best !! Opens the future possibilities for kids!
             </p>
           </div>
 
@@ -53,7 +52,7 @@ const BrandStorySection = ({ className = '' }: BrandStoryProps) => {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <p className="text-white text-lg font-semibold font-poppins">
-                  "Not just education, it's a movement"
+                  {"\"Not just education, it's a movement\""}
                 </p>
               </div>
             </div>
@@ -85,8 +84,7 @@ const BrandStorySection = ({ className = '' }: BrandStoryProps) => {
                   Cultural Resonance
                 </h3>
                 <p className="text-muted-foreground font-source leading-relaxed">
-                  Modern Indian parents' aspirations meeting ancient Indian wisdom through
-                  Sanskrit integration, holistic development, and values-based learning.
+                  {"Modern Indian parents' aspirations meeting ancient Indian wisdom through Sanskrit integration, holistic development, and values-based learning."}
                 </p>
               </div>
             </div>

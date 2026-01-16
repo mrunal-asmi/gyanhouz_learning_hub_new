@@ -25,11 +25,12 @@ export default function SchoolOfCreativityPage() {
               School of Creativity
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-source">
-              Where imagination becomes expression. We provide the tools and environment for children to explore their creative potential.
+              Where imagination becomes expression. We provide the tools and environment for
+              children to explore their creative potential.
             </p>
           </div>
         </section>
-        
+
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

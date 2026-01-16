@@ -111,7 +111,7 @@ const EnrollmentSection = ({ className = '' }: EnrollmentSectionProps) => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground font-poppins mb-4">
-                Enroll in Innovation Lab
+                Enroll in Science Lab
               </h2>
             </div>
             <div className="bg-card rounded-xl p-8 shadow-subtle border border-border animate-pulse">
@@ -139,7 +139,7 @@ const EnrollmentSection = ({ className = '' }: EnrollmentSectionProps) => {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground font-poppins mb-4">
-              Enroll in Innovation Lab
+              Enroll in Science Lab
             </h2>
             <p className="text-lg text-muted-foreground font-source">
               Join India's most advanced innovation program and transform your child into tomorrow's
@@ -157,7 +157,7 @@ const EnrollmentSection = ({ className = '' }: EnrollmentSectionProps) => {
                   Enrollment Request Submitted!
                 </h3>
                 <p className="text-muted-foreground font-source mb-6">
-                  Thank you for your interest in GYANHOUZ Innovation Lab. Our admissions team will
+                  Thank you for your interest in GYANHOUZ Science Lab. Our admissions team will
                   contact you within 24 hours to discuss the next steps.
                 </p>
                 <button

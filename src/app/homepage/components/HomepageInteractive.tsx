@@ -1,5 +1,6 @@
 'use client';
 
+import TopBanner from './TopBanner';
 import HeroSection from './HeroSection';
 import EcosystemMap from './EcosystemMap';
 import ResultsShowcase from './ResultsShowcase';
@@ -11,6 +12,7 @@ import QuickActionCenter from './QuickActionCenter';
 const HomepageInteractive = () => {
   return (
     <>
+      <TopBanner />
       <HeroSection />
       <EcosystemMap />
       <ResultsShowcase />

@@ -30,7 +30,7 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
     city: '',
     careerInterest: '',
     preferredDate: '',
-    message: ''
+    message: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,13 +43,15 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
     'Creative Arts & Media',
     'Culinary & Hospitality',
     'Law & Governance',
-    'Not Sure - Need Assessment'
+    'Not Sure - Need Assessment',
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -69,7 +71,7 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
         city: '',
         careerInterest: '',
         preferredDate: '',
-        message: ''
+        message: '',
       });
 
       setTimeout(() => {
@@ -90,10 +92,7 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
             <h3 className="text-2xl font-bold">Career Labs Admission</h3>
             <p className="text-sm text-white/90">Book your free career assessment</p>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-white/20 rounded-lg transition-smooth"
-          >
+          <button onClick={onClose} className="p-2 hover:bg-white/20 rounded-lg transition-smooth">
             <Icon name="XMarkIcon" size={24} />
           </button>
         </div>
@@ -105,7 +104,9 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
               <Icon name="CheckCircleIcon" size={24} className="text-brand-green" />
               <div>
                 <div className="font-semibold text-brand-green">Application Submitted!</div>
-                <div className="text-sm text-muted-foreground">Our team will contact you within 2 hours</div>
+                <div className="text-sm text-muted-foreground">
+                  Our team will contact you within 2 hours
+                </div>
               </div>
             </div>
           )}
@@ -183,16 +184,16 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
                 className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
               >
                 <option value="">Select age</option>
-                {[8, 9, 10, 11, 12, 13, 14, 15, 16].map(age => (
-                  <option key={age} value={age}>{age} years</option>
+                {[8, 9, 10, 11, 12, 13, 14, 15, 16].map((age) => (
+                  <option key={age} value={age}>
+                    {age} years
+                  </option>
                 ))}
               </select>
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-foreground mb-2">
-                City *
-              </label>
+              <label className="block text-sm font-semibold text-foreground mb-2">City *</label>
               <input
                 type="text"
                 name="city"
@@ -216,8 +217,10 @@ export default function CareerAdmissionForm({ isOpen, onClose }: CareerAdmission
                 className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
               >
                 <option value="">Select career interest</option>
-                {careerInterests.map(interest => (
-                  <option key={interest} value={interest}>{interest}</option>
+                {careerInterests.map((interest) => (
+                  <option key={interest} value={interest}>
+                    {interest}
+                  </option>
                 ))}
               </select>
             </div>

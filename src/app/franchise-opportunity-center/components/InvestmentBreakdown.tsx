@@ -10,35 +10,35 @@ const investmentItems: InvestmentItem[] = [
   {
     category: 'Franchise Fee',
     amount: '₹8,00,000',
-    description: 'One-time brand licensing and territory rights'
+    description: 'One-time brand licensing and territory rights',
   },
   {
     category: 'Infrastructure Setup',
     amount: '₹12,00,000 - ₹18,00,000',
-    description: 'Classroom setup, furniture, learning materials, safety equipment'
+    description: 'Classroom setup, furniture, learning materials, safety equipment',
   },
   {
     category: 'Technology & Systems',
     amount: '₹2,00,000 - ₹3,00,000',
-    description: 'Learning management system, security systems, communication tools'
+    description: 'Learning management system, security systems, communication tools',
   },
   {
     category: 'Marketing Launch',
     amount: '₹3,00,000 - ₹5,00,000',
-    description: 'Initial marketing campaigns, branding materials, community outreach'
+    description: 'Initial marketing campaigns, branding materials, community outreach',
   },
   {
     category: 'Working Capital',
     amount: '₹5,00,000 - ₹8,00,000',
-    description: 'Staff salaries, operational expenses for first 6 months'
-  }
+    description: 'Staff salaries, operational expenses for first 6 months',
+  },
 ];
 
 const revenueStreams = [
   { name: 'Preschool Programs', percentage: '55%', amount: '₹25L - ₹36L' },
-  { name: 'Innovation Labs', percentage: '20%', amount: '₹9L - ₹13L' },
+  { name: 'Science Labs', percentage: '20%', amount: '₹9L - ₹13L' },
   { name: 'Career Discovery', percentage: '15%', amount: '₹7L - ₹10L' },
-  { name: 'Workshops & Camps', percentage: '10%', amount: '₹4L - ₹6L' }
+  { name: 'Workshops & Camps', percentage: '10%', amount: '₹4L - ₹6L' },
 ];
 
 export default function InvestmentBreakdown() {
@@ -54,10 +54,11 @@ export default function InvestmentBreakdown() {
             Transparent Investment Structure
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Complete breakdown of initial investment and expected revenue streams for informed decision-making.
+            Complete breakdown of initial investment and expected revenue streams for informed
+            decision-making.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <div className="bg-card rounded-xl border border-border p-8 mb-6">
@@ -77,7 +78,7 @@ export default function InvestmentBreakdown() {
                 ))}
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-brand-green to-brand-teal text-white rounded-xl p-8">
               <div className="flex items-center space-x-3 mb-4">
                 <Icon name="TrendingUpIcon" size={32} />
@@ -87,16 +88,17 @@ export default function InvestmentBreakdown() {
                 </div>
               </div>
               <p className="text-white/90 leading-relaxed">
-                Based on average performance of existing franchise partners with 80+ student enrollment within first year.
+                Based on average performance of existing franchise partners with 80+ student
+                enrollment within first year.
               </p>
             </div>
           </div>
-          
+
           <div>
             <div className="bg-card rounded-xl border border-border p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">Annual Revenue Potential</h3>
               <div className="text-4xl font-bold text-brand-orange mb-8">₹45L - ₹65L</div>
-              
+
               <div className="space-y-6">
                 {revenueStreams.map((stream, index) => (
                   <div key={index}>
@@ -118,11 +120,13 @@ export default function InvestmentBreakdown() {
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-8 pt-6 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Icon name="InformationCircleIcon" size={20} />
-                  <span>Revenue projections based on 100-120 student capacity with 85% enrollment rate</span>
+                  <span>
+                    Revenue projections based on 100-120 student capacity with 85% enrollment rate
+                  </span>
                 </div>
               </div>
             </div>

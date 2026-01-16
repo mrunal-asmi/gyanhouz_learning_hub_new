@@ -13,9 +13,7 @@ interface CurriculumTimelineProps {
   milestones: Milestone[];
 }
 
-export default function CurriculumTimeline({
-  milestones,
-}: CurriculumTimelineProps) {
+export default function CurriculumTimeline({ milestones }: CurriculumTimelineProps) {
   return (
     <div className="relative">
       <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
@@ -30,24 +28,13 @@ export default function CurriculumTimeline({
             <div className="flex-1 bg-card border border-border rounded-xl p-6 shadow-brand hover:shadow-lg transition-smooth">
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h4 className="text-xl font-bold text-foreground mb-1">
-                    {milestone.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground md:hidden">
-                    Age: {milestone.age}
-                  </p>
+                  <h4 className="text-xl font-bold text-foreground mb-1">{milestone.title}</h4>
+                  <p className="text-sm text-muted-foreground md:hidden">Age: {milestone.age}</p>
                 </div>
-                <Icon
-                  name="AcademicCapIcon"
-                  size={24}
-                  className="text-primary"
-                  variant="solid"
-                />
+                <Icon name="AcademicCapIcon" size={24} className="text-primary" variant="solid" />
               </div>
 
-              <p className="text-sm text-foreground mb-4">
-                {milestone.description}
-              </p>
+              <p className="text-sm text-foreground mb-4">{milestone.description}</p>
 
               <div className="flex flex-wrap gap-2">
                 {milestone.skills.map((skill, skillIndex) => (

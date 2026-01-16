@@ -57,9 +57,9 @@ const SuccessCarousel = () => {
       parentName: 'Meera Patel',
       childName: 'Rohan',
       childAge: 10,
-      program: 'Innovation Lab',
+      program: 'Science Lab',
       testimonial:
-        'Rohan built his first robot at age 10! The Innovation Lab has unleashed his creativity. He is now participating in national competitions and winning awards. Thank you GYANHOUZ!',
+        'Rohan built his first robot at age 10! The Science Lab has unleashed his creativity. He is now participating in national competitions and winning awards. Thank you GYANHOUZ!',
       achievement: 'Robotics expertise, national competitions, innovation awards',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1dd6c684d-1767585644940.png',
       alt: 'Smiling Indian mother in traditional dress with young boy holding robotics project trophy',
@@ -104,7 +104,7 @@ const SuccessCarousel = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-primary/10 px-6 py-3 rounded-full mb-6">
             <Icon name="ChatBubbleLeftRightIcon" size={20} className="text-primary" />
-            <span className="text-sm font-semibold text-primary font-poppins">
+            <span className="text-lg font-semibold text-primary font-poppins">
               Parent Testimonials
             </span>
           </div>

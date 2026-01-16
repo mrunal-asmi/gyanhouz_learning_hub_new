@@ -60,7 +60,7 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
       location: 'Bangalore, Karnataka',
       rating: 5,
       testimonial:
-        "The integrated approach is what sets GYANHOUZ apart. Arjun doesn't just learn - he experiments, creates, and innovates daily. He built his first simple robot at age 5! The innovation lab exposure has sparked a genuine love for science and problem-solving.",
+        "The integrated approach is what sets GYANHOUZ apart. Arjun doesn't just learn - he experiments, creates, and innovates daily. He built his first simple robot at age 5! The Science Lab exposure has sparked a genuine love for science and problem-solving.",
       achievement: 'Built first robot at age 5 + Advanced problem-solving skills',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_131f95752-1763300633344.png',
       alt: 'Young Indian mother in casual wear with son wearing glasses holding science project',

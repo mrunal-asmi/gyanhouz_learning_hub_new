@@ -12,7 +12,13 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
     <section className="relative bg-gradient-to-br from-brand-blue via-primary to-brand-teal overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px',
+          }}
+        />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
@@ -33,7 +39,8 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
 
             {/* Subheadline */}
             <p className="text-xl lg:text-2xl text-white/90 leading-relaxed">
-              Where children discover their true potential through real-world career simulations and industry mentorship
+              Where children discover their true potential through real-world career simulations and
+              industry mentorship
             </p>
 
             {/* Key Stats */}
@@ -56,8 +63,8 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
                 onClick={onEnrollClick}
-                className="px-8 py-4 bg-brand-orange text-white font-bold text-lg rounded-lg shadow-xl hover:bg-brand-red hover:scale-105 transition-smooth">
-
+                className="px-8 py-4 bg-brand-orange text-white font-bold text-lg rounded-lg shadow-xl hover:bg-brand-red hover:scale-105 transition-smooth"
+              >
                 Book Career Assessment
               </button>
               <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold text-lg rounded-lg border-2 border-white/40 hover:bg-white/30 transition-smooth">
@@ -68,7 +75,9 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
             {/* Urgency Indicator */}
             <div className="flex items-center space-x-2 bg-brand-red/90 backdrop-blur-sm px-4 py-3 rounded-lg">
               <Icon name="ClockIcon" size={20} className="text-white animate-pulse" />
-              <span className="text-sm font-semibold">Only 23 seats left for January 2026 batch</span>
+              <span className="text-sm font-semibold">
+                Only 23 seats left for January 2026 batch
+              </span>
             </div>
           </div>
 
@@ -78,9 +87,9 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
               <AppImage
                 src="https://img.rocket.new/generatedImages/rocket_gen_img_1204eff2e-1767704879964.png"
                 alt="Children in professional lab coats conducting science experiments and exploring career simulations in modern interactive learning environment"
-                className="w-full h-auto" />
+                className="w-full h-auto"
+              />
 
-              
               {/* Floating Career Cards */}
               <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-3 animate-float">
                 <div className="flex items-center space-x-2">
@@ -91,8 +100,11 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
                   </div>
                 </div>
               </div>
-              
-              <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 animate-float" style={{ animationDelay: '1s' }}>
+
+              <div
+                className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 animate-float"
+                style={{ animationDelay: '1s' }}
+              >
                 <div className="flex items-center space-x-2">
                   <Icon name="CodeBracketIcon" size={24} className="text-brand-orange" />
                   <div>
@@ -105,6 +117,6 @@ export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionPr
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

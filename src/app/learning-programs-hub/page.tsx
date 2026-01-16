@@ -4,7 +4,8 @@ import LearningProgramsInteractive from './components/LearningProgramsInteractiv
 
 export const metadata: Metadata = {
   title: 'Learning Programs Hub - GYANHOUZ',
-  description: 'Explore comprehensive learning programs from Preschool Foundation (2-6 years) to Innovation Labs and Career Discovery. Experience hands-on learning with robotics, electronics, science labs, and industry simulations.',
+  description:
+    'Explore comprehensive learning programs from Preschool Foundation (2-6 years) to Science Labs and Career Discovery. Experience hands-on learning with robotics, electronics, science labs, and industry simulations.',
 };
 
 export default function LearningProgramsHubPage() {
