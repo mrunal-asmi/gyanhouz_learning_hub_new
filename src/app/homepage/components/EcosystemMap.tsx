@@ -126,8 +126,8 @@ const EcosystemMap = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full mb-6">
-            <Icon name="MapIcon" size={20} className="text-secondary" />
-            <span className="text-xl font-semibold text-secondary font-poppins">
+            <Icon name="MapIcon" size={24} className="text-secondary" />
+            <span className="text-2xl font-bold text-secondary font-poppins">
               Complete Learning Ecosystem
             </span>
           </div>

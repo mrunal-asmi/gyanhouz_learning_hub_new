@@ -34,8 +34,11 @@ const UrgencyPopup = () => {
           </div>
           <div>
             <h4 className="text-lg font-bold font-poppins mb-1">Franchises are filling fast!</h4>
-            <p className="text-sm font-source leading-tight opacity-90">
-              Closing for your region soon. Take action now to secure your territory!
+            <p className="text-base font-bold font-source leading-tight text-white">
+              Closing for your region soon.
+            </p>
+            <p className="text-sm font-source opacity-90 mt-1">
+              Take action now to secure your territory!
             </p>
             <a 
               href="/franchise-opportunity"

@@ -61,8 +61,8 @@ const FOMOGenerator = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-warning/10 px-6 py-3 rounded-full mb-6">
-            <Icon name="ExclamationTriangleIcon" size={20} className="text-warning" />
-            <span className="text-xl font-semibold text-warning font-poppins">
+            <Icon name="ExclamationTriangleIcon" size={24} className="text-warning" />
+            <span className="text-2xl font-bold text-warning font-poppins">
               Don't Let Your Child Miss Out
             </span>
           </div>
