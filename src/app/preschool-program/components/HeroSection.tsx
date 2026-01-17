@@ -46,10 +46,10 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                 <Icon name="ArrowRightIcon" size={20} className="ml-2" />
               </Link>
 
-              <button className="inline-flex items-center justify-center px-8 py-4 bg-white text-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle font-nunito">
+              {/* <button className="inline-flex items-center justify-center px-8 py-4 bg-white text-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle font-nunito">
                 <Icon name="PlayIcon" size={20} className="mr-2" />
                 Watch Success Stories
-              </button>
+              </button> */}
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">

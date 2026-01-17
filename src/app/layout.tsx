@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        <div className="absolute inset-0 bg-[length:200%_200%] bg-gradient-to-tr from-blue-200 via-cyan-200 via-yellow-200 via-green-200 to-orange-200 animate-gradient-xy -z-10" />
+
+      <body className="min-h-screen bg-gradient-to-br from-purple-200 via-pink-200 to-yellow-200">{children}</body>
     </html>
   );
 }

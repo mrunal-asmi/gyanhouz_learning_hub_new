@@ -66,7 +66,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden " style={{ backgroundImage: "url('/assets/images/bg2.jpeg')" }}>
+    <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden " >
       <div className="absolute inset-0 z-0">
         
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10"></div>

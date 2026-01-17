@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Homepage() {
   return (
-    <main className="min-h-screen bg-background" style={{ backgroundImage: "url('/assets/images/bg2.jpeg')" }}>
+    <main className="min-h-screen bg-background" >
       <Header />
       <HomepageInteractive />
       <Footer />
