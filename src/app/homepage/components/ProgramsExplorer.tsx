@@ -28,7 +28,7 @@ export default function ProgramsExplorer() {
     {
       id: 1,
       title: 'Preschool Foundation',
-      ageRange: '2-6 years',
+      ageRange: '1.5-7 years',
       description: 'Building cognitive foundations through play-based experiential learning',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_15a2086be-1764670235699.png',
       alt: 'Smiling toddler in yellow shirt playing with colorful building blocks on classroom floor',

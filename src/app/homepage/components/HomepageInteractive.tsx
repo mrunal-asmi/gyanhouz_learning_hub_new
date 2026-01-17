@@ -14,7 +14,7 @@ const HomepageInteractive = () => {
   return (
     <>
       <UrgencyPopup />
-      <TopBanner />
+      <TopBanner />       
       <HeroSection />
       <EcosystemMap />
       <ResultsShowcase />

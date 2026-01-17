@@ -66,7 +66,11 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 pt-16 pb-16 lg:pb-24 overflow-hidden">
+    <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden " style={{ backgroundImage: "url('/assets/images/bg2.jpeg')" }}>
+      <div className="absolute inset-0 z-0">
+        
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10"></div>
+      </div>
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
@@ -75,7 +79,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-3 bg-primary/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full">
-            <Icon name="SparklesIcon" size={60} className="text-primary flex-shrink-0 scale-50 md:scale-100" />
+            <Icon
+              name="SparklesIcon"
+              size={60}
+              className="text-primary flex-shrink-0 scale-50 md:scale-100"
+            />
             <span className="text-xl md:text-5xl lg:text-6xl font-bold text-primary font-poppins whitespace-nowrap">
               India's FIRST Integrated Learning Ecosystem
             </span>
