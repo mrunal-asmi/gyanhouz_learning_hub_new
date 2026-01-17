@@ -84,7 +84,7 @@ const HeroSection = () => {
               size={40}
               className="text-primary flex-shrink-0 scale-50 md:scale-100"
             />
-            <span className="text-xl md:text-5xl lg:text-6xl font-bold text-primary font-poppins whitespace-nowrap">
+            <span className="text-xl md:text-2xl lg:text-2xl font-bold text-primary font-poppins whitespace-nowrap">
               India's FIRST Integrated Learning Ecosystem
             </span>
           </div>
