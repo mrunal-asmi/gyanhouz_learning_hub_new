@@ -81,7 +81,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center space-x-3 bg-primary/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full">
             <Icon
               name="SparklesIcon"
-              size={60}
+              size={40}
               className="text-primary flex-shrink-0 scale-50 md:scale-100"
             />
             <span className="text-xl md:text-5xl lg:text-6xl font-bold text-primary font-poppins whitespace-nowrap">
