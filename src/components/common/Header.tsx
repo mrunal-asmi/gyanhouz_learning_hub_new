@@ -15,6 +15,17 @@ const Header = ({ className = '' }: HeaderProps) => {
     { label: 'Home', href: '/homepage' },
     { label: 'Preschool', href: '/preschool-program' },
     {
+      label: 'Full Day Program',
+      href: '/full-day-program',
+      submenu: [
+        { label: 'Toddlers Program', href: '/full-day-program/toddlers' },
+        { label: 'Playgroup Program', href: '/full-day-program/playgroup' },
+        { label: 'Nursery Program', href: '/full-day-program/nursery' },
+        { label: 'LowerKG program', href: '/full-day-program/lower-kg' },
+        { label: 'UpperKG program', href: '/full-day-program/upper-kg' },
+      ],
+    },
+    {
       label: 'Practical Labs',
       href: '/career-labs',
       submenu: [
