@@ -11,7 +11,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
     <section className={`relative overflow-hidden ${className}`}>
       <div className="absolute inset-0 z-0">
         <AppImage
-          src="/assets/images/bgnew.jpg"
+          src="public/assets/images/bgnew.jpg"
           alt="Background"
           fill
           className="object-cover opacity-20"
