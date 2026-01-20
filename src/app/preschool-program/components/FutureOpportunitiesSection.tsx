@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/AppIcon';
+import AppImage from '@/components/ui/AppImage';
 
 interface Opportunity {
   title: string;
@@ -11,45 +12,60 @@ const FutureOpportunitiesSection = () => {
   const opportunities: Opportunity[] = [
     {
       title: 'Career Discovery Pathways',
-      description: 'Early exposure to diverse career fields through our integrated Career Labs, helping children identify their passions before they even reach high school.',
+      description:
+        'Early exposure to diverse career fields through our integrated Career Labs, helping children identify their passions before they even reach high school.',
       icon: 'BriefcaseIcon',
       color: 'bg-primary',
     },
     {
       title: 'Innovation & Entrepreneurship',
-      description: 'Access to our Science and Robotics labs where children learn to build, create, and think like entrepreneurs from a young age.',
+      description:
+        'Access to our Science and Robotics labs where children learn to build, create, and think like entrepreneurs from a young age.',
       icon: 'LightBulbIcon',
       color: 'bg-secondary',
     },
     {
       title: 'Global Communication Mastery',
-      description: 'Trilingual proficiency (English, Hindi, Sanskrit) opens doors to global opportunities and cultural leadership in an interconnected world.',
+      description:
+        'Trilingual proficiency (English, Hindi, Sanskrit) opens doors to global opportunities and cultural leadership in an interconnected world.',
       icon: 'GlobeAltIcon',
       color: 'bg-accent',
     },
     {
       title: 'Leadership & Stage Presence',
-      description: 'Developing the confidence to lead and speak in front of large audiences, a critical skill for future CEOs, politicians, and thought leaders.',
+      description:
+        'Developing the confidence to lead and speak in front of large audiences, a critical skill for future CEOs, politicians, and thought leaders.',
       icon: 'UserGroupIcon',
       color: 'bg-brand-orange',
     },
     {
       title: 'Advanced Cognitive Edge',
-      description: 'Ambidextrous writing and IQ development modules provide a permanent cognitive advantage in academic and professional pursuits.',
+      description:
+        'Ambidextrous writing and IQ development modules provide a permanent cognitive advantage in academic and professional pursuits.',
       icon: 'CpuChipIcon',
       color: 'bg-primary',
     },
     {
       title: 'Ecosystem Networking',
-      description: 'Being part of the GYANHOUZ ecosystem connects families to a network of innovators, mentors, and like-minded achievers.',
+      description:
+        'Being part of the GYANHOUZ ecosystem connects families to a network of innovators, mentors, and like-minded achievers.',
       icon: 'ShareIcon',
       color: 'bg-secondary',
     },
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 lg:py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-4 bg-accent/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon name="RocketLaunchIcon" size={40} className="text-accent scale-75 md:scale-100" />
@@ -63,7 +79,8 @@ const FutureOpportunitiesSection = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground font-source">
-            We don't just prepare children for school; we create pathways for lifelong success and leadership through our unique ecosystem.
+            We don't just prepare children for school; we create pathways for lifelong success and
+            leadership through our unique ecosystem.
           </p>
         </div>
 
@@ -83,10 +100,8 @@ const FutureOpportunitiesSection = () => {
                 {opp.title}
               </h3>
 
-              <p className="text-muted-foreground font-source leading-relaxed">
-                {opp.description}
-              </p>
-              
+              <p className="text-muted-foreground font-source leading-relaxed">{opp.description}</p>
+
               <div className="absolute top-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Icon name={opp.icon as any} size={64} className="text-foreground" />
               </div>
@@ -99,7 +114,8 @@ const FutureOpportunitiesSection = () => {
             Ready to give your child a head start on their future?
           </h3>
           <p className="text-white/90 font-source text-lg mb-8 max-w-2xl mx-auto">
-            Join the GYANHOUZ movement and witness the miraculous transformation in your child's development and future prospects.
+            Join the GYANHOUZ movement and witness the miraculous transformation in your child's
+            development and future prospects.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-full font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Book a Discovery Session

@@ -65,7 +65,9 @@ const Footer = ({ className = '' }: FooterProps) => {
               </div>
             </Link>
             <p className="text-sm text-gray-300 mb-4 max-w-sm">
-              {"India's first integrated learning ecosystem transforming education from passive consumption to active discovery."}
+              {
+                "India's first integrated learning ecosystem transforming education from passive consumption to active discovery."
+              }
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((social, index) => (

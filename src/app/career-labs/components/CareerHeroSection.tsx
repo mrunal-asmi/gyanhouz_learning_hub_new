@@ -7,13 +7,17 @@ interface CareerHeroSectionProps {
 
 const CareerHeroSection = ({ className = '' }: CareerHeroSectionProps) => {
   return (
-    <section
-      className={`relative bg-gradient-to-br from-secondary via-brand-trust to-secondary overflow-hidden ${className}`}
-    >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+    <section className={`relative overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/80 via-brand-trust/80 to-secondary/80 z-0"></div>
 
       <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

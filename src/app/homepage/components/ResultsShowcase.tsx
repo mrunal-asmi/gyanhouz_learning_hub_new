@@ -70,12 +70,12 @@ const ResultsShowcase = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-accent/10 px-6 py-3 rounded-full mb-6">
             <Icon name="TrophyIcon" size={24} className="text-accent" />
-            <span className="text-2xl font-bold text-accent font-poppins">
-              Miraculous Outcomes
-            </span>
+            <span className="text-2xl font-bold text-accent font-poppins">Miraculous Outcomes</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 font-poppins">Results That Speak for Themselves</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 font-poppins">
+            Results That Speak for Themselves
+          </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-source">
             Our revolutionary approach produces outcomes that seem impossible in conventional

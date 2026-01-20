@@ -40,7 +40,7 @@ const MarketOpportunitySection = () => {
     {
       id: 1,
       title: 'First-Mover Advantage',
-      description: "India\'s ONLY integrated 2-16 age learning ecosystem under one roof",
+      description: "India's ONLY integrated 2-16 age learning ecosystem under one roof",
       icon: 'RocketLaunchIcon',
     },
     {

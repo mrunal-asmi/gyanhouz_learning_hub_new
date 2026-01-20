@@ -107,7 +107,9 @@ const TeamSection = ({ className = '' }: TeamSectionProps) => {
           <Icon name="UserGroupIcon" size={48} className="mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-3">Join Our Team</h3>
           <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            {"We're always looking for passionate educators and innovators to join our mission of transforming education in India"}
+            {
+              "We're always looking for passionate educators and innovators to join our mission of transforming education in India"
+            }
           </p>
           <button className="px-8 py-3 bg-white text-brand-orange font-semibold rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-smooth">
             View Open Positions

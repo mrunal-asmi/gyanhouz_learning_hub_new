@@ -6,9 +6,16 @@ interface HeroSectionProps {
 
 const HeroSection = ({ className = '' }: HeroSectionProps) => {
   return (
-    <section
-      className={`relative bg-gradient-to-br from-brand-orange/10 via-background to-brand-teal/10 py-20 lg:py-32 ${className}`}
-    >
+    <section className={`relative py-20 lg:py-32 overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

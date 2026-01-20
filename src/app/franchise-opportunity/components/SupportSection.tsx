@@ -94,7 +94,7 @@ const SupportSection = () => {
     {
       id: 1,
       title: 'National Brand Recognition',
-      description: "Leverage GYANHOUZ\'s growing brand reputation",
+      description: "Leverage GYANHOUZ's growing brand reputation",
       icon: 'BuildingStorefrontIcon',
     },
     {

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import AppImage from '@/components/ui/AppImage';
 
 interface HeroSectionProps {
   className?: string;
@@ -15,9 +16,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
 
   if (!isHydrated) {
     return (
-      <section
-        className={`relative bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 py-20 lg:py-32 ${className}`}
-      >
+      <section className={`relative py-20 lg:py-32 ${className}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="h-16 bg-muted/50 rounded-lg mb-6 animate-pulse"></div>
@@ -29,12 +28,15 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
   }
 
   return (
-    <section
-      className={`relative bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 py-20 lg:py-32 overflow-hidden ${className}`}
-    >
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+    <section className={`relative py-20 lg:py-32 overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

@@ -9,17 +9,17 @@ interface CareerHeroSectionProps {
 
 export default function CareerHeroSection({ onEnrollClick }: CareerHeroSectionProps) {
   return (
-    <section className="relative bg-gradient-to-br from-brand-blue via-primary to-brand-teal overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
         />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/80 via-primary/80 to-brand-teal/80 z-0"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

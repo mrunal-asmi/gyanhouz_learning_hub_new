@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
 
@@ -10,21 +9,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Next.js with Tailwind CSS',
   description: 'A boilerplate project with Next.js and Tailwind CSS',
-  icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
-  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <div className="absolute inset-0 bg-[length:200%_200%] bg-gradient-to-tr from-sky-200 via-pink-200 to-purple-200 animate-gradient-xy -z-10" />
-
-      <body className="min-h-screen bg-gradient-to-br from-purple-200 via-sky-200 to-pink-200">
+      <body
+        className="min-h-screen bg-cover bg-center bg-no-repeat"
+       
+      >
         {children}
       </body>
     </html>

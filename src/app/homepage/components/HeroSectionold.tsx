@@ -23,39 +23,40 @@ const HeroSection = () => {
   }, []);
 
   const journeySteps: AgeJourneyStep[] = [
-  {
-    age: "2-4 Years",
-    title: "Foundation Building",
-    description: "Miraculous early development through play-based learning and sensory exploration",
-    image: "https://images.unsplash.com/photo-1646148327678-63ae561ec90c",
-    alt: "Happy Indian toddler girl with pigtails playing with colorful building blocks in bright classroom",
-    outcomes: ["Ambidextrous Writing", "Multilingual Foundation", "Sensory Development"]
-  },
-  {
-    age: "5-8 Years",
-    title: "Skill Mastery",
-    description: "Practical learning through hands-on experiments and creative expression",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d8fb08bc-1764659821764.png",
-    alt: "Indian boy in blue shirt conducting science experiment with test tubes in modern laboratory",
-    outcomes: ["Scientific Thinking", "Creative Expression", "Stage Confidence"]
-  },
-  {
-    age: "9-12 Years",
-    title: "Innovation Discovery",
-    description: "STEM excellence through robotics, electronics, and project-based learning",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_158f511ec-1767955070898.png",
-    alt: "Indian girl with glasses working on robotics project with circuit boards and laptop",
-    outcomes: ["Robotics Skills", "Problem Solving", "Innovation Mindset"]
-  },
-  {
-    age: "13-16 Years",
-    title: "Career Readiness",
-    description: "Future-focused career discovery with industry mentors and real-world projects",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_159a79c5d-1767090827586.png",
-    alt: "Confident Indian teenage boy presenting project on digital screen to group in modern classroom",
-    outcomes: ["Career Clarity", "Industry Skills", "Leadership Development"]
-  }];
-
+    {
+      age: '2-4 Years',
+      title: 'Foundation Building',
+      description:
+        'Miraculous early development through play-based learning and sensory exploration',
+      image: 'https://images.unsplash.com/photo-1646148327678-63ae561ec90c',
+      alt: 'Happy Indian toddler girl with pigtails playing with colorful building blocks in bright classroom',
+      outcomes: ['Ambidextrous Writing', 'Multilingual Foundation', 'Sensory Development'],
+    },
+    {
+      age: '5-8 Years',
+      title: 'Skill Mastery',
+      description: 'Practical learning through hands-on experiments and creative expression',
+      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1d8fb08bc-1764659821764.png',
+      alt: 'Indian boy in blue shirt conducting science experiment with test tubes in modern laboratory',
+      outcomes: ['Scientific Thinking', 'Creative Expression', 'Stage Confidence'],
+    },
+    {
+      age: '9-12 Years',
+      title: 'Innovation Discovery',
+      description: 'STEM excellence through robotics, electronics, and project-based learning',
+      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_158f511ec-1767955070898.png',
+      alt: 'Indian girl with glasses working on robotics project with circuit boards and laptop',
+      outcomes: ['Robotics Skills', 'Problem Solving', 'Innovation Mindset'],
+    },
+    {
+      age: '13-16 Years',
+      title: 'Career Readiness',
+      description: 'Future-focused career discovery with industry mentors and real-world projects',
+      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_159a79c5d-1767090827586.png',
+      alt: 'Confident Indian teenage boy presenting project on digital screen to group in modern classroom',
+      outcomes: ['Career Clarity', 'Industry Skills', 'Leadership Development'],
+    },
+  ];
 
   const handleStepChange = (index: number) => {
     if (isHydrated) {
@@ -74,32 +75,36 @@ const HeroSection = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-primary/10 px-6 py-3 rounded-full mb-6">
             <Icon name="SparklesIcon" size={20} className="text-primary" />
-            <span className="text-sm font-semibold text-primary font-poppins">India's FIRST Integrated Learning Ecosystem</span>
+            <span className="text-sm font-semibold text-primary font-poppins">
+              India's FIRST Integrated Learning Ecosystem
+            </span>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 font-poppins leading-tight">
-            Unlocking Every Child's<br />
+            Unlocking Every Child's
+            <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-brand-orange to-accent">
               Infinite Potential
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 font-source leading-relaxed">
-            From age 2 to 16, experience the complete educational journey that transforms curious toddlers into confident innovators through our revolutionary integrated approach.
+            From age 2 to 16, experience the complete educational journey that transforms curious
+            toddlers into confident innovators through our revolutionary integrated approach.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact-and-admissions"
-              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-lg hover:scale-105 font-nunito inline-flex items-center space-x-2">
-
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-lg hover:scale-105 font-nunito inline-flex items-center space-x-2"
+            >
               <span>Start Your Child's Journey</span>
               <Icon name="ArrowRightIcon" size={20} />
             </Link>
             <Link
               href="/franchise-opportunity"
-              className="px-8 py-4 bg-white text-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle hover:shadow-elevated font-nunito inline-flex items-center space-x-2">
-
+              className="px-8 py-4 bg-white text-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle hover:shadow-elevated font-nunito inline-flex items-center space-x-2"
+            >
               <span>Explore Franchise</span>
               <Icon name="BuildingStorefrontIcon" size={20} />
             </Link>
@@ -108,19 +113,19 @@ const HeroSection = () => {
 
         <div className="bg-white rounded-2xl shadow-elevated p-6 lg:p-8">
           <div className="flex items-center justify-between mb-8 overflow-x-auto pb-4">
-            {journeySteps.map((step, index) =>
-            <button
-              key={index}
-              onClick={() => handleStepChange(index)}
-              className={`flex-shrink-0 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 font-poppins ${
-              isHydrated && activeStep === index ?
-              'bg-primary text-primary-foreground shadow-subtle' :
-              'bg-muted text-muted-foreground hover:bg-muted/80'}`
-              }>
-
+            {journeySteps.map((step, index) => (
+              <button
+                key={index}
+                onClick={() => handleStepChange(index)}
+                className={`flex-shrink-0 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 font-poppins ${
+                  isHydrated && activeStep === index
+                    ? 'bg-primary text-primary-foreground shadow-subtle'
+                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                }`}
+              >
                 {step.age}
               </button>
-            )}
+            ))}
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -128,7 +133,8 @@ const HeroSection = () => {
               <AppImage
                 src={journeySteps[isHydrated ? activeStep : 0].image}
                 alt={journeySteps[isHydrated ? activeStep : 0].alt}
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
@@ -145,25 +151,25 @@ const HeroSection = () => {
               <p className="text-lg text-foreground font-source leading-relaxed">
                 {journeySteps[isHydrated ? activeStep : 0].description}
               </p>
-              
+
               <div className="space-y-3">
                 <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide font-poppins">
                   Key Outcomes
                 </h4>
-                {journeySteps[isHydrated ? activeStep : 0].outcomes.map((outcome, idx) =>
-                <div key={idx} className="flex items-center space-x-3">
+                {journeySteps[isHydrated ? activeStep : 0].outcomes.map((outcome, idx) => (
+                  <div key={idx} className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Icon name="CheckIcon" size={16} className="text-accent" />
                     </div>
                     <span className="text-foreground font-source">{outcome}</span>
                   </div>
-                )}
+                ))}
               </div>
 
               <Link
                 href="/preschool-program"
-                className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-semibold transition-colors duration-300 font-poppins">
-
+                className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-semibold transition-colors duration-300 font-poppins"
+              >
                 <span>Explore This Program</span>
                 <Icon name="ArrowRightIcon" size={16} />
               </Link>
@@ -171,8 +177,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSection;

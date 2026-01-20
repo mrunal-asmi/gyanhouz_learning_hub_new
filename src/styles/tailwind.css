@@ -22,7 +22,7 @@
     --color-accent-foreground: #ffffff; /* white */
 
     /* Background Colors */
-    --color-background: #fafafa; /* gray-50 - Clean canvas */
+    --color-background: transparent; /* gray-50 - Clean canvas */
     --color-foreground: #212121; /* gray-900 - Text primary */
 
     /* Surface Colors */

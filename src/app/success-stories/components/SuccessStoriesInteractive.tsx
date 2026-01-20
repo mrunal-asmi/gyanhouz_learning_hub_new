@@ -241,7 +241,7 @@ export default function SuccessStoriesInteractive() {
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1e28e55d5-1763299022307.png',
       alt: 'Professional woman with glasses in blue blazer smiling warmly in modern office setting',
       testimonial:
-        "GYANHOUZ\'s integrated approach addresses the critical gap in Indian education. Their focus on practical skills alongside academics creates well-rounded individuals prepared for the 21st century. The results I\'ve observed are remarkable.",
+        "GYANHOUZ's integrated approach addresses the critical gap in Indian education. Their focus on practical skills alongside academics creates well-rounded individuals prepared for the 21st century. The results I've observed are remarkable.",
     },
     {
       id: 2,
@@ -279,7 +279,7 @@ export default function SuccessStoriesInteractive() {
     {
       id: 1,
       outlet: 'The Times of India',
-      headline: "GYANHOUZ: Redefining Education for India\'s Future",
+      headline: "GYANHOUZ: Redefining Education for India's Future",
       date: 'December 15, 2025',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_149fb2816-1768066552042.png',
       alt: 'Newspaper headline featuring GYANHOUZ education innovation story with colorful classroom photos',
@@ -288,7 +288,7 @@ export default function SuccessStoriesInteractive() {
     {
       id: 2,
       outlet: 'Education Today Magazine',
-      headline: "How One Learning Hub is Solving India\'s Education Crisis",
+      headline: "How One Learning Hub is Solving India's Education Crisis",
       date: 'November 28, 2025',
       image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1dab94b54-1768066552776.png',
       alt: 'Magazine cover showing innovative classroom with students engaged in hands-on learning activities',
@@ -311,7 +311,7 @@ export default function SuccessStoriesInteractive() {
       platform: 'Facebook',
       author: 'Sneha Kapoor',
       content:
-        "My daughter\'s transformation at GYANHOUZ has been nothing short of miraculous! From a shy 4-year-old to a confident multilingual speaker in just 8 months. Every parent in Mumbai needs to know about this place! 🌟",
+        "My daughter's transformation at GYANHOUZ has been nothing short of miraculous! From a shy 4-year-old to a confident multilingual speaker in just 8 months. Every parent in Mumbai needs to know about this place! 🌟",
       likes: 342,
       shares: 89,
       date: 'January 5, 2026',
@@ -321,7 +321,7 @@ export default function SuccessStoriesInteractive() {
       platform: 'Instagram',
       author: 'Amit Verma',
       content:
-        "Just watched my 12-year-old son present his innovation project to industry experts. This is what education should look like! Thank you GYANHOUZ for believing in our children\'s potential. 🚀 #FutureReady #ProudParent",
+        "Just watched my 12-year-old son present his innovation project to industry experts. This is what education should look like! Thank you GYANHOUZ for believing in our children's potential. 🚀 #FutureReady #ProudParent",
       likes: 567,
       shares: 123,
       date: 'December 28, 2025',

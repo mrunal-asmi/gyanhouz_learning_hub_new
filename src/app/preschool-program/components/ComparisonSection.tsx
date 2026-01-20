@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/AppIcon';
+import AppImage from '@/components/ui/AppImage';
 
 interface ComparisonItem {
   traditional: string;
@@ -38,11 +39,21 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
   ];
 
   return (
-    <section className={`py-16 lg:py-24 bg-muted ${className}`}>
-      <div className="container mx-auto px-4">
+    <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0"  style={{
+          backgroundImage: "url('/assets/images/bgnew.jpg')",
+        }}>
+      
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-4 bg-warning/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
-            <Icon name="ExclamationTriangleIcon" size={40} className="text-warning scale-75 md:scale-100" />
+            <Icon
+              name="ExclamationTriangleIcon"
+              size={40}
+              className="text-warning scale-75 md:scale-100"
+            />
             <span className="text-2xl md:text-5xl font-semibold text-warning font-poppins whitespace-nowrap">
               What Your Child is Missing
             </span>

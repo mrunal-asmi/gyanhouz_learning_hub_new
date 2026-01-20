@@ -43,7 +43,9 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
             Ready to Join the <span className="text-brand-orange">Revolution?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {"Take the next step in transforming your child's education or becoming part of India's most innovative learning ecosystem"}
+            {
+              "Take the next step in transforming your child's education or becoming part of India's most innovative learning ecosystem"
+            }
           </p>
         </div>
 
@@ -78,7 +80,9 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
           />
           <h3 className="text-2xl font-bold text-foreground mb-3">Have Questions?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            {"Our team is here to help you understand how GYANHOUZ can transform your child's learning journey"}
+            {
+              "Our team is here to help you understand how GYANHOUZ can transform your child's learning journey"
+            }
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

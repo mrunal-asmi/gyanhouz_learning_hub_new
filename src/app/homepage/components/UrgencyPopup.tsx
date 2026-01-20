@@ -14,7 +14,7 @@ const UrgencyPopup = () => {
     const triggerPopup = () => {
       setIsVisible(true);
       setTimeLeft(15);
-      
+
       // Auto-hide after duration
       setTimeout(() => {
         setIsVisible(false);
@@ -52,7 +52,7 @@ const UrgencyPopup = () => {
             <span>Closing in {timeLeft}s</span>
           </div>
         </div>
-        
+
         <div className="flex items-start space-x-4 mt-2">
           <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
             <Icon name="FireIcon" size={28} className="text-white animate-pulse" />
@@ -65,7 +65,7 @@ const UrgencyPopup = () => {
             <p className="text-sm font-source opacity-90 mt-1">
               Take action now to secure your territory!
             </p>
-            <a 
+            <a
               href="/franchise-opportunity"
               className="inline-block mt-3 text-sm font-bold underline hover:no-underline transition-all"
             >
@@ -73,10 +73,10 @@ const UrgencyPopup = () => {
             </a>
           </div>
         </div>
-        
+
         <div className="absolute bottom-0 left-0 h-1 bg-white/30 w-full">
-          <div 
-            className="h-full bg-white transition-all duration-1000 ease-linear" 
+          <div
+            className="h-full bg-white transition-all duration-1000 ease-linear"
             style={{ width: `${(timeLeft / 15) * 100}%` }}
           ></div>
         </div>

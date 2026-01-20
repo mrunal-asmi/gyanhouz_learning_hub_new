@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Homepage() {
   return (
-    <main className="min-h-screen bg-background" >
+    <main className="min-h-screen bg-background">
       <Header />
       <HomepageInteractive />
       <Footer />

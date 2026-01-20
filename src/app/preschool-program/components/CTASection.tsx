@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import AppImage from '@/components/ui/AppImage';
 
 interface CTASectionProps {
   className?: string;
@@ -7,13 +8,17 @@ interface CTASectionProps {
 
 const CTASection = ({ className = '' }: CTASectionProps) => {
   return (
-    <section
-      className={`py-16 lg:py-24 bg-gradient-to-br from-primary to-brand-orange relative overflow-hidden ${className}`}
-    >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-brand-orange/80 z-0"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

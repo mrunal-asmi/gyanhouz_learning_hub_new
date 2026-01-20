@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/AppIcon';
+import AppImage from '@/components/ui/AppImage';
 
 interface CurriculumArea {
   title: string;
@@ -95,8 +96,17 @@ const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
   ];
 
   return (
-    <section className={`py-16 lg:py-24 bg-muted ${className}`}>
-      <div className="container mx-auto px-4">
+    <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-4 bg-primary/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon name="AcademicCapIcon" size={40} className="text-primary scale-75 md:scale-100" />

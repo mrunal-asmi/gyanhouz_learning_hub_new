@@ -15,7 +15,6 @@ interface RevenueStream {
 }
 
 const FranchiseSpotlight = () => {
-
   const revenueStreams: RevenueStream[] = [
     {
       id: 1,
@@ -87,9 +86,9 @@ const FranchiseSpotlight = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 font-source leading-relaxed">
-              Join India's fastest-growing education revolution with a proven business model
-              that generates multiple revenue streams throughout the year. No seasonal fluctuations,
-              just consistent growth.
+              Join India's fastest-growing education revolution with a proven business model that
+              generates multiple revenue streams throughout the year. No seasonal fluctuations, just
+              consistent growth.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -177,9 +176,7 @@ const FranchiseSpotlight = () => {
                   <Icon name={stream.icon as any} size={24} className="text-secondary" />
                 </div>
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-lg font-bold text-foreground font-poppins">
-                    {stream.title}
-                  </h4>
+                  <h4 className="text-lg font-bold text-foreground font-poppins">{stream.title}</h4>
                   <span className="text-[10px] font-bold bg-secondary/10 text-secondary px-2 py-1 rounded-full uppercase tracking-wider">
                     {stream.age}
                   </span>

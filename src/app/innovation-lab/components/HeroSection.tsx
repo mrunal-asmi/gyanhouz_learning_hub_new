@@ -7,12 +7,15 @@ interface HeroSectionProps {
 
 const HeroSection = ({ className = '' }: HeroSectionProps) => {
   return (
-    <section
-      className={`relative bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10 overflow-hidden ${className}`}
-    >
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+    <section className={`relative overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
 
       <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">

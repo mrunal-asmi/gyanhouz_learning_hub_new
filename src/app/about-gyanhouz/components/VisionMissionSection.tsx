@@ -37,7 +37,9 @@ const VisionMissionSection = ({ className = '' }: VisionMissionSectionProps) => 
             The GYANHOUZ <span className="text-brand-orange">Philosophy</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {"Positioned as the \"Tesla of Education\" - premium, innovative, and future-focused, yet accessible and practical"}
+            {
+              'Positioned as the "Tesla of Education" - premium, innovative, and future-focused, yet accessible and practical'
+            }
           </p>
         </div>
 

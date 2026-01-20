@@ -19,11 +19,10 @@ export const metadata: Metadata = {
 
 export default function PreschoolProgramPage() {
   return (
-    <main className="min-h-screen bg-background" >
+    <main className="min-h-screen bg-background">
       <Header />
 
-      <div className="pt-16 lg:pt-20" >
-        
+      <div className="pt-16 lg:pt-20">
         <HeroSection />
         <ComparisonSection />
         <ResultsShowcase />

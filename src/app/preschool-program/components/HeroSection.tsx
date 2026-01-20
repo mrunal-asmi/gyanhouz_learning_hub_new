@@ -8,12 +8,15 @@ interface HeroSectionProps {
 
 const HeroSection = ({ className = '' }: HeroSectionProps) => {
   return (
-    <section
-      className={`relative bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 overflow-hidden ${className}`}
-    >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+    <section className={`relative overflow-hidden ${className}`}>
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
 
       <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
@@ -54,7 +57,9 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-primary font-poppins">1500+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary font-poppins">
+                  1500+
+                </div>
                 <div className="text-sm text-muted-foreground font-source mt-1">
                   Transformed Lives
                 </div>

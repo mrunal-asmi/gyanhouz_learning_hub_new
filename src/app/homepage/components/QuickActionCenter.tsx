@@ -68,9 +68,7 @@ const QuickActionCenter = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-conversion/10 px-6 py-3 rounded-full mb-6">
             <Icon name="RocketLaunchIcon" size={24} className="text-conversion" />
-            <span className="text-2xl font-bold text-conversion font-poppins">
-              Take Action Now
-            </span>
+            <span className="text-2xl font-bold text-conversion font-poppins">Take Action Now</span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 font-poppins">
