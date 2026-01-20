@@ -98,12 +98,23 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        "gradient-xy": {
+          "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "left top",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right bottom",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         pulse: "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         fadeIn: "fadeIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "gradient-xy": "gradient-xy 15s ease infinite",
       },
       boxShadow: {
         'subtle': '0 2px 8px rgba(0,0,0,0.1)',
