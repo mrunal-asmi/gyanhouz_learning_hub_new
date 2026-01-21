@@ -1,6 +1,13 @@
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Link from 'next/link';
+//import bgNew from '@/public/assets/images/bgnew.jpg';
+
+<div
+  className="absolute inset-0 z-0"
+  style={{ backgroundImage: `url(/public/assets/images/bgnew.jpg)` }}
+></div>
+
 
 interface HeroSectionProps {
   className?: string;

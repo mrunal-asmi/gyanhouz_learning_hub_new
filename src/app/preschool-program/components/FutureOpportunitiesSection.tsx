@@ -13,42 +13,42 @@ const FutureOpportunitiesSection = () => {
     {
       title: 'Career Discovery Pathways',
       description:
-        'Early exposure to diverse career fields through our integrated Career Labs, helping children identify their passions before they even reach high school.',
+        'No Gyanhouz kids is left behind during the future years for their career discovery.',
       icon: 'BriefcaseIcon',
       color: 'bg-primary',
     },
     {
       title: 'Innovation & Entrepreneurship',
       description:
-        'Access to our Science and Robotics labs where children learn to build, create, and think like entrepreneurs from a young age.',
+        'Access to our Innovation labs where when they think, we enable their journey to innovation with right guidance, funding and unique innovation lab ecosystem across India.',
       icon: 'LightBulbIcon',
       color: 'bg-secondary',
     },
     {
-      title: 'Global Communication Mastery',
+      title: 'First access to our other programs',
       description:
-        'Trilingual proficiency (English, Hindi, Sanskrit) opens doors to global opportunities and cultural leadership in an interconnected world.',
+        'We give first access to our all other program, as the top priority goes to kids that start their journey with Gyanhouz at the small ages itself.',
       icon: 'GlobeAltIcon',
       color: 'bg-accent',
     },
     {
-      title: 'Leadership & Stage Presence',
+      title: 'Talent door',
       description:
-        'Developing the confidence to lead and speak in front of large audiences, a critical skill for future CEOs, politicians, and thought leaders.',
+        'When Gyanhouz kids leads across the areas, we support their journey to be India’s best.',
       icon: 'UserGroupIcon',
       color: 'bg-brand-orange',
     },
     {
-      title: 'Advanced Cognitive Edge',
+      title: 'Science and Industry doors',
       description:
-        'Ambidextrous writing and IQ development modules provide a permanent cognitive advantage in academic and professional pursuits.',
+        'We get priority seats to all of our science and industry driven programs for our Gyanhouz preschoolers.',
       icon: 'CpuChipIcon',
       color: 'bg-primary',
     },
     {
       title: 'Ecosystem Networking',
       description:
-        'Being part of the GYANHOUZ ecosystem connects families to a network of innovators, mentors, and like-minded achievers.',
+        'When your child grows, he gets complete Gyanhouz ecosystem of innovators, talent gurus, other gurus and like-minded achievers.',
       icon: 'ShareIcon',
       color: 'bg-secondary',
     },
@@ -79,9 +79,11 @@ const FutureOpportunitiesSection = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground font-source">
-            We don't just prepare children for school; we create pathways for lifelong success and
-            leadership through our unique ecosystem.
+            Our unique ecosystem spanning across multiple areas, ensures that our kids have unique educational doors that other preschools cannot provide. 
+
+
           </p>
+          <p className="text-lg text-muted-foreground font-source">Gyanhouz preschoolers have the best future too !!</p>
         </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
