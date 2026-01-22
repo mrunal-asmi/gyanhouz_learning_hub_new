@@ -5,15 +5,15 @@ import Icon from '@/components/ui/AppIcon';
 
 const AdmissionUrgencyPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(20); // Slightly longer duration
+  const [timeLeft, setTimeLeft] = useState(15);
 
   useEffect(() => {
-    const SHOW_INTERVAL = 4 * 60 * 1000; // 4 minutes
-    const DISPLAY_DURATION = 20 * 1000; // 20 seconds
+    const SHOW_INTERVAL = 5 * 60 * 1000; // 5 minutes
+    const DISPLAY_DURATION = 15 * 1000; // 15 seconds
 
     const triggerPopup = () => {
       setIsVisible(true);
-      setTimeLeft(20);
+      setTimeLeft(15);
 
       // Auto-hide after duration
       setTimeout(() => {
@@ -21,10 +21,10 @@ const AdmissionUrgencyPopup = () => {
       }, DISPLAY_DURATION);
     };
 
-    // Initial show after 5 seconds (after franchise popup)
+    // Initial show after 5 seconds
     const initialTimer = setTimeout(triggerPopup, 5000);
 
-    // Repeat every 4 minutes
+    // Repeat every 5 minutes
     const interval = setInterval(triggerPopup, SHOW_INTERVAL);
 
     return () => {
@@ -44,7 +44,7 @@ const AdmissionUrgencyPopup = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-[280px] right-8 z-50 animate-bounce-in">
+    <div className="fixed bottom-[240px] right-8 z-50 animate-bounce-in">
       <div className="bg-[#FFF0F5] text-[#D81B60] p-6 rounded-2xl shadow-elevated max-w-sm border-2 border-[#FFC0CB]/50 relative overflow-hidden group">
         <div className="absolute top-2 right-4">
           <div className="flex items-center space-x-1 bg-[#D81B60]/10 px-2 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider">
@@ -74,7 +74,7 @@ const AdmissionUrgencyPopup = () => {
         <div className="absolute bottom-0 left-0 h-1 bg-[#D81B60]/20 w-full">
           <div
             className="h-full bg-[#D81B60] transition-all duration-1000 ease-linear"
-            style={{ width: `${(timeLeft / 20) * 100}%` }}
+            style={{ width: `${(timeLeft / 15) * 100}%` }}
           ></div>
         </div>
       </div>

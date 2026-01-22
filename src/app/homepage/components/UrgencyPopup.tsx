@@ -21,8 +21,8 @@ const UrgencyPopup = () => {
       }, DISPLAY_DURATION);
     };
 
-    // Initial show after 3 seconds
-    const initialTimer = setTimeout(triggerPopup, 3000);
+    // Initial show after 5 seconds
+    const initialTimer = setTimeout(triggerPopup, 5000);
 
     // Repeat every 5 minutes
     const interval = setInterval(triggerPopup, SHOW_INTERVAL);
