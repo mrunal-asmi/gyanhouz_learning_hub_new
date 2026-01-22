@@ -49,10 +49,29 @@ const ProgramAdmissionForm = ({ programName, className = '' }: ProgramAdmissionF
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          formType: 'Full Day Program Admission',
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    }
 
     setIsSubmitting(false);
-    setSubmitStatus('success');
 
     setTimeout(() => {
       setSubmitStatus('idle');

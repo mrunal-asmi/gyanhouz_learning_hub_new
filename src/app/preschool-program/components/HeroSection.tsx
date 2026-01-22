@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 <div
   className="absolute inset-0 z-0"
-  style={{ backgroundImage: `url(/public/assets/images/bgnew.jpg)` }}
+  style={{ backgroundImage: `url(/assets/images/bgnew.jpg)` }}
 ></div>
 
 
@@ -18,7 +18,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
     <section className={`relative overflow-hidden ${className}`}>
       <div className="absolute inset-0 z-0">
         <AppImage
-          src="public/assets/images/bgnew.jpg"
+          src="/assets/images/bgnew.jpg"
           alt="Background"
           fill
           className="object-cover opacity-20"
