@@ -45,7 +45,7 @@ const EcosystemMap = () => {
     },
     {
       id: 'innovation',
-      title: 'Science Lab',
+      title: 'Innovation Lab',
       description:
         'Young inventors ecosystem with mentor network and cutting-edge technology access',
       icon: 'LightBulbIcon',
@@ -60,7 +60,7 @@ const EcosystemMap = () => {
         'STEM excellence through hands-on robotics, electronics, and engineering projects',
       icon: 'CpuChipIcon',
       color: 'from-warning to-conversion',
-      link: '/innovation-lab',
+      link: '/robotics-electronics-lab',
       ageRange: '7-16 Years',
     },
     {
@@ -70,7 +70,7 @@ const EcosystemMap = () => {
         'Practical vs theoretical learning with real experiments and scientific thinking development',
       icon: 'BeakerIcon',
       color: 'from-brand-blue to-secondary',
-      link: '/innovation-lab',
+      link: '/science-labs',
       ageRange: '5-16 Years',
     },
     {
@@ -80,17 +80,17 @@ const EcosystemMap = () => {
         'Comprehensive skill-building programs for art, dance, music, digital marketing, communication, leadership, and creative expression',
       icon: 'StarIcon',
       color: 'from-success to-accent',
-      link: '/preschool-program',
+      link: '/professional-classes',
       ageRange: '10-60 Years',
     },
     {
       id: 'business',
       title: 'Business Network',
       description:
-        'Connect your local business through local networking clubs, and enhance practical business skills from an early age',
+        'Connect your local business through local networking, and enhance practical business skills from an early age',
       icon: 'UserGroupIcon',
       color: 'from-success to-accent',
-      link: '/preschool-program',
+      link: '/business-clubs',
       ageRange: 'above 20 Years',
     },
     {
@@ -100,17 +100,17 @@ const EcosystemMap = () => {
         'Upskill your employees with our specialized corporate training programs designed to enhance productivity, leadership, and innovation within your organization.',
       icon: 'PresentationChartBarIcon',
       color: 'from-success to-accent',
-      link: '/preschool-program',
+      link: '/professional-classes',
       ageRange: 'above 20 Years',
     },
     {
       id: 'personal-development',
       title: 'Personal Development',
       description:
-        'Empower yourself with our personal development courses that focus on building confidence, communication skills, and emotional intelligence for lifelong success.',
+        'At every step Gyanhouz Unleash many opportunities for growth and potential discovery for every child. Explore opportunity.',
       icon: 'UserIcon',
       color: 'from-success to-accent',
-      link: '/preschool-program',
+      link: '/success-stories',
       ageRange: 'above 20 Years',
     },
   ];
@@ -191,14 +191,26 @@ const EcosystemMap = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 px-8 py-6 rounded-2xl">
-            <Icon name="InformationCircleIcon" size={32} className="text-primary flex-shrink-0" />
-            <p className="text-foreground font-source text-center sm:text-left">
-              <span className="font-semibold">Seamless Integration:</span> Each program connects to
-              create a comprehensive learning journey, ensuring skills build upon each other
-              naturally.
-            </p>
+        <div className="mt-20 text-center">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-8 bg-sky-100 border-2 border-primary/20 px-10 py-10 rounded-[3rem] shadow-elevated hover:shadow-2xl transition-all duration-500 group relative max-w-5xl mx-auto overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+            
+            <div className="relative w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+              <div className="absolute inset-0 bg-primary/5 rounded-3xl animate-ping group-hover:animate-none"></div>
+              <Icon name="ShareIcon" size={48} className="text-primary relative z-10" />
+            </div>
+            
+            <div className="relative text-center sm:text-left">
+              <h4 className="text-2xl md:text-3xl font-bold text-foreground font-poppins mb-3">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                  Seamless Integration
+                </span>
+              </h4>
+              <p className="text-muted-foreground font-source text-xl leading-relaxed">
+                Each program connects to create a <span className="text-foreground font-bold">comprehensive learning journey</span>, 
+                ensuring skills build upon each other naturally and effectively.
+              </p>
+            </div>
           </div>
         </div>
       </div>
