@@ -1,0 +1,85 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Icon from '@/components/ui/AppIcon';
+
+const AdmissionUrgencyPopup = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(20); // Slightly longer duration
+
+  useEffect(() => {
+    const SHOW_INTERVAL = 4 * 60 * 1000; // 4 minutes
+    const DISPLAY_DURATION = 20 * 1000; // 20 seconds
+
+    const triggerPopup = () => {
+      setIsVisible(true);
+      setTimeLeft(20);
+
+      // Auto-hide after duration
+      setTimeout(() => {
+        setIsVisible(false);
+      }, DISPLAY_DURATION);
+    };
+
+    // Initial show after 5 seconds (after franchise popup)
+    const initialTimer = setTimeout(triggerPopup, 5000);
+
+    // Repeat every 4 minutes
+    const interval = setInterval(triggerPopup, SHOW_INTERVAL);
+
+    return () => {
+      clearTimeout(initialTimer);
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (isVisible && timeLeft > 0) {
+      timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
+    }
+    return () => clearTimeout(timer);
+  }, [isVisible, timeLeft]);
+
+  if (!isVisible) return null;
+
+  return (
+    <div className="fixed bottom-[280px] right-8 z-50 animate-bounce-in">
+      <div className="bg-[#FFF0F5] text-[#D81B60] p-6 rounded-2xl shadow-elevated max-w-sm border-2 border-[#FFC0CB]/50 relative overflow-hidden group">
+        <div className="absolute top-2 right-4">
+          <div className="flex items-center space-x-1 bg-[#D81B60]/10 px-2 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider">
+            <span className="w-1.5 h-1.5 bg-[#D81B60] rounded-full animate-pulse"></span>
+            <span>Closing in {timeLeft}s</span>
+          </div>
+        </div>
+
+        <div className="flex items-start space-x-4 mt-2">
+          <div className="w-12 h-12 bg-[#D81B60]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <Icon name="AcademicCapIcon" size={28} className="text-[#D81B60] animate-pulse" />
+          </div>
+          <div>
+            <h4 className="text-lg font-bold font-poppins mb-1">Limited seats available !!</h4>
+            <p className="text-sm font-bold font-source leading-tight text-[#D81B60]">
+              You don't loose just admission in Gyanhouz world preschool, you lose your child future
+            </p>
+            <a
+              href="/contact-and-admissions"
+              className="inline-block mt-3 text-sm font-bold underline hover:no-underline transition-all"
+            >
+              Secure Your Child's Future &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div className="absolute bottom-0 left-0 h-1 bg-[#D81B60]/20 w-full">
+          <div
+            className="h-full bg-[#D81B60] transition-all duration-1000 ease-linear"
+            style={{ width: `${(timeLeft / 20) * 100}%` }}
+          ></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AdmissionUrgencyPopup;
