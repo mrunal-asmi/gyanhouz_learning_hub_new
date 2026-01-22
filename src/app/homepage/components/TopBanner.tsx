@@ -49,9 +49,9 @@ const TopBanner = () => {
   if (!isHydrated) return null;
 
   return (
-    <section className="pt-28 lg:pt-36 pb-8 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="relative w-full h-[400px] md:h-[600px] lg:h-[750px] overflow-hidden rounded-2xl shadow-elevated">
+    <section className="pt-20 lg:pt-24 bg-background">
+      <div className="w-full">
+        <div className="relative w-full h-[400px] md:h-[600px] lg:h-[750px] overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out h-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}

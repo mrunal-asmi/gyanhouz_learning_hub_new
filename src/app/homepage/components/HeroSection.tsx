@@ -67,10 +67,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden ">
-      <div className="absolute inset-0 z-0"  style={{
-          backgroundImage: "url('/assets/images/bgnew.jpg')",
-        }}>
-        
+      <div className="absolute inset-0 z-0">
+        <AppImage
+          src="/assets/images/bgnew.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
@@ -79,7 +83,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-3 bg-primary/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full">
+          <div className="inline-flex items-center space-x-3 bg-white/20 backdrop-blur-sm px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full border border-white/30">
             <Icon
               name="SparklesIcon"
               size={40}
@@ -121,7 +125,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-elevated p-6 lg:p-8">
+        <div className="py-8 lg:py-12">
           <div className="flex items-center justify-between mb-8 overflow-x-auto pb-4">
             {journeySteps.map((step, index) => (
               <button
@@ -130,7 +134,7 @@ const HeroSection = () => {
                 className={`flex-shrink-0 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 font-poppins ${
                   isHydrated && activeStep === index
                     ? 'bg-primary text-primary-foreground shadow-subtle'
-                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                    : 'bg-primary/10 text-primary hover:bg-primary/20'
                 }`}
               >
                 {step.age}
