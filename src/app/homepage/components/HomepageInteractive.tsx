@@ -9,11 +9,13 @@ import FranchiseSpotlight from './FranchiseSpotlight';
 import SuccessCarousel from './SuccessCarousel';
 import QuickActionCenter from './QuickActionCenter';
 import UrgencyPopup from './UrgencyPopup';
+import AdmissionUrgencyPopup from './AdmissionUrgencyPopup';
 
 const HomepageInteractive = () => {
   return (
     <>
       <UrgencyPopup />
+      <AdmissionUrgencyPopup />
       <TopBanner />
       <HeroSection />
       <EcosystemMap />
