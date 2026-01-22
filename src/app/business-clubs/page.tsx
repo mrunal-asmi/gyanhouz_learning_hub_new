@@ -15,7 +15,7 @@ export default function BusinessClubsPage() {
         <section className="py-20 bg-green-500/5">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 font-poppins">
-              Business Clubs
+              Business Network
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-source">
               Teaching finance, leadership, and real-world working. Develop entrepreneurship and

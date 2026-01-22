@@ -13,16 +13,16 @@ interface ComparisonSectionProps {
 const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
   const comparisons: ComparisonItem[] = [
     {
-      traditional: 'Rote memorization and passive learning',
-      gyanhouz: 'Active experimentation and hands-on discovery',
+      traditional: 'Books First, Understanding later',
+      gyanhouz: 'Gyanhouzdesigned India’s most unique practical methodology',
     },
     {
-      traditional: 'Single language focus with limited exposure',
-      gyanhouz: 'Trilingual mastery (English, Hindi, Sanskrit)',
+      traditional: 'Focus on rote learning ',
+      gyanhouz: 'Focus on intelligence building ',
     },
     {
-      traditional: 'Theoretical concepts without practical application',
-      gyanhouz: 'Real-world problem solving and innovation',
+      traditional: 'One-size-fits all classrooms',
+      gyanhouz: 'Gyanhouz specific Zen focused designed classrooms',
     },
     {
       traditional: 'Limited creative expression opportunities',
@@ -33,9 +33,29 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
       gyanhouz: 'Ambidextrous writing for enhanced brain development',
     },
     {
-      traditional: 'Isolated skill development approach',
-      gyanhouz: 'Integrated ecosystem connecting all learning areas',
+      traditional: 'In traditional schools, children confidence takes a back seat ',
+      gyanhouz: 'Confidence of children are primary important ',
     },
+    {
+      traditional: 'Limited brain development focus ',
+      gyanhouz: 'Whole brain development focus ',
+    },
+    {
+ traditional: 'Physical activity as a class once in a week',
+      gyanhouz: 'Fitness integrated into learning ',
+    },
+    {
+      traditional: 'Unilateral teaching ',
+      gyanhouz: 'Active participating classrooms ',
+    },
+     {
+      traditional: 'Unilateral teaching ',
+      gyanhouz: 'Gyanhouz specific creative expression and thinking practice for learning ',
+    },
+     {
+      traditional: 'Isolated development approach',
+      gyanhouz: 'Integrated learning approach  connecting across the learning areas ',
+    }
   ];
 
   return (

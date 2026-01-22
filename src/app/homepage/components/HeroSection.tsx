@@ -89,7 +89,7 @@ const HeroSection = () => {
               size={40}
               className="text-primary flex-shrink-0 scale-50 md:scale-100"
             />
-            <span className="text-xl md:text-2xl lg:text-2xl font-bold text-primary font-poppins whitespace-nowrap">
+            <span className="text-xl md:text-4xl lg:text-5xl font-bold text-primary font-lucida whitespace-nowrap">
               India's FIRST Integrated Learning Ecosystem
             </span>
           </div>
@@ -103,7 +103,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 font-source leading-relaxed">
-            From preschool foundations to academic excellence, creativity, competitions, and future
+            From preschool foundations with academic excellence, high IQ children, innovation, creativity, competitions, and future
             skills — Gyanhouz nurtures your child at every stage of life.
           </p>
 
@@ -113,6 +113,13 @@ const HeroSection = () => {
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-lg hover:scale-105 font-nunito inline-flex items-center space-x-2"
             >
               <span>Start Your Child's Journey</span>
+              <Icon name="ArrowRightIcon" size={20} />
+            </Link>
+             <Link
+              href="/preschool-program"
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-elevated hover:shadow-lg hover:scale-105 font-nunito inline-flex items-center space-x-2"
+            >
+              <span>Start Your Child's Preschool Admission</span>
               <Icon name="ArrowRightIcon" size={20} />
             </Link>
             <Link
