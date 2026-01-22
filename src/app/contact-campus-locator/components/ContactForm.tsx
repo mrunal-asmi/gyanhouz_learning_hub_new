@@ -61,28 +61,46 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({
-        inquiryType: '',
-        fullName: '',
-        email: '',
-        phone: '',
-        city: '',
-        childAge: '',
-        preferredCampus: '',
-        preferredDate: '',
-        preferredTime: '',
-        message: '',
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          formType: 'Campus Visit / General Inquiry',
+        }),
       });
 
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setFormData({
+          inquiryType: '',
+          fullName: '',
+          email: '',
+          phone: '',
+          city: '',
+          childAge: '',
+          preferredCampus: '',
+          preferredDate: '',
+          preferredTime: '',
+          message: '',
+        });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        alert('Failed to submit request. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again later.');
+    }
+
+    setIsSubmitting(false);
   };
 
   return (

@@ -17,7 +17,7 @@ const ContactInfo = ({ className = '' }: ContactInfoProps) => {
     {
       icon: 'PhoneIcon',
       title: 'Call Us',
-      details: ['+91 123 456 7890', '+91 987 654 3210'],
+      details: ['+91 92720 99011'],
       color: 'text-primary',
       bgColor: 'bg-primary/10',
     },
@@ -31,7 +31,7 @@ const ContactInfo = ({ className = '' }: ContactInfoProps) => {
     {
       icon: 'MapPinIcon',
       title: 'Visit Us',
-      details: ['123 Education Street', 'Mumbai, Maharashtra 400001'],
+      details: ['Behind Choudhari Park Petrol Pump', 'Behind premji mithai wala, Wakad'],
       color: 'text-accent',
       bgColor: 'bg-accent/10',
     },

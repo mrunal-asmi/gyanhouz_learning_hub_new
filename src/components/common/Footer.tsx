@@ -104,16 +104,16 @@ const Footer = ({ className = '' }: FooterProps) => {
               <li className="flex items-start space-x-3">
                 <Icon name="MapPinIcon" size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/80 font-source">
-                  123 Education Street, Learning District, Mumbai, Maharashtra 400001
+                  Behind Choudhari Park Petrol Pump, Behind premji mithai wala, Wakad
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Icon name="PhoneIcon" size={20} className="text-primary flex-shrink-0" />
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+919272099011"
                   className="text-sm text-white/80 hover:text-white transition-colors duration-300 font-source"
                 >
-                  +91 123 456 7890
+                  +91 92720 99011
                 </a>
               </li>
               <li className="flex items-center space-x-3">

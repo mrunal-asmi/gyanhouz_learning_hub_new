@@ -52,17 +52,36 @@ const PreschoolAdmissionForm = ({ onClose, className = '' }: PreschoolAdmissionF
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateForm()) return;
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1500);
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          formType: 'Preschool Admission Enquiry',
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert('Failed to submit application. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again later.');
+    }
+
+    setIsSubmitting(false);
   };
 
   const handleChange = (
@@ -223,7 +242,7 @@ const PreschoolAdmissionForm = ({ onClose, className = '' }: PreschoolAdmissionF
               value={formData.phone}
               onChange={handleChange}
               className={`w-full px-4 py-3 border-2 ${errors.phone ? 'border-error' : 'border-border'} rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 font-source`}
-              placeholder="9876543210"
+              placeholder="9272099011"
             />
             {errors.phone && <p className="text-error text-xs mt-1 font-source">{errors.phone}</p>}
           </div>

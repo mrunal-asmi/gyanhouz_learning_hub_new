@@ -126,11 +126,11 @@ const FAQSection = ({ className = '' }: FAQSectionProps) => {
               <p className="text-foreground font-semibold font-poppins">Still have questions?</p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+919272099011"
                   className="inline-flex items-center space-x-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors duration-300 font-nunito"
                 >
                   <Icon name="PhoneIcon" size={20} />
-                  <span>Call Us: +91 123 456 7890</span>
+                  <span>Call Us: +91 92720 99011</span>
                 </a>
                 <a
                   href="mailto:admissions@gyanhouz.com"

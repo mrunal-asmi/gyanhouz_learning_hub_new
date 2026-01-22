@@ -223,7 +223,7 @@ const EnrollmentSection = ({ className = '' }: EnrollmentSectionProps) => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary font-source"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 92720 99011"
                     />
                   </div>
 
@@ -389,7 +389,7 @@ const EnrollmentSection = ({ className = '' }: EnrollmentSectionProps) => {
             <div className="bg-card rounded-lg p-6 text-center shadow-subtle border border-border">
               <Icon name="PhoneIcon" size={32} className="text-primary mx-auto mb-3" />
               <h4 className="font-semibold text-foreground font-poppins mb-2">Call Us</h4>
-              <p className="text-sm text-muted-foreground font-source">+91 123 456 7890</p>
+              <p className="text-sm text-muted-foreground font-source">+91 92720 99011</p>
             </div>
             <div className="bg-card rounded-lg p-6 text-center shadow-subtle border border-border">
               <Icon name="EnvelopeIcon" size={32} className="text-primary mx-auto mb-3" />

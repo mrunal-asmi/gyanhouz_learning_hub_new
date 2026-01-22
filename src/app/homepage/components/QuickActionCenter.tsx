@@ -136,10 +136,10 @@ const QuickActionCenter = () => {
               </div>
               <h4 className="font-semibold text-foreground mb-1 font-poppins">Call Us</h4>
               <a
-                href="tel:+911234567890"
+                href="tel:+919272099011"
                 className="text-sm text-primary hover:text-primary/80 transition-colors duration-300 font-source"
               >
-                +91 123 456 7890
+                +91 92720 99011
               </a>
             </div>
 
