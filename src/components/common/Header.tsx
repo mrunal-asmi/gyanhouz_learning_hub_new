@@ -31,7 +31,7 @@ const Header = ({ className = '' }: HeaderProps) => {
       submenu: [
         { label: 'Career Labs', href: '/career-labs' },
         { label: 'Science Labs', href: '/science-labs' },
-        { label: 'Science Lab', href: '/innovation-lab' },
+        { label: 'Innovation Labs', href: '/innovation-lab' },
         { label: 'School of Creativity', href: '/school-of-creativity' },
         { label: 'Robotics & Electronics Lab', href: '/robotics-electronics-lab' },
         { label: 'Business Clubs', href: '/business-clubs' },

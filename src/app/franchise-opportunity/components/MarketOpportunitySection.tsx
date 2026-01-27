@@ -62,11 +62,104 @@ const MarketOpportunitySection = () => {
       icon: 'ArrowsPointingOutIcon',
     },
   ];
+ const reasons = [
+    {
+      id: 1,
+      title: '7+ Revenue Streams',
+      description: 'Multiple income sources ensure year-round profitability and risk diversification',
+      icon: 'CurrencyRupeeIcon',
+    },
+    {
+      id: 2,
+      title: 'Setup in Just 15 Days',
+      description: 'Fastest franchise launch timeline in the education industry',
+      icon: 'BoltIcon',
+    },
+    {
+      id: 3,
+      title: 'Integrated 2–16 Model',
+      description: 'India’s only ecosystem covering early learning to career readiness',
+      icon: 'AcademicCapIcon',
+    },
+    {
+      id: 4,
+      title: 'End-to-End Support',
+      description: 'From setup to marketing, operations, training, and ongoing growth',
+      icon: 'LifebuoyIcon',
+    },
+  ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+    <>
+      {/* ================= WHY GYANHOUZ ================= */}
+      <section className="py-16 lg:py-22 bg-gradient-to-br from-brand-trust via-secondary to-brand-blue text-white">
+        <div className="container mx-auto px-4">
+          {/* Header */}
+          <div className="text-center max-w-2xl mx-auto mb-12">
+           <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-brand-orange to-brand-yellow px-12 py-6 rounded-full mb-8 shadow-2xl transform scale-100">
+  <Icon name="SparklesIcon" size={80} className="text-white" />
+  <span className="text-4xl lg:text-4xl font-extrabold font-nunito text-white">
+    Why GYANHOUZ
+  </span>
+</div>
+
+
+            <h2 className="text-3xl lg:text-5xl font-bold font-poppins mb-4">
+              Not Just a Franchise,
+              <br />
+              <span className="text-brand-orange">
+                A Complete Education Business
+              </span>
+            </h2>
+
+            <p className="text-lg text-white/90 font-source">
+              GYANHOUZ is built for entrepreneurs who want predictable returns,
+              fast setup, and long term setup for 20-25 years, also upgrade to full schools.</p>           </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {reasons.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-brand-orange to-primary rounded-xl flex items-center justify-center mb-4">
+                  <Icon name={item.icon as any} size={28} className="text-white" />
+                </div>
+
+                <h3 className="text-lg font-bold font-poppins mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm text-white/90 font-source">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+         <div className="mt-16 bg-white rounded-3xl p-12 text-center shadow-2xl max-w-4xl mx-auto">
+  <div className="text-sm uppercase tracking-widest text-muted-foreground mb-4 font-nunito font-semibold">
+    The GYANHOUZ Advantage
+  </div>
+  
+  <h2 className="text-4xl lg:text-5xl xl:text-xl font-extrabold font-poppins leading-tight">
+    <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-orange via-primary to-brand-blue">
+      GYANHOUZ
+    </span>: Where <span className="text-brand-orange">parents</span>, <span className="text-brand-blue">businesses</span>, 
+    and <span className="text-green-500">India's top mindsin science, innovation, dance, music, and artificial Intelligence <br /> 
+    unite to</span>  <span className="text-primary">shape the next generation</span>.
+  </h2>
+</div>
+
+        </div>
+      </section>
+
+      {/* ================= MARKET OPPORTUNITY (UNCHANGED) ================= */}
+      <section className="py-16 lg:py-24 bg-gradient-to-b from-background to-muted">
+        <div className="container mx-auto px-4">
+          {/* ✅ YOUR EXISTING MARKET OPPORTUNITY CODE */}
+        
+            <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center space-x-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
             <Icon name="GlobeAltIcon" size={20} className="text-secondary" />
             <span className="text-sm font-semibold text-secondary font-nunito">
@@ -170,9 +263,16 @@ const MarketOpportunitySection = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    
+        </div>
+      </section>
+    </>
   );
+
+
 };
+
+
+
 
 export default MarketOpportunitySection;
