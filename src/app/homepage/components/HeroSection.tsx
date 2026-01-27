@@ -68,13 +68,7 @@ const HeroSection = () => {
   return (
     <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden ">
       <div className="absolute inset-0 z-0">
-        <AppImage
-          src="/assets/images/bgnew.jpg"
-          alt="Background"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
+        
       </div>
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
