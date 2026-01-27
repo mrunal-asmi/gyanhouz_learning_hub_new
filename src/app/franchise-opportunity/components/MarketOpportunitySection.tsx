@@ -141,14 +141,32 @@ const MarketOpportunitySection = () => {
   <div className="text-sm uppercase tracking-widest text-muted-foreground mb-4 font-nunito font-semibold">
     The GYANHOUZ Advantage
   </div>
-  
-  <h2 className="text-4xl lg:text-5xl xl:text-xl font-extrabold font-poppins leading-tight">
-    <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-orange via-primary to-brand-blue">
-      GYANHOUZ
-    </span>: Where <span className="text-brand-orange">parents</span>, <span className="text-brand-blue">businesses</span>, 
-    and <span className="text-green-500">India's top mindsin science, innovation, dance, music, and artificial Intelligence <br /> 
-    unite to</span>  <span className="text-primary">shape the next generation</span>.
-  </h2>
+  <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed tracking-wide">
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-orange via-primary to-brand-blue font-cormorant italic">
+    GYANHOUZ
+  </span>
+  <span className="text-foreground font-cormorant italic">
+    — where
+  </span>{' '}
+  <span className="text-brand-orange font-cormorant italic">
+    parents
+  </span>,{' '}
+  <span className="text-brand-blue font-cormorant italic">
+    businesses
+  </span>, and{' '}
+  <span className="text-green-500 font-cormorant italic">
+    India’s finest minds
+  </span>
+  <br />
+  <span className="text-muted-foreground font-cormorant italic">
+    in science, innovation, arts, music, and artificial intelligence
+  </span>
+  <br />
+  <span className="text-primary font-cormorant italic">
+    come together to shape the next generation.
+  </span>
+</h2>
+
 </div>
 
         </div>
