@@ -143,7 +143,7 @@ const Header = ({ className = '' }: HeaderProps) => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-card border-t border-border">
+        <div className="lg:hidden bg-card border-t border-border fixed inset-0 top-16 overflow-y-auto"> {/* Added fixed, inset-0, top-16, and overflow-y-auto */}
           <nav className="container mx-auto px-4 py-4 space-y-1">
             {navigationItems.map((item) => (
               <div key={item.label}>
