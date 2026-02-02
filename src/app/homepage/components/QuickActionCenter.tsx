@@ -117,7 +117,7 @@ const QuickActionCenter = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-white rounded-2xl shadow-elevated p-8 lg:p-12 max-w-4xl mx-auto">
+        {/* <div className="mt-16 bg-white rounded-2xl shadow-elevated p-8 lg:p-12 max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <Icon name="PhoneIcon" size={48} className="text-primary mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-foreground mb-3 font-poppins">
@@ -164,7 +164,7 @@ const QuickActionCenter = () => {
               <p className="text-sm text-muted-foreground font-source">Schedule a campus tour</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
