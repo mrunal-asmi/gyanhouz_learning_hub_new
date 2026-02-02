@@ -25,7 +25,7 @@ export default function FranchiseInteractive() {
     <>
       <HeroSection onInquiryClick={handleInquiryClick} />
       <WhyGYANHOUZSection />
-      <InvestmentBreakdown />
+      {/* <InvestmentBreakdown /> */}
       <ROICalculator />
       <TerritoryMap />
       <SuccessStories />
