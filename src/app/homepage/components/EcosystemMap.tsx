@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import AppImage from '@/components/ui/AppImage';
 
 interface EcosystemNode {
   id: string;
@@ -210,6 +211,15 @@ const EcosystemMap = () => {
                 Each program connects to create a <span className="text-foreground font-bold">comprehensive learning journey</span>, 
                 ensuring skills build upon each other naturally and effectively.
               </p>
+              <div className="mt-8">
+                <AppImage
+                  src="/assets/images/seemless.jpeg"
+                  alt="Seamless Integration"
+                  width={800}
+                  height={450}
+                  className="rounded-xl shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -13,9 +13,9 @@ const AboutInteractive = () => {
       <HeroSection />
       <BrandStorySection />
       <FounderStorySection />
-      <EcosystemApproachSection />
+      {/* <EcosystemApproachSection /> */}
       <ValuesSection />
-      <FutureVisionSection />
+      {/* <FutureVisionSection /> */}
     </>
   );
 };

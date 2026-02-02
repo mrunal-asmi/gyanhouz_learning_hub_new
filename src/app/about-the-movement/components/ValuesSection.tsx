@@ -80,28 +80,7 @@ const ValuesSection = ({ className = '' }: ValuesSectionProps) => {
     },
   ];
 
-  const teachingPhilosophy = [
-    {
-      principle: 'Practical Over Theoretical',
-      description:
-        'Children learn by doing, not just listening. Every concept is reinforced through hands-on experience.',
-    },
-    {
-      principle: 'Curiosity-Driven Learning',
-      description:
-        'We nurture natural curiosity rather than forcing information, making learning a joyful exploration.',
-    },
-    {
-      principle: 'Mistake-Friendly Environment',
-      description:
-        'Failures are celebrated as learning opportunities, building resilience and growth mindset.',
-    },
-    {
-      principle: 'Real-World Connections',
-      description:
-        'Every lesson connects to real-life applications, making learning relevant and meaningful.',
-    },
-  ];
+ 
 
   return (
     <section
@@ -150,32 +129,7 @@ const ValuesSection = ({ className = '' }: ValuesSectionProps) => {
             ))}
           </div>
 
-          <div className="bg-card p-8 lg:p-12 rounded-2xl shadow-elevated border-l-4 border-primary mb-16">
-            <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-8 font-poppins">
-              Our Teaching Philosophy
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {teachingPhilosophy.map((item, index) => (
-                <div key={index} className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-primary font-bold text-sm font-poppins">
-                        {index + 1}
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 font-poppins">
-                        {item.principle}
-                      </h4>
-                      <p className="text-muted-foreground font-source leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+         
 
           <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-8 lg:p-12 rounded-2xl shadow-subtle text-center">
             <Icon name="BookOpenIcon" size={48} className="text-primary mx-auto mb-6" />

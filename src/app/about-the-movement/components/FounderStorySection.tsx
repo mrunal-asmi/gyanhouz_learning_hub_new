@@ -148,7 +148,7 @@ const FounderStorySection = ({ className = '' }: FounderStoryProps) => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-8 text-center font-poppins">
               Movement Timeline
             </h3>
@@ -181,7 +181,7 @@ const FounderStorySection = ({ className = '' }: FounderStoryProps) => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
