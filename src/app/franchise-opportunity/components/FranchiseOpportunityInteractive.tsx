@@ -26,10 +26,10 @@ const FranchiseOpportunityInteractive = () => {
       <HeroSection onInquiryClick={handleInquiryClick} />
       <RevenueStreamsSection />
       <MarketOpportunitySection />
-      <ROISection />
+      {/* <ROISection /> */}
       <SuccessStoriesSection />
       <SupportSection />
-      <InvestmentSection />
+      {/* <InvestmentSection /> */}
 
       <section className="py-16 bg-gradient-to-r from-primary to-brand-orange">
         <div className="container mx-auto px-4 text-center">

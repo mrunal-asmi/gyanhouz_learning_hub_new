@@ -137,36 +137,36 @@ const MarketOpportunitySection = () => {
             ))}
           </div>
 
-         <div className="mt-16 bg-white rounded-3xl p-12 text-center shadow-2xl max-w-4xl mx-auto">
-  <div className="text-sm uppercase tracking-widest text-muted-foreground mb-4 font-nunito font-semibold">
+        <div className="mt-16 bg-white rounded-3xl p-12 text-center shadow-2xl max-w-4xl mx-auto">
+  <div className="text-base uppercase tracking-widest text-muted-foreground mb-4 font-nunito font-semibold">
     The GYANHOUZ Advantage
   </div>
-  <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold leading-relaxed tracking-wide">
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-orange via-primary to-brand-blue font-cormorant italic">
-    GYANHOUZ
-  </span>
-  <span className="text-foreground font-cormorant italic">
-    — where
-  </span>{' '}
-  <span className="text-brand-orange font-cormorant italic">
-    parents
-  </span>,{' '}
-  <span className="text-brand-blue font-cormorant italic">
-    businesses
-  </span>, and{' '}
-  <span className="text-green-500 font-cormorant italic">
-    India’s finest minds
-  </span>
-  <br />
-  <span className="text-muted-foreground font-cormorant italic">
-    in science, innovation, arts, music, and artificial intelligence
-  </span>
-  <br />
-  <span className="text-primary font-cormorant italic">
-    come together to shape the next generation.
-  </span>
-</h2>
 
+  <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold leading-relaxed tracking-wide text-foreground">
+    <span className="font-cormorant italic">
+      GYANHOUZ
+    </span>
+    <span className="font-cormorant italic">
+      {' '}— where
+    </span>{' '}
+    <span className="font-cormorant italic">
+      parents
+    </span>,{' '}
+    <span className="font-cormorant italic">
+      businesses
+    </span>, and{' '}
+    <span className="font-cormorant italic">
+      India’s finest minds
+    </span>
+    <br />
+    <span className="text-muted-foreground font-cormorant italic">
+      in science, innovation, arts, music, and artificial intelligence
+    </span>
+    <br />
+    <span className="font-cormorant italic">
+      come together to shape the next generation.
+    </span>
+  </h2>
 </div>
 
         </div>

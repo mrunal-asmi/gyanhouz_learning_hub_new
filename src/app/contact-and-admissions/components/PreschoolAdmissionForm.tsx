@@ -60,24 +60,31 @@ const PreschoolAdmissionForm = ({ onClose, className = '' }: PreschoolAdmissionF
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/submit-form', {
+      const dataToSend = {
+        name: formData.parentName, // Assuming parentName is the main contact name
+        email: formData.email,
+        message: `Child Name: ${formData.childName}, Age Group: ${formData.childAge}, Address: ${formData.address}, Preferred Location: ${formData.preferredLocation}, Start Date: ${formData.startDate}, Additional Info: ${formData.additionalInfo}`,
+      };
+      console.log('Client-side: Sending data:', dataToSend);
+
+      const response = await fetch('/api/enquiries', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          ...formData,
-          formType: 'Preschool Admission Enquiry',
-        }),
+        body: JSON.stringify(dataToSend),
       });
+
+      const responseData = await response.json();
+      console.log('Client-side: Received response:', responseData);
 
       if (response.ok) {
         setIsSubmitted(true);
       } else {
-        alert('Failed to submit application. Please try again later.');
+        alert(`Failed to submit application: ${responseData.error || 'Unknown error'}. Please try again later.`);
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Client-side: Error submitting form:', error);
       alert('An error occurred. Please try again later.');
     }
 

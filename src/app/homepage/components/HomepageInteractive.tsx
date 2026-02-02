@@ -21,7 +21,7 @@ const HomepageInteractive = () => {
       <EcosystemMap />
       <ResultsShowcase />
       <FOMOGenerator />
-      <FranchiseSpotlight />
+      {/* <FranchiseSpotlight /> */}
       <SuccessCarousel />
       <QuickActionCenter />
     </>
