@@ -49,19 +49,23 @@ const TopBanner = () => {
   if (!isHydrated) return null;
 
   return (
-    <section className="pt-20 lg:pt-24 bg-background">
+    <section className="pt-16 lg:pt-20 bg-background "  style={{
+          backgroundImage: "url('/assets/images/bgome2.jpg')",
+         
+          backgroundPosition: 'top',
+        }}>
       <div className="w-full">
-        <div className="relative w-full min-h-[400px] overflow-hidden">
+        <div className="relative w-full h-[calc(100vh-64px)] lg:h-[calc(100vh-80px)] overflow-hidden mt-[-64px] lg:mt-[-0px] ">
           <div
-            className="flex transition-transform duration-700 ease-in-out"
+            className="flex transition-transform duration-700 ease-in-out h-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {banners.map((banner) => (
-              <div key={banner.id} className="min-w-full w-full relative flex justify-center items-center">
+              <div key={banner.id} className="min-w-full h-full w-full relative flex justify-center items-center">
                 <AppImage
                   src={banner.image}
                   alt={banner.alt}
-                  className="w-full h-auto object-contain object-center"
+                  className="w-full h-full object-contain object-center"
                 />
               </div>
             ))}
@@ -89,6 +93,7 @@ const TopBanner = () => {
               <button
                 key={index}
                 onClick={() => handleDotClick(index)}
+                
                 className={`w-3 h-3 rounded-full transition-all ${
                   currentIndex === index ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/80'
                 }`}
