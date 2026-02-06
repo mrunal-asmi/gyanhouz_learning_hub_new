@@ -66,7 +66,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-16 pb-16 lg:pb-24 overflow-hidden ">
+   <section className="relative -mt-[40px] pb-16 lg:mt-16 lg:pb-24 overflow-hidden">
+
       <div className="absolute inset-0 z-0">
         
       </div>
@@ -77,16 +78,17 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-3 bg-white/20 backdrop-blur-sm px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full border border-white/30">
-            <Icon
-              name="SparklesIcon"
-              size={40}
-              className="text-primary flex-shrink-0 scale-50 md:scale-100"
-            />
-            <span className="text-xl md:text-4xl lg:text-5xl font-bold text-primary font-lucida whitespace-nowrap">
-              India's FIRST Integrated Learning Ecosystem
-            </span>
-          </div>
+        <div className="inline-flex items-center space-x-3 bg-white/20 backdrop-blur-sm px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full border border-white/30 -ml-[20px]">
+  <Icon
+    name="SparklesIcon"
+    size={40}
+    className="text-primary flex-shrink-0 scale-50 md:scale-100"
+  />
+  <span className="text-xl md:text-4xl lg:text-5xl font-bold text-primary font-lucida whitespace-normal md:whitespace-nowrap">
+    India's FIRST Integrated Learning Ecosystem
+  </span>
+</div>
+
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 font-poppins leading-tight">
             Unlocking Every Child's
