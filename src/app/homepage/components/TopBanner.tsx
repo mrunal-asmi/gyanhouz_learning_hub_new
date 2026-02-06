@@ -11,7 +11,7 @@ const TopBanner = () => {
   const banners = [
     {
       id: 1,
-      image: '/assets/images/homebanner1.jpeg',
+      image: '/assets/images/homebanner11.jpeg',
       alt: 'Gyanhouz Learning Hub Banner 1',
     },
     {
@@ -51,17 +51,17 @@ const TopBanner = () => {
   return (
     <section className="pt-20 lg:pt-24 bg-background">
       <div className="w-full">
-        <div className="relative w-full h-[400px] md:h-[600px] lg:h-[750px] overflow-hidden">
+        <div className="relative w-full min-h-[400px] overflow-hidden">
           <div
-            className="flex transition-transform duration-700 ease-in-out h-full"
+            className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {banners.map((banner) => (
-              <div key={banner.id} className="min-w-full h-full relative">
+              <div key={banner.id} className="min-w-full w-full relative flex justify-center items-center">
                 <AppImage
                   src={banner.image}
                   alt={banner.alt}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto object-contain object-center"
                 />
               </div>
             ))}
