@@ -66,7 +66,7 @@ const HeroSection = () => {
   };
 
   return (
-   <section className="relative -mt-[40px] pb-16 lg:mt-16 lg:pb-24 overflow-hidden">
+   <section className="relative -mt-[10px] pb-16 lg:mt-16 lg:pb-24 overflow-hidden">
 
       <div className="absolute inset-0 z-0">
         
