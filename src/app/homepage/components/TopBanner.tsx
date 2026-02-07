@@ -55,7 +55,7 @@ const TopBanner = () => {
           backgroundPosition: 'top',
         }}>
       <div className="w-full">
-        <div className="relative w-full h-[calc(100vh-64px)] lg:h-[calc(100vh-80px)] overflow-hidden mt-[-90px] lg:mt-[-0px] ">
+        <div className="relative w-full  lg:h-[calc(100vh-80px)] overflow-hidden mt-[-90px] lg:mt-[-0px] ">
           <div
             className="flex transition-transform duration-700 ease-in-out h-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
