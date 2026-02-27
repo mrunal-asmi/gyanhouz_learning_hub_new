@@ -63,7 +63,7 @@ const QuickActionCenter = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-section-lavender/40 via-background to-section-peach/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-conversion/10 px-6 py-3 rounded-full mb-6">

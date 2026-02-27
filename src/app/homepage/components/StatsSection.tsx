@@ -36,7 +36,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+    <section className="py-16 bg-gradient-to-br from-section-peach/50 via-background to-section-pink/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

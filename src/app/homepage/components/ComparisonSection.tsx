@@ -37,7 +37,7 @@ export default function ComparisonSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-muted/30 via-background to-muted/30">
+    <section className="py-20 bg-gradient-to-br from-section-lavender/30 via-background to-section-peach/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -56,7 +56,7 @@ export default function ComparisonSection() {
         {/* Comparison Table */}
         <div className="bg-card rounded-2xl shadow-brand overflow-hidden">
           {/* Header Row */}
-          <div className="grid grid-cols-3 gap-4 p-6 bg-gradient-to-r from-error/10 via-warning/10 to-success/10 border-b border-border">
+          <div className="grid grid-cols-3 gap-4 p-6 bg-gradient-to-r from-section-pink/40 via-section-peach/30 to-section-lavender/30 border-b border-border">
             <div className="font-bold text-foreground">Category</div>
             <div className="flex items-center space-x-2">
               <Icon name="XCircleIcon" size={24} className="text-error" variant="solid" />

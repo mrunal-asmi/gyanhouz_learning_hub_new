@@ -64,10 +64,17 @@ module.exports = {
           foreground: "var(--color-error-foreground)", /* white */
         },
         brand: {
-          orange: "var(--color-brand-pink)", /* orange-600 */
-          blue: "var(--color-brand-blue)", /* blue-600 */
-          conversion: "var(--color-conversion)", /* orange-500 */
-          trust: "var(--color-trust)", /* blue-900 */
+          orange: "var(--color-brand-orange)",
+          blue: "var(--color-brand-blue)",
+          pink: "var(--color-brand-pink)",
+          lavender: "var(--color-brand-lavender)",
+          conversion: "var(--color-conversion)",
+          trust: "var(--color-trust)",
+        },
+        section: {
+          pink: "var(--color-section-pink)",
+          lavender: "var(--color-section-lavender)",
+          peach: "var(--color-section-peach)",
         },
       },
       fontFamily: {
@@ -117,11 +124,12 @@ module.exports = {
         "gradient-xy": "gradient-xy 15s ease infinite",
       },
       boxShadow: {
-        'subtle': '0 2px 8px rgba(27,42,74,0.08)',
-        'elevated': '0 8px 24px rgba(27,42,74,0.12)',
-        'premium': '0 2px 4px rgba(27,42,74,0.06), 0 8px 16px rgba(13,115,119,0.08)',
+        'subtle': '0 2px 8px rgba(45,34,53,0.06)',
+        'elevated': '0 8px 24px rgba(45,34,53,0.10)',
+        'premium': '0 2px 4px rgba(45,34,53,0.05), 0 8px 16px rgba(212,132,154,0.10)',
         'brand': '0 4px 14px rgba(13,115,119,0.15)',
-        'warm': '0 4px 20px rgba(255,107,53,0.12)',
+        'warm': '0 4px 20px rgba(212,132,154,0.15)',
+        'blossom': '0 4px 16px rgba(184,160,210,0.12)',
       },
     },
   },

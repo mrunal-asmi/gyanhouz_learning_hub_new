@@ -78,7 +78,7 @@ const FOMOGenerator = () => {
     },
   ];
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-warning/5 via-background to-accent/5">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-section-peach/50 via-background to-section-pink/30">
       <div className="container mx-auto px-4">
          <div className="bg-card p-8 lg:p-12 rounded-2xl shadow-elevated border-l-4 border-primary mb-16">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-8 font-poppins">
@@ -205,7 +205,7 @@ const FOMOGenerator = () => {
           </div>
         </div>
 
-        <div className="mt-12 bg-gradient-to-r from-error/10 via-warning/10 to-conversion/10 rounded-2xl p-8 lg:p-12 border-2 border-warning/20">
+        <div className="mt-12 bg-gradient-to-r from-section-peach/60 via-section-pink/40 to-section-lavender/40 rounded-2xl p-8 lg:p-12 border-2 border-warning/20">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-start space-x-4">
               <div className="w-16 h-16 bg-warning rounded-xl flex items-center justify-center flex-shrink-0">

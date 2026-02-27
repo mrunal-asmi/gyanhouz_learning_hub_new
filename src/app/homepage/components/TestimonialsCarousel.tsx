@@ -100,7 +100,7 @@ export default function TestimonialsCarousel() {
   }, [isHydrated, currentIndex]);
   const current = testimonials[currentIndex];
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+    <section className="py-20 bg-gradient-to-br from-section-lavender/50 via-background to-section-pink/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">

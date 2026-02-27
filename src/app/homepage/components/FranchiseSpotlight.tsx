@@ -67,7 +67,7 @@ const FranchiseSpotlight = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-brand-blue/5 to-secondary/5">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-section-peach/40 via-background to-section-lavender/40">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
@@ -161,7 +161,7 @@ const FranchiseSpotlight = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-elevated p-8 lg:p-12">
+        <div className="bg-card text-card-foreground rounded-2xl shadow-elevated p-8 lg:p-12">
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center font-poppins">
             Multiple Revenue Streams Throughout the Year
           </h3>
@@ -196,7 +196,7 @@ const FranchiseSpotlight = () => {
             ))}
           </div>
 
-          <div className="mt-8 bg-gradient-to-r from-success/10 to-accent/10 rounded-xl p-6 border border-success/20">
+          <div className="mt-8 bg-gradient-to-r from-section-peach/40 to-section-lavender/30 rounded-xl p-6 border border-success/20">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center space-x-4">
                 <Icon name="ChartBarIcon" size={32} className="text-success" />

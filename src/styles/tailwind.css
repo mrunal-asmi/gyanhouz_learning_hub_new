@@ -10,60 +10,68 @@
 @layer base {
   :root {
     /* ========================================
-       PEACH BLOSSOM THEME
-       Cheerful, sunny, child-friendly, warm
+       WATERCOLOR BLOSSOM THEME
+       Pink, Lavender & Peach — dreamy, warm,
+       child-friendly watercolor aesthetic
        ======================================== */
 
     /* Primary Colors - Rich Teal */
-    --color-primary: #0D7377; /* rich teal - trustworthy, fresh, modern */
-    --color-primary-foreground: #ffffff; /* white */
+    --color-primary: #0D7377; /* rich teal - trustworthy, fresh */
+    --color-primary-foreground: #ffffff;
 
     /* Secondary Colors - Deep Navy */
-    --color-secondary: #1B2A4A; /* deep navy - authority, confidence */
-    --color-secondary-foreground: #ffffff; /* white */
+    --color-secondary: #1B2A4A; /* deep navy - authority */
+    --color-secondary-foreground: #ffffff;
 
     /* Accent Colors - Coral Orange */
-    --color-accent: #FF6B35; /* coral-orange - energetic, warm, inviting */
-    --color-accent-foreground: #ffffff; /* white */
+    --color-accent: #E8603C; /* warm coral - energetic */
+    --color-accent-foreground: #ffffff;
 
-    /* Background Colors - Peach Blossom */
-    --color-background: #FFF1EB; /* warm peachy-pink - cheerful blossom */
-    --color-foreground: #1B2A4A; /* deep navy - strong readability */
+    /* Background Colors - Soft Pink Blush */
+    --color-background: #FFF0F3; /* soft rose-pink background */
+    --color-foreground: #2D2235; /* deep plum-charcoal text */
 
-    /* Surface Colors - Soft Cream */
-    --color-card: #FFF8F5; /* soft cream-white - elevated surfaces */
-    --color-card-foreground: #1B2A4A; /* deep navy */
+    /* Surface Colors - White with pink warmth */
+    --color-card: #FFFBFC; /* near-white with pink hint */
+    --color-card-foreground: #2D2235;
 
-    --color-popover: #FFF8F5; /* soft cream-white */
-    --color-popover-foreground: #1B2A4A; /* deep navy */
+    --color-popover: #FFFBFC;
+    --color-popover-foreground: #2D2235;
 
-    /* Muted Colors - Light Peach */
-    --color-muted: #FFE8DD; /* light peach - gentle contrast */
-    --color-muted-foreground: #5C6B7A; /* slate gray - readable secondary text */
+    /* Muted Colors - Lavender tint */
+    --color-muted: #F0E6F6; /* soft lavender muted */
+    --color-muted-foreground: #6B5E7B; /* muted plum-gray */
 
     /* Border & Input */
-    --color-border: #F0CFC0; /* warm blush border */
-    --color-input: #F0CFC0; /* warm blush */
+    --color-border: #E8D0E0; /* blush-lavender border */
+    --color-input: #E8D0E0;
     --color-ring: #0D7377; /* teal focus ring */
 
     /* Status Colors */
-    --color-success: #2E7D32; /* green-700 - Achievement celebration */
-    --color-success-foreground: #ffffff; /* white */
+    --color-success: #2E7D32;
+    --color-success-foreground: #ffffff;
 
-    --color-warning: #E8890C; /* warm amber - urgent but friendly */
-    --color-warning-foreground: #ffffff; /* white */
+    --color-warning: #E8890C;
+    --color-warning-foreground: #ffffff;
 
-    --color-error: #C62828; /* deep red - clear correction */
-    --color-error-foreground: #ffffff; /* white */
+    --color-error: #C62828;
+    --color-error-foreground: #ffffff;
 
-    --color-destructive: #C62828; /* deep red */
-    --color-destructive-foreground: #ffffff; /* white */
+    --color-destructive: #C62828;
+    --color-destructive-foreground: #ffffff;
 
     /* Brand Specific Colors */
-    --color-brand-orange: #FF6B35; /* coral-orange - energetic warmth */
-    --color-brand-blue: #0D7377; /* teal - trustworthy freshness */
-    --color-conversion: #FF8C42; /* warm tangerine - vibrant action */
-    --color-trust: #1B2A4A; /* deep navy - authority & trust */
+    --color-brand-orange: #E8603C; /* warm coral */
+    --color-brand-blue: #0D7377; /* teal */
+    --color-brand-pink: #D4849A; /* muted rose */
+    --color-brand-lavender: #B8A0D2; /* soft lavender */
+    --color-conversion: #E8603C; /* coral action */
+    --color-trust: #1B2A4A; /* deep navy */
+
+    /* Watercolor Section Backgrounds */
+    --color-section-pink: #FDDDE6; /* warm watercolor pink */
+    --color-section-lavender: #E4D6F0; /* soft watercolor lavender */
+    --color-section-peach: #FFECD2; /* warm watercolor peach */
 
     /* Radius */
     --radius: 0.625rem;

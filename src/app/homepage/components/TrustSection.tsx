@@ -63,7 +63,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-20 bg-card">
+    <section className="py-20 bg-gradient-to-br from-section-pink/30 via-card to-section-lavender/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -80,7 +80,7 @@ export default function TrustSection() {
           {trustIndicators.map((indicator, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl hover:shadow-brand transition-smooth"
+              className="text-center p-6 bg-gradient-to-br from-section-pink/20 to-section-lavender/20 rounded-xl hover:shadow-brand transition-smooth"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                 <Icon
@@ -97,7 +97,7 @@ export default function TrustSection() {
         </div>
 
         {/* Awards Section */}
-        <div className="bg-gradient-to-br from-warning/10 via-background to-success/10 rounded-2xl p-8 lg:p-12 mb-16">
+        <div className="bg-gradient-to-br from-section-peach/40 via-card to-section-lavender/30 rounded-2xl p-8 lg:p-12 mb-16">
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
             Award-Winning Excellence
           </h3>

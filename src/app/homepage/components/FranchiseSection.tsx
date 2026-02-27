@@ -33,7 +33,7 @@ export default function FranchiseSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary/10 via-background to-primary/10">
+    <section className="py-20 bg-gradient-to-br from-section-pink/40 via-background to-section-lavender/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}

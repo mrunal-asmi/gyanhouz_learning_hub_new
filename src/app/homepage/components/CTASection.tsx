@@ -3,7 +3,7 @@ import Icon from '@/components/ui/AppIcon';
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-brand-orange via-brand-red to-error relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" />
