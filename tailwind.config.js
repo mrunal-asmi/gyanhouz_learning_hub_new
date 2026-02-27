@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}' ,
+    './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
-    "./src/**/*.{js,ts,jsx,tsx}",    
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -64,7 +64,7 @@ module.exports = {
           foreground: "var(--color-error-foreground)", /* white */
         },
         brand: {
-          orange: "var(--color-brand-orange)", /* orange-600 */
+          orange: "var(--color-brand-pink)", /* orange-600 */
           blue: "var(--color-brand-blue)", /* blue-600 */
           conversion: "var(--color-conversion)", /* orange-500 */
           trust: "var(--color-trust)", /* blue-900 */
