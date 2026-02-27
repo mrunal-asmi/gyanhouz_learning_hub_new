@@ -10,8 +10,8 @@
 @layer base {
   :root {
     /* ========================================
-       WARM SUNSHINE GOLD THEME
-       Joyful, warm, premium, child-friendly
+       PEACH BLOSSOM THEME
+       Cheerful, sunny, child-friendly, warm
        ======================================== */
 
     /* Primary Colors - Rich Teal */
@@ -26,24 +26,24 @@
     --color-accent: #FF6B35; /* coral-orange - energetic, warm, inviting */
     --color-accent-foreground: #ffffff; /* white */
 
-    /* Background Colors - Warm Golden Cream */
-    --color-background: #FFF8E7; /* warm golden-cream - sunshine warmth */
+    /* Background Colors - Peach Blossom */
+    --color-background: #FFF1EB; /* warm peachy-pink - cheerful blossom */
     --color-foreground: #1B2A4A; /* deep navy - strong readability */
 
-    /* Surface Colors - Soft White Cream */
-    --color-card: #FFFDF5; /* warm off-white - elevated surfaces */
+    /* Surface Colors - Soft Cream */
+    --color-card: #FFF8F5; /* soft cream-white - elevated surfaces */
     --color-card-foreground: #1B2A4A; /* deep navy */
 
-    --color-popover: #FFFDF5; /* warm off-white */
+    --color-popover: #FFF8F5; /* soft cream-white */
     --color-popover-foreground: #1B2A4A; /* deep navy */
 
-    /* Muted Colors - Warm Sand */
-    --color-muted: #FFF2D6; /* warm sand - gentle contrast */
+    /* Muted Colors - Light Peach */
+    --color-muted: #FFE8DD; /* light peach - gentle contrast */
     --color-muted-foreground: #5C6B7A; /* slate gray - readable secondary text */
 
     /* Border & Input */
-    --color-border: #E8D5B5; /* warm tan border */
-    --color-input: #E8D5B5; /* warm tan */
+    --color-border: #F0CFC0; /* warm blush border */
+    --color-input: #F0CFC0; /* warm blush */
     --color-ring: #0D7377; /* teal focus ring */
 
     /* Status Colors */
