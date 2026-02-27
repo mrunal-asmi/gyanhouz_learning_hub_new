@@ -65,7 +65,7 @@ const ResultsShowcase = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-accent/5 to-success/5">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-2 bg-accent/10 px-6 py-3 rounded-full mb-6">
@@ -87,7 +87,7 @@ const ResultsShowcase = () => {
           {miraculousResults.map((result) => (
             <div
               key={result.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-subtle hover:shadow-elevated transition-all duration-300"
+              className="group bg-card text-card-foreground rounded-2xl overflow-hidden shadow-subtle hover:shadow-elevated transition-all duration-300"
             >
               <div className="relative h-64 overflow-hidden">
                 <AppImage
@@ -121,7 +121,7 @@ const ResultsShowcase = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-white rounded-2xl p-8 lg:p-12 shadow-subtle">
+        <div className="mt-12 bg-card rounded-2xl p-8 lg:p-12 shadow-subtle">
           <div className="grid lg:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
               <div className="text-4xl lg:text-5xl font-bold text-primary font-poppins">

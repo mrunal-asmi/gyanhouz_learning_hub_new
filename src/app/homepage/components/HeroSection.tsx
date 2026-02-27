@@ -78,7 +78,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 lg:mb-16">
-        <div className="inline-flex items-center space-x-3 bg-white/20 backdrop-blur-sm px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full border border-white/30 -ml-[20px]">
+        <div className="inline-flex items-center space-x-3 bg-primary/10 backdrop-blur-sm px-4 md:px-8 py-3 md:py-4 rounded-full mb-8 max-w-full border border-primary/20 -ml-[20px]">
   <Icon
     name="SparklesIcon"
     size={40}
@@ -93,7 +93,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 font-poppins leading-tight">
             Unlocking Every Child's
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-brand-orange to-accent">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
               Infinite Potential
             </span>
           </h1>
@@ -120,7 +120,7 @@ const HeroSection = () => {
             </Link>
             <Link
               href="/franchise-opportunity"
-              className="px-8 py-4 bg-white text-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle hover:shadow-elevated font-nunito inline-flex items-center space-x-2"
+              className="px-8 py-4 bg-card text-card-foreground border-2 border-border rounded-lg font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300 shadow-subtle hover:shadow-elevated font-nunito inline-flex items-center space-x-2"
             >
               <span>Explore Franchise</span>
               <Icon name="BuildingStorefrontIcon" size={20} />

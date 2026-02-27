@@ -56,7 +56,7 @@ const TopBanner = () => {
       <div className="container mx-auto px-1">
 
         {/* Slider Wrapper */}
-        <div className="relative w-full bg-white overflow-hidden">
+        <div className="relative w-full bg-card overflow-hidden rounded-xl">
 
           {/* Slides */}
           <div

@@ -71,7 +71,7 @@ const Header = ({ className = '' }: HeaderProps) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/homepage" className="flex items-center space-x-3 flex-shrink-0">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-primary to-brand-orange rounded-lg flex items-center justify-center shadow-subtle">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center shadow-subtle">
               <span className="text-white font-bold text-xl lg:text-2xl font-poppins">G</span>
             </div>
             <div className="flex flex-col">

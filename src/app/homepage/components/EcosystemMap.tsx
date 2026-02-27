@@ -152,7 +152,7 @@ const EcosystemMap = () => {
           {ecosystemNodes.map((node) => (
             <div
               key={node.id}
-              className="group relative bg-white rounded-2xl p-6 lg:p-8 shadow-subtle hover:shadow-elevated transition-all duration-300 cursor-pointer"
+              className="group relative bg-card text-card-foreground rounded-2xl p-6 lg:p-8 shadow-subtle hover:shadow-elevated transition-all duration-300 cursor-pointer"
               onClick={() => handleNodeClick(node.id)}
             >
               <div
@@ -193,8 +193,8 @@ const EcosystemMap = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-8 bg-sky-100 border-2 border-primary/20 px-10 py-10 rounded-[3rem] shadow-elevated hover:shadow-2xl transition-all duration-500 group relative max-w-5xl mx-auto overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+          <div className="inline-flex flex-col sm:flex-row items-center gap-8 bg-card border-2 border-primary/20 px-10 py-10 rounded-[3rem] shadow-elevated hover:shadow-2xl transition-all duration-500 group relative max-w-5xl mx-auto overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-secondary"></div>
             
             <div className="relative w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
               <div className="absolute inset-0 bg-primary/5 rounded-3xl animate-ping group-hover:animate-none"></div>

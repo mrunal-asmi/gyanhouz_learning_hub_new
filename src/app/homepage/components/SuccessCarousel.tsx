@@ -123,7 +123,7 @@ const SuccessCarousel = () => {
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-elevated overflow-hidden">
+          <div className="bg-card text-card-foreground rounded-2xl shadow-elevated overflow-hidden">
             <div className="grid lg:grid-cols-5 gap-0">
               <div className="lg:col-span-2 relative h-80 lg:h-auto">
                 <AppImage

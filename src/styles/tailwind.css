@@ -9,59 +9,64 @@
 
 @layer base {
   :root {
-    /* Primary Colors */
-    --color-primary: #e65100; /* deep-orange-800 - Revolutionary energy */
+    /* ========================================
+       WARM SUNSHINE GOLD THEME
+       Joyful, warm, premium, child-friendly
+       ======================================== */
+
+    /* Primary Colors - Rich Teal */
+    --color-primary: #0D7377; /* rich teal - trustworthy, fresh, modern */
     --color-primary-foreground: #ffffff; /* white */
 
-    /* Secondary Colors */
-    --color-secondary: #1565c0; /* blue-800 - Trust foundation */
+    /* Secondary Colors - Deep Navy */
+    --color-secondary: #1B2A4A; /* deep navy - authority, confidence */
     --color-secondary-foreground: #ffffff; /* white */
 
-    /* Accent Colors */
-    --color-accent: #2e7d32; /* green-800 - Growth achievement */
+    /* Accent Colors - Coral Orange */
+    --color-accent: #FF6B35; /* coral-orange - energetic, warm, inviting */
     --color-accent-foreground: #ffffff; /* white */
 
-    /* Background Colors */
-    --color-background: transparent; /* gray-50 - Clean canvas */
-    --color-foreground: #212121; /* gray-900 - Text primary */
+    /* Background Colors - Warm Golden Cream */
+    --color-background: #FFF8E7; /* warm golden-cream - sunshine warmth */
+    --color-foreground: #1B2A4A; /* deep navy - strong readability */
 
-    /* Surface Colors */
-    --color-card: #ffffff; /* white - Content elevation */
-    --color-card-foreground: #212121; /* gray-900 */
+    /* Surface Colors - Soft White Cream */
+    --color-card: #FFFDF5; /* warm off-white - elevated surfaces */
+    --color-card-foreground: #1B2A4A; /* deep navy */
 
-    --color-popover: #ffffff; /* white */
-    --color-popover-foreground: #212121; /* gray-900 */
+    --color-popover: #FFFDF5; /* warm off-white */
+    --color-popover-foreground: #1B2A4A; /* deep navy */
 
-    /* Muted Colors */
-    --color-muted: #f5f5f5; /* gray-100 */
-    --color-muted-foreground: #616161; /* gray-600 - Text secondary */
+    /* Muted Colors - Warm Sand */
+    --color-muted: #FFF2D6; /* warm sand - gentle contrast */
+    --color-muted-foreground: #5C6B7A; /* slate gray - readable secondary text */
 
     /* Border & Input */
-    --color-border: #e0e0e0; /* gray-300 */
-    --color-input: #e0e0e0; /* gray-300 */
-    --color-ring: #e65100; /* deep-orange-800 */
+    --color-border: #E8D5B5; /* warm tan border */
+    --color-input: #E8D5B5; /* warm tan */
+    --color-ring: #0D7377; /* teal focus ring */
 
     /* Status Colors */
-    --color-success: #388e3c; /* green-700 - Achievement celebration */
+    --color-success: #2E7D32; /* green-700 - Achievement celebration */
     --color-success-foreground: #ffffff; /* white */
 
-    --color-warning: #f57c00; /* orange-700 - Opportunity urgency */
+    --color-warning: #E8890C; /* warm amber - urgent but friendly */
     --color-warning-foreground: #ffffff; /* white */
 
-    --color-error: #d32f2f; /* red-700 - Helpful correction */
+    --color-error: #C62828; /* deep red - clear correction */
     --color-error-foreground: #ffffff; /* white */
 
-    --color-destructive: #d32f2f; /* red-700 */
+    --color-destructive: #C62828; /* deep red */
     --color-destructive-foreground: #ffffff; /* white */
 
     /* Brand Specific Colors */
-    --color-brand-orange: #ff6b35; /* orange-600 - Energetic innovation */
-    --color-brand-blue: #2e86ab; /* blue-600 - Trustworthy stability */
-    --color-conversion: #f7931e; /* orange-500 - Vibrant action */
-    --color-trust: #1b365d; /* blue-900 - Deep authority */
+    --color-brand-orange: #FF6B35; /* coral-orange - energetic warmth */
+    --color-brand-blue: #0D7377; /* teal - trustworthy freshness */
+    --color-conversion: #FF8C42; /* warm tangerine - vibrant action */
+    --color-trust: #1B2A4A; /* deep navy - authority & trust */
 
     /* Radius */
-    --radius: 0.5rem;
+    --radius: 0.625rem;
   }
 }
 

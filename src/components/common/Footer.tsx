@@ -38,7 +38,7 @@ const Footer = ({ className = '' }: FooterProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="space-y-4">
             <Link href="/homepage" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-brand-orange rounded-lg flex items-center justify-center shadow-subtle">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center shadow-subtle">
                 <span className="text-white font-bold text-2xl font-poppins">G</span>
               </div>
               <div className="flex flex-col">

@@ -102,15 +102,15 @@ export default function FranchiseSection() {
 
               {/* Floating Stats */}
               <div className="absolute bottom-8 left-8 right-8 grid grid-cols-3 gap-4">
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <p className="text-2xl font-bold text-brand-orange">50+</p>
+                <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                  <p className="text-2xl font-bold text-accent">50+</p>
                   <p className="text-xs text-muted-foreground">Centers</p>
                 </div>
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 text-center">
                   <p className="text-2xl font-bold text-success">35%</p>
                   <p className="text-xs text-muted-foreground">Margins</p>
                 </div>
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 text-center">
                   <p className="text-2xl font-bold text-primary">18M</p>
                   <p className="text-xs text-muted-foreground">Breakeven</p>
                 </div>
