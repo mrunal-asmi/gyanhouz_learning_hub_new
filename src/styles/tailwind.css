@@ -10,71 +10,76 @@
 @layer base {
   :root {
     /* ========================================
-       WATERCOLOR BLOSSOM THEME
-       Pink, Lavender & Peach — dreamy, warm,
-       child-friendly watercolor aesthetic
+       BRIGHT CONTRAST THEME
+       Inspired by Kangaroo Kids — bold sunshine
+       yellow, vivid teal, coral-red, clean white,
+       deep navy. High-energy, child-friendly.
        ======================================== */
 
-    /* Primary Colors - Rich Teal */
-    --color-primary: #0D7377; /* rich teal - trustworthy, fresh */
+    /* Primary - Vivid Teal */
+    --color-primary: #00A89D; /* bright teal-green */
     --color-primary-foreground: #ffffff;
 
-    /* Secondary Colors - Deep Navy */
-    --color-secondary: #1B2A4A; /* deep navy - authority */
+    /* Secondary - Deep Navy */
+    --color-secondary: #1A2E5A; /* strong navy blue */
     --color-secondary-foreground: #ffffff;
 
-    /* Accent Colors - Coral Orange */
-    --color-accent: #E8603C; /* warm coral - energetic */
+    /* Accent - Vivid Coral Red */
+    --color-accent: #E94E3C; /* bold coral-red */
     --color-accent-foreground: #ffffff;
 
-    /* Background Colors - Soft Pink Blush */
-    --color-background: #FFF0F3; /* soft rose-pink background */
-    --color-foreground: #2D2235; /* deep plum-charcoal text */
+    /* Background - Clean White */
+    --color-background: #FFFFFF;
+    --color-foreground: #1A2E5A; /* navy text for strong contrast */
 
-    /* Surface Colors - White with pink warmth */
-    --color-card: #FFFBFC; /* near-white with pink hint */
-    --color-card-foreground: #2D2235;
+    /* Cards - Pure White */
+    --color-card: #FFFFFF;
+    --color-card-foreground: #1A2E5A;
 
-    --color-popover: #FFFBFC;
-    --color-popover-foreground: #2D2235;
+    --color-popover: #FFFFFF;
+    --color-popover-foreground: #1A2E5A;
 
-    /* Muted Colors - Lavender tint */
-    --color-muted: #F0E6F6; /* soft lavender muted */
-    --color-muted-foreground: #6B5E7B; /* muted plum-gray */
+    /* Muted - Light Gray */
+    --color-muted: #F3F4F6;
+    --color-muted-foreground: #5B6B82;
 
     /* Border & Input */
-    --color-border: #E8D0E0; /* blush-lavender border */
-    --color-input: #E8D0E0;
-    --color-ring: #0D7377; /* teal focus ring */
+    --color-border: #E2E8F0;
+    --color-input: #E2E8F0;
+    --color-ring: #00A89D;
 
     /* Status Colors */
-    --color-success: #2E7D32;
+    --color-success: #16A34A;
     --color-success-foreground: #ffffff;
 
-    --color-warning: #E8890C;
+    --color-warning: #F59E0B;
     --color-warning-foreground: #ffffff;
 
-    --color-error: #C62828;
+    --color-error: #DC2626;
     --color-error-foreground: #ffffff;
 
-    --color-destructive: #C62828;
+    --color-destructive: #DC2626;
     --color-destructive-foreground: #ffffff;
 
-    /* Brand Specific Colors */
-    --color-brand-orange: #E8603C; /* warm coral */
-    --color-brand-blue: #0D7377; /* teal */
-    --color-brand-pink: #D4849A; /* muted rose */
-    --color-brand-lavender: #B8A0D2; /* soft lavender */
-    --color-conversion: #E8603C; /* coral action */
-    --color-trust: #1B2A4A; /* deep navy */
+    /* Brand Colors */
+    --color-brand-orange: #FF7A2F; /* bright orange */
+    --color-brand-blue: #00A89D; /* teal */
+    --color-brand-pink: #E94E3C; /* coral */
+    --color-brand-lavender: #6C63FF; /* vivid purple-blue */
+    --color-conversion: #FF7A2F; /* orange CTA */
+    --color-trust: #1A2E5A; /* deep navy */
 
-    /* Watercolor Section Backgrounds */
-    --color-section-pink: #FDDDE6; /* warm watercolor pink */
-    --color-section-lavender: #E4D6F0; /* soft watercolor lavender */
-    --color-section-peach: #FFECD2; /* warm watercolor peach */
+    /* Bold Section Backgrounds */
+    --color-section-yellow: #FFD900; /* sunshine yellow */
+    --color-section-teal: #00A89D; /* vivid teal */
+    --color-section-coral: #E94E3C; /* coral-red */
+    --color-section-navy: #1A2E5A; /* deep navy */
+    --color-section-sky: #E0F7FA; /* light sky blue */
+    --color-section-cream: #FFFDE7; /* light warm cream */
+    --color-section-mint: #E8F5E9; /* soft mint */
 
     /* Radius */
-    --radius: 0.625rem;
+    --radius: 0.75rem;
   }
 }
 
