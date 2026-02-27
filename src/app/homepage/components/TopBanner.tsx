@@ -1,106 +1,110 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import AppImage from '@/components/ui/AppImage';
-import Icon from '@/components/ui/AppIcon';
+
+type BannerSlide = {
+  id: number;
+  image: string;
+  alt: string;
+  imageMobile?: string;
+  imageTablet?: string;
+};
+
+const AUTOPLAY_MS = 5000;
 
 const TopBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHydrated, setIsHydrated] = useState(false);
 
-  const banners = [
-    {
-      id: 1,
-      image: '/assets/images/homebanner11.jpeg',
-      alt: 'Gyanhouz Learning Hub Banner 1',
-    },
-    {
-      id: 2,
-      image: '/assets/images/homebanner2.jpeg',
-      alt: 'Gyanhouz Learning Hub Banner 2',
-    },
-    {
-      id: 3,
-      image: '/assets/images/homebanner3.jpeg',
-      alt: 'Gyanhouz Learning Hub Banner 3',
-    },
-  ];
+  const banners: BannerSlide[] = useMemo(
+    () => [
+      {
+        id: 1,
+        image: '/assets/images/homebanner1_desk_1340X525.png',
+        imageMobile: '/assets/images/homebanner1mob2.png',
+        imageTablet: '/assets/images/homebanner1tab2.png',
+        alt: 'Gyanhouz Learning Hub Banner 1',
+      },
+      {
+        id: 2,
+        image: '/assets/images/homebanner2_desk_1340X525.png',
+        imageMobile: '/assets/images/homebanner2_mob_768X1376.png',
+        imageTablet: '/assets/images/homebanner2_tab_1265X525.png',
+        alt: 'Gyanhouz Learning Hub Banner 2',
+      },
+      {
+        id: 3,
+        image: '/assets/images/homebanner3_desk_1340X525.png',
+        imageMobile: '/assets/images/homebanner3_mob_768X1376.png',
+        imageTablet: '/assets/images/homebanner3_tab_1265X525.png',
+        alt: 'Gyanhouz Learning Hub Banner 3',
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
-    setIsHydrated(true);
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
-    }, 5000);
+      setCurrentIndex((prev) => (prev + 1) % banners.length);
+    }, AUTOPLAY_MS);
+
     return () => clearInterval(timer);
   }, [banners.length]);
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? banners.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
-  };
-
-  const handleDotClick = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  if (!isHydrated) return null;
-
   return (
-    <section className="pt-16 lg:pt-20 bg-background "  style={{
-          backgroundImage: "url('/assets/images/bgome2.jpg')",
-         
-          backgroundPosition: 'top',
-        }}>
-      <div className="w-full">
-        <div className="relative w-full h-[calc(100vh-90px)] lg:h-[calc(100vh-80px)] overflow-hidden mt-[-90px] lg:mt-[-0px] ">
+    <section className="relative -mt-[10px] pb-5 lg:mt-14  lg:pb-5 overflow-hidden">
+      <div className="container mx-auto px-1">
+
+        {/* Slider Wrapper */}
+        <div className="relative w-full bg-white overflow-hidden">
+
+          {/* Slides */}
           <div
-            className="flex transition-transform duration-700 ease-in-out h-full"
+            className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {banners.map((banner) => (
-              <div key={banner.id} className="min-w-full h-full w-full relative flex justify-center items-center">
-                <AppImage
-                  src={banner.image}
-                  alt={banner.alt}
-                  className="w-full h-full object-contain object-center"
-                />
+              <div
+                key={banner.id}
+                className="
+                  min-w-full
+                  flex
+                  items-center
+                  justify-center
+                  py-0
+                  lg:py-1   /* Desktop top & bottom spacing */
+                "
+              >
+                <picture className="w-full flex justify-center">
+                  <source
+                    srcSet={banner.image}
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcSet={banner.imageTablet ?? banner.image}
+                    media="(min-width: 640px)"
+                  />
+                  <img
+                    src={banner.imageMobile ?? banner.image}
+                    alt={banner.alt}
+                    className="w-full object-contain"     
+                    loading={banner.id === 1 ? 'eager' : 'lazy'}
+                  />
+                </picture>
+
+                {/* LCP Optimization */}
+                {banner.id === 1 && (
+                  <AppImage
+                    src={banner.image}
+                    alt={banner.alt}
+                    priority
+                    className="hidden"
+                  />
+                )}
               </div>
             ))}
           </div>
 
-          {/* Navigation Arrows */}
-          <button
-            onClick={handlePrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all z-20"
-            aria-label="Previous slide"
-          >
-            <Icon name="ChevronLeftIcon" size={24} />
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all z-20"
-            aria-label="Next slide"
-          >
-            <Icon name="ChevronRightIcon" size={24} />
-          </button>
-
-          {/* Dots */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
-            {banners.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handleDotClick(index)}
-                
-                className={`w-3 h-3 rounded-full transition-all ${
-                  currentIndex === index ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/80'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
