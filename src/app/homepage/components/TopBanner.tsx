@@ -52,12 +52,10 @@ const TopBanner = () => {
   }, [banners.length]);
 
   return (
-    <section className="relative -mt-[10px] pb-5 lg:mt-14  lg:pb-5 overflow-hidden">
+    <section className="relative -mt-[10px] pb-5 lg:mt-14 lg:pb-5 overflow-hidden">
       <div className="container mx-auto px-1">
-
         {/* Slider Wrapper */}
         <div className="relative w-full bg-white overflow-hidden">
-
           {/* Slides */}
           <div
             className="flex transition-transform duration-700 ease-in-out"
