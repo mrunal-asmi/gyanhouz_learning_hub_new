@@ -86,7 +86,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative">sss
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <AppImage
                 src="/assets/images/school.jpeg"
