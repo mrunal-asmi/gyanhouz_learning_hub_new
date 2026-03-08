@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 <div
   className="absolute inset-0 z-0"
-  style={{ backgroundImage: `url(/assets/images/bgnew.jpg)` }}
+ 
 ></div>
 
 
@@ -89,7 +89,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_16d542f95-1766895399712.png"
+                src="/assets/images/school.jpeg"
                 alt="Happy Indian preschool children in colorful classroom actively engaged in hands-on learning activities with teacher"
                 className="w-full h-[400px] lg:h-[600px] object-cover"
               />

@@ -30,7 +30,7 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
         'Children develop equal proficiency in both hands, enhancing brain connectivity and cognitive flexibility from age 3.',
       metric: '95% Success Rate',
       icon: 'PencilIcon',
-      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_19dcd8c00-1768066553920.png',
+      image: '/assets/images/kid1.png',
       alt: 'Young Indian child writing confidently with both hands simultaneously on paper at desk',
       achievements: [
         'Both-hand writing by age 4',

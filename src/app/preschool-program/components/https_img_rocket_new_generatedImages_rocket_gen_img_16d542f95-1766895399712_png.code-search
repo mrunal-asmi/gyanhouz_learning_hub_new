@@ -5,5 +5,5 @@
 
 src\app\preschool-program\components\HeroSection.tsx:
   91                <AppImage
-  92:                 src="ps://img.rocket.new/generatedImages/rocket_gen_img_16d542f95-1766895399712.png"
+  92:                 src="/public/assets/images/school.jpeg"
   93                  alt="Happy Indian preschool children in colorful classroom actively engaged in hands-on learning activities with teacher"
