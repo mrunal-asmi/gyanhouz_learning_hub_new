@@ -15,7 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className="min-h-screen bg-cover bg-center bg-no-repeat"
+        className="min-h-screen bg-repeat bg-center bg-[url('/assets/images/back1.png')]"
+        style={{
+          backgroundAttachment: 'fixed',
+          backgroundBlendMode: 'multiply',
+        }}
        
       >
         {children}

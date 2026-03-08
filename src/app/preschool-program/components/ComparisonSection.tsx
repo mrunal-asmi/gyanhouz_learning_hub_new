@@ -41,16 +41,8 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
       gyanhouz: 'Whole brain development focus ',
     },
     {
- traditional: 'Physical activity as a class once in a week',
-      gyanhouz: 'Fitness integrated into learning ',
-    },
-    {
       traditional: 'Unilateral teaching ',
-      gyanhouz: 'Active participating classrooms ',
-    },
-     {
-      traditional: 'Unilateral teaching ',
-      gyanhouz: 'Gyanhouz specific creative expression and thinking practice for learning ',
+      gyanhouz: 'Active participating classrooms with creative expression and thinking practice ',
     },
      {
       traditional: 'Isolated development approach',
@@ -60,9 +52,7 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
 
   return (
     <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
-      <div className="absolute inset-0 z-0"  style={{
-          backgroundImage: "url('/assets/images/bgnew.jpg')",
-        }}>
+      <div className="absolute inset-0 z-0"  >
       
       </div>
 
