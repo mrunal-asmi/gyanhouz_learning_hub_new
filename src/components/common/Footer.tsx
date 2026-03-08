@@ -130,9 +130,12 @@ const Footer = ({ className = '' }: FooterProps) => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-white/60 font-source text-center md:text-left">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+            <p className="text-sm text-white/60 font-source text-center lg:text-left">
               © {currentYear} GYANHOUZ Learning Hub. All rights reserved.
+            </p>
+            <p className="text-sm text-brand-orange font-source text-center">
+              Developed by Ishanya Infosoft
             </p>
             <div className="flex items-center space-x-6">
               <Link
