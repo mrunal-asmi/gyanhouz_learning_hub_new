@@ -46,8 +46,8 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
         'Master English, Hindi, and Sanskrit through immersive daily practice, storytelling, and cultural integration.',
       metric: '3 Languages by Age 5',
       icon: 'LanguageIcon',
-      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1feef0ecb-1767159228474.png',
-      alt: 'Diverse group of preschool children engaged in multilingual storytelling session with colorful picture books',
+      image: '/assets/images/school.jpeg',
+      alt: 'Preschool children engaged in language and storytelling activities',
       achievements: [
         'Conversational fluency in 3 languages',
         'Cultural awareness and appreciation',
@@ -62,8 +62,8 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
         'Daily performances, presentations, and creative expression build unshakeable confidence and communication skills.',
       metric: '100% Stage Ready',
       icon: 'MicrophoneIcon',
-      image: 'https://images.unsplash.com/photo-1731067356475-7c66a928c9ef',
-      alt: 'Confident Indian preschool child performing on stage with microphone in front of audience',
+      image: '/assets/images/gallary/10.jpeg',
+      alt: 'Children participating in stage and confidence-building activities',
       achievements: [
         'Fearless public speaking',
         'Creative self-expression',
@@ -78,8 +78,8 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
         'Hands-on experiments, real-world challenges, and innovation projects develop critical thinking from day one.',
       metric: 'Daily Innovation',
       icon: 'LightBulbIcon',
-      image: 'https://img.rocket.new/generatedImages/rocket_gen_img_12cbad64e-1767145416114.png',
-      alt: 'Young children working together on colorful building blocks and STEM activity in modern classroom',
+      image: '/assets/images/robotics.jpg',
+      alt: 'Hands-on learning and early innovation exposure',
       achievements: [
         'Scientific thinking approach',
         'Creative problem solving',

@@ -11,45 +11,45 @@ interface Opportunity {
 const FutureOpportunitiesSection = () => {
   const opportunities: Opportunity[] = [
     {
-      title: 'Career Discovery Pathways',
+      title: 'Talent & Scholarship Door',
       description:
-        'No Gyanhouz kids is left behind during the future years for their career discovery.',
+        'Tie-ups with national music & dance academies and platforms. Talent scholarships from ₹5,000 to ₹2 Crore + special coaching & stage exposure.',
+      icon: 'TrophyIcon',
+      color: 'bg-brand-orange',
+    },
+    {
+      title: 'Industry Door',
+      description:
+        'Tie-ups with 100+ industries. Priority access to industry-linked programs, mentors, internships, real work exposure and even recommendation letters.',
       icon: 'BriefcaseIcon',
       color: 'bg-primary',
     },
     {
-      title: 'Innovation & Entrepreneurship',
+      title: 'Innovation & Technology Door',
       description:
-        'Access to our Innovation labs where when they think, we enable their journey to innovation with right guidance, funding and unique innovation lab ecosystem across India.',
-      icon: 'LightBulbIcon',
+        'Robotics, electronics and innovation labs. Scholarships from ₹5,000 to ₹1 Crore for innovations + engineering mindset through curiosity-to-creation learning.',
+      icon: 'CpuChipIcon',
       color: 'bg-secondary',
     },
     {
-      title: 'First access to our other programs',
+      title: 'Lifetime Mentorship & Network Door',
       description:
-        'We give first access to our all other program, as the top priority goes to kids that start their journey with Gyanhouz at the small ages itself.',
-      icon: 'GlobeAltIcon',
+        'A national mentorship community: experts guiding your child, industry connections for future internships, and a powerful peer network for life.',
+      icon: 'UserGroupIcon',
       color: 'bg-accent',
     },
     {
-      title: 'Talent door',
+      title: 'One Campus, Lifetime of Possibilities',
       description:
-        'When Gyanhouz kids leads across the areas, we support their journey to be India’s best.',
-      icon: 'UserGroupIcon',
-      color: 'bg-brand-orange',
-    },
-    {
-      title: 'Science and Industry doors',
-      description:
-        'We get priority seats to all of our science and industry driven programs for our Gyanhouz preschoolers.',
-      icon: 'CpuChipIcon',
+        'Preschool → Creativity → Career → Science → Robotics → Innovation → Startup. A connected ecosystem supporting the student journey beyond early years.',
+      icon: 'RocketLaunchIcon',
       color: 'bg-primary',
     },
     {
-      title: 'Ecosystem Networking',
+      title: 'Gates of Opportunity',
       description:
-        'When your child grows, he gets complete Gyanhouz ecosystem of innovators, talent gurus, other gurus and like-minded achievers.',
-      icon: 'ShareIcon',
+        'You don’t just choose a preschool — you choose real-world exposure, scholarships, mentors and opportunities that most kids never get.',
+      icon: 'KeyIcon',
       color: 'bg-secondary',
     },
   ];
@@ -75,15 +75,13 @@ const FutureOpportunitiesSection = () => {
           </div>
 
           <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
-            Future <span className="text-accent">Opportunities</span> We Create
+            BIG <span className="text-accent">‘Beyond Opportunity Doors’</span>
           </h2>
 
           <p className="text-lg text-muted-foreground font-source">
-            Our unique ecosystem spanning across multiple areas, ensures that our kids have unique educational doors that other preschools cannot provide. 
-
-
+            Most preschools end at “class”. GYANHOUZ opens doors that connect your child to the real
+            world: scholarships, industries, innovation labs, mentors and a lifetime network.
           </p>
-          <p className="text-lg text-muted-foreground font-source">Gyanhouz preschoolers have the best future too !!</p>
         </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -113,14 +111,15 @@ const FutureOpportunitiesSection = () => {
 
         <div className="mt-16 bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 lg:p-12 text-white text-center">
           <h3 className="text-2xl lg:text-3xl font-bold font-poppins mb-4">
-            Ready to give your child a head start on their future?
+            The admission decision that changes everything
           </h3>
           <p className="text-white/90 font-source text-lg mb-8 max-w-2xl mx-auto">
-            Join the GYANHOUZ movement and witness the miraculous transformation in your child's
-            development and future prospects.
+            “Mumma… Papa… why didn’t you admit me where my friends explored more, achieved more and
+            got the opportunities I never did?” Don’t choose a preschool — choose your child’s
+            ecosystem.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-full font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Book a Discovery Session
+            Enquire on WhatsApp
           </button>
         </div>
       </div>

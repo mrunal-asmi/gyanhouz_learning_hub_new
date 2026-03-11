@@ -1,13 +1,6 @@
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Link from 'next/link';
-//import bgNew from '@/public/assets/images/bgnew.jpg';
-
-<div
-  className="absolute inset-0 z-0"
- 
-></div>
-
 
 interface HeroSectionProps {
   className?: string;
@@ -32,19 +25,19 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full">
               <Icon name="SparklesIcon" size={20} className="text-primary" />
               <span className="text-sm font-semibold text-primary font-poppins">
-                India's FIRST Integrated Preschool++
+                PRESCHOOL++ • Limitless future opportunities
               </span>
             </div>
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground font-poppins leading-tight">
-              Where <span className="text-primary">Miracles</span> Happen{' '}
-              <span className="text-secondary">Daily</span>
+              India’s first <span className="text-primary">full-spectrum</span> learning ecosystem
+              for ages <span className="text-secondary">1.5–6</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-muted-foreground font-source leading-relaxed">
-              Watch your child master ambidextrous writing, speak 3 languages fluently, and perform
-              confidently on stage - all before age 6. What traditional preschools promise in years,
-              we deliver in months.
+              Strong academics + thinking-oriented confidence + games & toys based learning + a
+              Gurukul-inspired foundation. Built for an AI-era child: smart, curious, creative and
+              future-ready.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -65,28 +58,32 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-primary font-poppins">
-                  1500+
+                  1.5–6
                 </div>
                 <div className="text-sm text-muted-foreground font-source mt-1">
-                  Transformed Lives
+                  Playgroup to Upper KG
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-secondary font-poppins">
-                  99%
+                  NEP 2020
                 </div>
                 <div className="text-sm text-muted-foreground font-source mt-1">
-                  Parent Satisfaction
+                  NCF-FS 2022 • NCF 2023
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-accent font-poppins">75+</div>
-                <div className="text-sm text-muted-foreground font-source mt-1">Unique Skills</div>
+                <div className="text-3xl lg:text-4xl font-bold text-accent font-poppins">
+                  Cambridge
+                </div>
+                <div className="text-sm text-muted-foreground font-source mt-1">
+                  Aligned (CBSE • ICSE)
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="relative">sss
+          <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <AppImage
                 src="/assets/images/school.jpeg"
@@ -102,10 +99,10 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground font-poppins">
-                      Certified Excellence
+                      For class timings & fees
                     </div>
                     <div className="text-sm text-muted-foreground font-source">
-                      Award-winning curriculum & methodology
+                      WhatsApp us • www.gyanhouz.com
                     </div>
                   </div>
                 </div>

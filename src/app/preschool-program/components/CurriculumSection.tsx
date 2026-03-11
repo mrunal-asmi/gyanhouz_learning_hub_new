@@ -16,81 +16,81 @@ interface CurriculumSectionProps {
 const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
   const curriculumAreas: CurriculumArea[] = [
     {
-      title: 'Gurukul (Language & Life Skills)',
-      description: 'Trilingual mastery and essential life skills integration',
-      icon: 'ChatBubbleLeftRightIcon',
+      title: 'Cambridge-aligned Early Years',
+      description: 'Cambridge preschool syllabus aligned to IB / CBSE / ICSE + NEP 2020',
+      icon: 'AcademicCapIcon',
       color: 'bg-primary',
       skills: [
-        'Small kids speak in multiple languages',
-        'English, Hindi, and Sanskrit fluency',
-        'Integrating children with basic life skills',
-        'Public speaking and presentation skills',
-        'Storytelling and creative expression',
+        'Aligned with NEP 2020, NCF-FS 2022, NCF 2023',
+        'Global frameworks: OECD 2030 + Harvard Project Zero (inspired)',
+        'Strong academic foundation for lifelong success',
+        'Thinking-oriented learning (not rote)',
+        'Experiential pedagogy for faster concept clarity',
       ],
     },
     {
-      title: 'IQ Development Module',
-      description: 'Strong game-based module for proven IQ results',
-      icon: 'LightBulbIcon',
+      title: 'Phonics Based Education',
+      description: 'No extra phonics classes needed later — built into daily learning',
+      icon: 'LanguageIcon',
       color: 'bg-secondary',
       skills: [
-        'Proven results with IQ development',
-        'Analytical skills development',
-        'Ambidextrous writing proficiency',
-        'Problem-solving and critical thinking',
-        'Memory enhancement techniques',
+        'Phonics sounds + blending + complex word sounds',
+        'Long/short vowels + exception rules',
+        'Better reading, spellings and fewer mistakes',
+        'Language basics that scale to higher classes',
+        'Strong communication confidence',
       ],
     },
     {
-      title: 'Physical & Practical Growth',
-      description: 'Education becomes practical through games and toys',
-      icon: 'HeartIcon',
+      title: 'Games & Toys Based Curriculum',
+      description: 'Research-based learning through play and activity design',
+      icon: 'PuzzlePieceIcon',
       color: 'bg-accent',
       skills: [
-        'Basics of maths taught through games and toys',
-        'Learning conducted through games and toys',
-        'Fine and gross motor skill development',
-        'Yoga and mindfulness practices',
-        'Robust physical growth activities',
+        'Textbooks converted into engaging learning activities',
+        'Based on Montessori, Piaget, Vygotsky + Multiple Intelligence',
+        'Multi-dimensional brain development through play',
+        'Problem-solving, curiosity and scientific thinking',
+        'No pressure: joy-first learning culture',
       ],
     },
     {
-      title: 'Creative Arts',
-      description: 'Nurturing artistic expression and creativity',
-      icon: 'PaintBrushIcon',
+      title: 'Gurukul Inspired Early Education',
+      description: 'Application-led learning that nurtures intelligence and character',
+      icon: 'SparklesIcon',
       color: 'bg-brand-orange',
       skills: [
-        'Visual arts and crafts',
-        'Music and rhythm activities',
-        'Dance and movement expression',
-        'Drama and role-playing',
-        'Creative project work',
+        'Strong basics + strong phonics + practical approach',
+        'Sanskrit as a tool for sanskars and language',
+        'Character development: respect & responsibility',
+        'Leadership-oriented education principles',
+        'Confidence & stage presence from early years',
       ],
     },
     {
-      title: 'Socio-Emotional Module',
-      description: 'Building confidence and making children ready to face the world',
-      icon: 'UserGroupIcon',
+      title: 'Environment + Physical Development',
+      description: 'Open, airy campus + early years sports + holistic growth',
+      icon: 'HeartIcon',
       color: 'bg-primary',
       skills: [
-        'Stage-confidence and speaking in crowd',
-        'Performance in front of small and large groups',
-        'Responsible and self-aware kids',
-        'Teamwork and Leadership skills',
-        'Emotional intelligence development',
+        'Playgrounds, sunlight and airflow for healthy growth',
+        'Early age sports: cricket, badminton, basketball, football',
+        'Yoga, movement and motor skill development',
+        'Learning from environment (Zen-inspired design)',
+        'Love for school & learning; kids don’t want to go home',
       ],
     },
     {
-      title: 'Innovation & Discovery',
-      description: 'Hands-on learning and scientific thinking',
-      icon: 'BeakerIcon',
+      title: 'The L.E.A.P Learning Architecture™',
+      description: 'A connected framework building thinkers, communicators and creators',
+      icon: 'CubeTransparentIcon',
       color: 'bg-secondary',
       skills: [
-        'Science experiments and exploration',
-        'Building and construction activities',
-        'Technology introduction',
-        'Nature study and environmental awareness',
-        'Innovation mindset development',
+        'Intelligence: NeuroIQ™, ThinkFast™, WholeMind™',
+        'Expression: Phono Logic™, LeadVoice™, Stage Ready™',
+        'Creation: FutureMind™, InnoThink™, MakerCore™',
+        'Movement: Move360™ + ActiveCore™',
+        'Outcomes: clarity, confidence, communication, creativity',
       ],
     },
   ];
@@ -159,13 +159,10 @@ const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
 
         <div className="mt-12 text-center">
           <div className="inline-flex items-center space-x-2 bg-white px-6 py-4 rounded-xl shadow-subtle">
-            <Icon name="DocumentTextIcon" size={24} className="text-primary" />
+            <Icon name="ChatBubbleLeftRightIcon" size={24} className="text-primary" />
             <span className="text-sm font-medium text-foreground font-source">
-              Download detailed curriculum guide for your child's age group
+              For class timings & fees — kindly WhatsApp on the below number (as shared in brochure)
             </span>
-            <button className="ml-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors duration-300 font-nunito">
-              Download PDF
-            </button>
           </div>
         </div>
       </div>

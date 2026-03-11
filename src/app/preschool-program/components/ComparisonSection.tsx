@@ -1,5 +1,4 @@
 import Icon from '@/components/ui/AppIcon';
-import AppImage from '@/components/ui/AppImage';
 
 interface ComparisonItem {
   traditional: string;
@@ -44,18 +43,14 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
       traditional: 'Unilateral teaching ',
       gyanhouz: 'Active participating classrooms with creative expression and thinking practice ',
     },
-     {
+    {
       traditional: 'Isolated development approach',
-      gyanhouz: 'Integrated learning approach  connecting across the learning areas ',
-    }
+      gyanhouz: 'Integrated learning approach connecting across learning areas',
+    },
   ];
 
   return (
     <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
-      <div className="absolute inset-0 z-0"  >
-      
-      </div>
-
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="inline-flex items-center space-x-4 bg-warning/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
