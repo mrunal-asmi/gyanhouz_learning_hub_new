@@ -25,7 +25,7 @@ export default function PreschoolProgramPage() {
       <div className="pt-16 lg:pt-20">
         <HeroSection />
         <ComparisonSection />
-        <ResultsShowcase />
+        {/* <ResultsShowcase /> */}
         <CurriculumSection />
         <FutureOpportunitiesSection />
         <AdmissionForm />

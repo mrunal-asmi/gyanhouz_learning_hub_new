@@ -29,7 +29,7 @@ const FAQSection = ({ className = '' }: FAQSectionProps) => {
     {
       question: 'What is the student-teacher ratio?',
       answer:
-        "We maintain a low student-teacher ratio of 8:1 for ages 2-3 and 12:1 for ages 4-6. This ensures personalized attention, individualized learning plans, and close monitoring of each child's development. Additionally, we have specialized instructors for language, arts, physical education, and innovation activities.",
+        "We maintain a low student-teacher ratio of 4:1 for ages 2-3 and 14:1 for ages 4-6. This ensures personalized attention, individualized learning plans, and close monitoring of each child's development. Additionally, we have specialized instructors for language, arts, physical education, and innovation activities.",
     },
     {
       question: "How do you ensure my child's safety and security?",
