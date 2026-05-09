@@ -94,18 +94,18 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
     <section className={`py-16 lg:py-24 bg-background ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-success/10 px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-success/10 px-4 py-2 rounded-full mb-4">
             <Icon name="ChatBubbleLeftRightIcon" size={20} className="text-success" />
             <span className="text-sm font-semibold text-success font-poppins">
               Parent Testimonials
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             Real Stories, <span className="text-primary">Real Results</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Hear from parents who witnessed their children's miraculous transformation at GYANHOUZ.
           </p>
         </div>

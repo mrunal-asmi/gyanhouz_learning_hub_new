@@ -67,18 +67,18 @@ const FutureOpportunitiesSection = () => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-4 bg-accent/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 md:gap-4 bg-accent/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon name="RocketLaunchIcon" size={40} className="text-accent scale-75 md:scale-100" />
-            <span className="text-2xl md:text-5xl font-semibold text-accent font-poppins whitespace-nowrap">
+            <span className="text-xl sm:text-2xl md:text-5xl font-semibold text-accent font-poppins leading-tight">
               Beyond Preschool
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             BIG <span className="text-accent">‘Beyond Opportunity Doors’</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Most preschools end at “class”. GYANHOUZ opens doors that connect your child to the real
             world: scholarships, industries, innovation labs, mentors and a lifetime network.
           </p>
@@ -113,7 +113,7 @@ const FutureOpportunitiesSection = () => {
           <h3 className="text-2xl lg:text-3xl font-bold font-poppins mb-4">
             The admission decision that changes everything
           </h3>
-          <p className="text-white/90 font-source text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-white/90 font-source text-base md:text-lg mb-8 max-w-2xl mx-auto">
             “Mumma… Papa… why didn’t you admit me where my friends explored more, achieved more and
             got the opportunities I never did?” Don’t choose a preschool — choose your child’s
             ecosystem.

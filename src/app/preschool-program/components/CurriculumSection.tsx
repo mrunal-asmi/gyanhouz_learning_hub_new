@@ -108,18 +108,18 @@ const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-4 bg-primary/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 md:gap-4 bg-primary/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon name="AcademicCapIcon" size={40} className="text-primary scale-75 md:scale-100" />
-            <span className="text-2xl md:text-5xl font-semibold text-primary font-poppins whitespace-nowrap">
+            <span className="text-xl sm:text-2xl md:text-5xl font-semibold text-primary font-poppins leading-tight">
               Comprehensive Curriculum
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             Holistic Development <span className="text-primary">Framework</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Our integrated curriculum covers every aspect of child development, ensuring no skill is
             left behind.
           </p>
@@ -158,9 +158,9 @@ const CurriculumSection = ({ className = '' }: CurriculumSectionProps) => {
         </div>
 
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center space-x-2 bg-white px-6 py-4 rounded-xl shadow-subtle">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-white px-4 md:px-6 py-4 rounded-xl shadow-subtle">
             <Icon name="ChatBubbleLeftRightIcon" size={24} className="text-primary" />
-            <span className="text-sm font-medium text-foreground font-source">
+            <span className="text-sm font-medium text-foreground font-source leading-tight">
               For class timings & fees — kindly WhatsApp on the below number (as shared in brochure)
             </span>
           </div>

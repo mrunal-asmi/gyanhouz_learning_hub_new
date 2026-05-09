@@ -186,18 +186,18 @@ const DayInLifeSection = ({ className = '' }: DayInLifeSectionProps) => {
     >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
             <Icon name="ClockIcon" size={20} className="text-secondary" />
             <span className="text-sm font-semibold text-secondary font-poppins">
               Daily Experience
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             A Day in the Life at <span className="text-primary">GYANHOUZ</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Experience how every moment is designed for holistic development, skill building, and
             joyful learning.
           </p>

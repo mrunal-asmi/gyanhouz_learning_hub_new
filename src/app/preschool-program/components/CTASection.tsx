@@ -22,18 +22,18 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <Icon name="ClockIcon" size={20} className="text-white" />
             <span className="text-sm font-semibold text-white font-poppins">
               Limited Seats Available for 2026
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white font-poppins mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white font-poppins mb-6 leading-tight">
             Don't Let Your Child Miss Out on This Revolutionary Learning Experience
           </h2>
 
-          <p className="text-lg lg:text-xl text-white/90 font-source mb-8 leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-white/90 font-source mb-8 leading-relaxed">
             Join 500+ families who chose GYANHOUZ and witnessed miraculous transformations. Seats
             are filling fast for the upcoming academic year. Secure your child's future today.
           </p>

@@ -102,18 +102,18 @@ const ResultsShowcase = ({ className = '' }: ResultsShowcaseProps) => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-4 bg-accent/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 md:gap-4 bg-accent/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon name="TrophyIcon" size={40} className="text-accent scale-75 md:scale-100" />
-            <span className="text-2xl md:text-5xl font-semibold text-accent font-poppins whitespace-nowrap">
+            <span className="text-xl sm:text-2xl md:text-5xl font-semibold text-accent font-poppins leading-tight">
               Miraculous Outcomes
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             Results That Speak for Themselves
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Quantified, measurable outcomes that traditional preschools can only dream of achieving.
             See what your child will accomplish.
           </p>

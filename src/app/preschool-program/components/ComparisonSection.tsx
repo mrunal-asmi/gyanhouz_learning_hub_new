@@ -53,22 +53,22 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
     <section className={`relative py-16 lg:py-24 overflow-hidden ${className}`}>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-4 bg-warning/10 px-6 md:px-8 py-3 md:py-4 rounded-full mb-8">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 md:gap-4 bg-warning/10 px-4 md:px-8 py-3 md:py-4 rounded-full mb-8">
             <Icon
               name="ExclamationTriangleIcon"
               size={40}
               className="text-warning scale-75 md:scale-100"
             />
-            <span className="text-2xl md:text-5xl font-semibold text-warning font-poppins whitespace-nowrap">
+            <span className="text-xl sm:text-2xl md:text-5xl font-semibold text-warning font-poppins leading-tight">
               What Your Child is Missing
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             Old School vs <span className="text-primary">New School</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             See the stark difference between traditional preschools and GYANHOUZ's revolutionary
             approach. Your child deserves better than outdated methods.
           </p>
@@ -131,9 +131,9 @@ const ComparisonSection = ({ className = '' }: ComparisonSectionProps) => {
           </div>
 
           <div className="mt-8 text-center">
-            <div className="inline-flex items-center space-x-2 bg-primary/10 px-6 py-3 rounded-full">
+            <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-primary/10 px-4 md:px-6 py-3 rounded-full">
               <Icon name="LightBulbIcon" size={20} className="text-primary" />
-              <span className="text-sm font-semibold text-primary font-poppins">
+              <span className="text-sm font-semibold text-primary font-poppins leading-tight">
                 The choice is clear. Don't let your child fall behind.
               </span>
             </div>

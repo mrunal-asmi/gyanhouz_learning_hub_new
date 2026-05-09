@@ -66,18 +66,18 @@ const FAQSection = ({ className = '' }: FAQSectionProps) => {
     <section className={`py-16 lg:py-24 bg-background ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
             <Icon name="QuestionMarkCircleIcon" size={20} className="text-secondary" />
             <span className="text-sm font-semibold text-secondary font-poppins">
               Frequently Asked Questions
             </span>
           </div>
 
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground font-poppins mb-4 leading-tight">
             Got Questions? <span className="text-primary">We've Got Answers</span>
           </h2>
 
-          <p className="text-lg text-muted-foreground font-source">
+          <p className="text-base md:text-lg text-muted-foreground font-source">
             Find answers to common questions about our preschool program, admission process, and
             what makes GYANHOUZ unique.
           </p>
